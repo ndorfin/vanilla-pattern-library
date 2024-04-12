@@ -5,6 +5,11 @@ A collection of front-end patterns and their documentation for Vanilla's new sit
 ## Dependencies
 
 - Node.js (20.12.2)
+   - [`@11ty/eleventy`](https://11ty.dev) - A static site generator
+     - [`@11ty/eleventy-plugin-syntaxhighlight`](https://www.11ty.dev/docs/plugins/syntaxhighlight/)\
+     A plugin for 11ty generating blocks of syntax-highlighted code
+  - [`js-yaml`](https://github.com/nodeca/js-yaml#readme)\
+  Adds YAML support to Node
 
 ## Running the development environment locally
 
@@ -16,4 +21,4 @@ A collection of front-end patterns and their documentation for Vanilla's new sit
    `npm i`
 1. Run the dev server:\
    `npm start`
-1. Browse to [`localhost:8000`](http://localhost:8000)
+1. Browse to [`localhost:8080`](http://localhost:8080)
