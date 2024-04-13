@@ -1,0 +1,22 @@
+---
+title: All templates
+heading: All templates
+summary: Pre-built example pages based on the existing patterns
+description: Pre-built example pages based on the existing patterns
+---
+<h3>List of templates</h3>
+
+{% if templates %}
+	{% set templateList = templates | objToArray %}
+	<ul>
+	{% for template in templateList %}
+		<li>
+			<a href="{{ url.templates }}/{{ template.id }}/">
+				{{ template.name }}
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No templates defined yet</p>
+{% endif %}

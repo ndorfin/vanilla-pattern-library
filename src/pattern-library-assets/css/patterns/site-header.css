@@ -1,0 +1,15 @@
+body > header {
+	background-color: var(--color-header-background);
+	color: var(--color-header-foreground);
+	padding-block: calc(var(--spacing-container-inner) * 2);
+	padding-inline: var(--spacing-container-inner);
+}
+
+body > header a {
+	color: inherit;
+}
+
+body > header a:focus-visible {
+	outline-color: currentColor;
+	outline-offset: 0.5rem;
+}

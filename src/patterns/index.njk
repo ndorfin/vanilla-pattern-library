@@ -1,0 +1,17 @@
+---
+title: All patterns
+heading: All patterns
+summary: Common HTML/CSS or UI patterns
+description: Common HTML/CSS or UI patterns
+---
+<h3>List of patterns</h3>
+{% set patternList = patterns | objToArray %}
+<ul>
+{% for pattern in patternList %}
+	<li>
+		<a href="{{ url.patterns }}/{{ pattern.id }}/">
+			{{ pattern.name }}
+		</a>
+	</li>
+{% endfor %}
+</ul>

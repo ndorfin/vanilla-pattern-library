@@ -1,0 +1,10 @@
+---
+pagination:
+  data: patterns
+  size: 1
+  alias: pattern
+  resolve: values
+permalink: "{{ url.patterns }}/{{ pattern.id }}/example/index.html"
+layout: "pattern_example.njk"
+---
+{{ pattern.example.code | safe }}

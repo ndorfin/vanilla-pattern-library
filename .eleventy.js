@@ -15,7 +15,8 @@ module.exports = function(config) {
 	config.addDataExtension('yml', contents => yaml.load(contents));
 
 	/* Copy assets straight through to the `public` folder */
-	config.addPassthroughCopy('src/assets');
+	config.addPassthroughCopy('src/pattern-library-assets');
+	config.addPassthroughCopy('src/vanilla-web-assets');
 
 	/* Filters */
 	config.addFilter('markdown', (content) => {

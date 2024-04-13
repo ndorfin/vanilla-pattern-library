@@ -1,0 +1,24 @@
+id: button
+name: Button
+summary: Clicky and blocky elements that beg for user interaction.
+description: |-
+  Test
+design_link: 
+assets:
+  - /css/patterns/buttons/buttons.css
+example:
+  width: 200
+  height: 75
+  code: |-
+    <button type="submit" class="button" data-scheme="primary">
+      I’m a button!
+    </button>
+notes: |-
+  Test
+variants:
+  -
+    id: primary
+  - 
+    id: secondary
+  -
+    id: icon
