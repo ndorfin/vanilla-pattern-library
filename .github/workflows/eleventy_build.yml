@@ -20,11 +20,10 @@ jobs:
           path: 'vanilla-web-assets'
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: rm -rf ./vanilla-pattern-library/vanilla-web-assets
-      - run: cd vanilla-pattern-library
-      - run: mkdir vanilla-web-assets
-      - run: cd ..
-      - run: cp -r ./vanilla-web-assets ./vanilla-pattern-library/vanilla-web-assets
+      - name: Replace symlinks with latest from vanilla-web-assets
+        run: |
+          rm vanilla-pattern-library/vanilla-web-assets/src
+          cp -r vanilla-web-assets/src vanilla-pattern-library/vanilla-web-assets
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
