@@ -2,7 +2,7 @@ id: button
 name: Button
 summary: Clicky and blocky elements that beg for user interaction.
 description: |-
-  Test
+  A call-to-action, and the conclusion of a form.
 design_link: 
 assets:
   - /css/patterns/buttons/buttons.css
