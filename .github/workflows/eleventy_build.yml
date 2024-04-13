@@ -21,7 +21,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - run: rm -rf ./vanilla-pattern-library/vanilla-web-assets
-
+      - run: mkdir ./vanilla-pattern-library/vanilla-web-assets
       - run: cp -r ./vanilla-web-assets ./vanilla-pattern-library/vanilla-web-assets
 
       - name: Use Node.js ${{ matrix.node-version }}
