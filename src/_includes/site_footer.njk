@@ -1,0 +1,24 @@
+<footer>
+	<screenreader-only>
+		<h2 id="heading_sitemap">Sitemap</h2>
+	</screenreader-only>
+	<nav aria-labelledby="heading_sitemap">
+		<ul>
+			<li><a href="{{ url.patterns }}">HTML/CSS patterns</a></li>
+			<li><a href="{{ url.templates }}">Templates</a></li>
+		</ul>
+	</nav>
+</footer>
+<!--
+============================
+page: {{ page | debug | safe }}
+page_meta: {{ page_meta | debug | safe }}
+title: {{ title | debug | safe }}
+heading: {{ heading | debug | safe }}
+summary: {{ summary | debug | safe }}
+description: {{ description | debug | safe }}
+active_tab: {{ active_tab | debug | safe }}
+============================
+pattern: {{ pattern | debug | safe }}
+============================
+-->
