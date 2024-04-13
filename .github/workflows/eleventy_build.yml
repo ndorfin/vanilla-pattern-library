@@ -9,13 +9,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout vanilla-pattern-library
+        uses: actions/checkout@v4
 
-      - uses: actions/checkout@v3
+      - name: Checkout vanilla-web-assets
+        uses: actions/checkout@v4
         with:
           repository: 'ndorfin/vanilla-web-assets'
-          path: ./vanilla-web-assets
+          ref: 'main'
+          path: 'vanilla-web-assets'
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - run: rm -rf ./vanilla-pattern-library/vanilla-web-assets
+
+      - run: cp ./vanilla-web-assets ./vanilla-pattern-library/vanilla-web-assets
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
