@@ -23,9 +23,8 @@ jobs:
 
       - name: Replace symlinks with latest from vanilla-web-assets
         run: |
-          pwd
-          rm vanilla-pattern-library/vanilla-web-assets/src
-          cp -r vanilla-web-assets/src vanilla-pattern-library/vanilla-web-assets
+          rm vanilla-web-assets/src
+          cp -r ../vanilla-web-assets/src vanilla-web-assets
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
