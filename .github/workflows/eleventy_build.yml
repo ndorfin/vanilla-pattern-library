@@ -12,14 +12,18 @@ jobs:
       - name: Checkout vanilla-pattern-library
         uses: actions/checkout@v4
 
+      - run: rm -rf vanilla-web-assets
+
       - name: Checkout vanilla-web-assets
         uses: actions/checkout@v4
         with:
           repository: 'ndorfin/vanilla-web-assets'
           ref: 'main'
           sparse-checkout: src
-          path: '../vanilla-web-assets'
+          path: 'vanilla-web-assets'
           token: ${{ secrets.GITHUB_TOKEN }}
+        
+      - run: ls vanilla-web-assets/src
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
