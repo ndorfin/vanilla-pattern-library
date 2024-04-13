@@ -18,13 +18,8 @@ jobs:
           repository: 'ndorfin/vanilla-web-assets'
           ref: 'main'
           sparse-checkout: src
-          path: 'vanilla-web-assets'
+          path: '../vanilla-web-assets'
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Replace symlinks with latest from vanilla-web-assets
-        run: |
-          rm vanilla-web-assets/src
-          cp -r ../vanilla-web-assets/src vanilla-web-assets
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
