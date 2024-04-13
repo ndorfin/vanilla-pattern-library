@@ -1,0 +1,13 @@
+html {
+	--font-size-base: 1rem;
+	--color-button-primary-background: #111;
+	--color-button-primary-foreground: #fff;
+	--color-header-background: #111;
+	--color-header-foreground: #eee;
+	--color-main-header-background: #eee;
+	--color-main-header-foreground: #111;
+	--color-footer-background: #eee;
+	--color-footer-foreground: #111;
+	--color-link-default: #111;
+	--spacing-container-inner: 1rem;
+}

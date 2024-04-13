@@ -1,0 +1,63 @@
+/* Import Partials */
+@import "general/constants.css";
+@import "general/defaults.css";
+@import "patterns/site-header.css";
+@import "patterns/site-navigation.css";
+@import "patterns/page-header.css";
+@import "patterns/site-footer.css";
+/* Import Custom Element and Web Component CSS */
+@import "custom-elements/screenreader-only.css";
+/* Import external library CSS */
+@import "lib/prism-syntax-highlight.css";
+
+html {
+	block-size: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	block-size: 100%;
+}
+
+body > header {
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding-block: calc(var(--spacing-container-inner) * 2);
+	padding-inline: var(--spacing-container-inner);
+}
+
+body > nav {
+	flex-grow: 0;
+	flex-shrink: 0;
+	padding-inline: var(--spacing-container-inner);
+}
+
+body > :is(main, footer) {
+	padding: var(--spacing-container-inner);
+}
+
+main {
+	flex-grow: 1;
+}
+
+main > header {
+	padding-block-start: 2rem;
+	padding-block-end: 2rem;
+}
+
+article {
+	padding-block: 4rem;
+	max-inline-size: 80ch;
+}
+
+article > section + section {
+	margin-block-start: 4rem;
+}
+
+body > footer {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
