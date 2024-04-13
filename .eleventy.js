@@ -16,7 +16,7 @@ module.exports = function(config) {
 
 	/* Copy assets straight through to the `public` folder */
 	config.addPassthroughCopy('src/pattern-library-assets');
-	config.addPassthroughCopy('src/vanilla-web-assets');
+	config.addPassthroughCopy('vanilla-web-assets/src');
 
 	/* Filters */
 	config.addFilter('markdown', (content) => {
