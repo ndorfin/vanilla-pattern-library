@@ -17,11 +17,13 @@ jobs:
         with:
           repository: 'ndorfin/vanilla-web-assets'
           ref: 'main'
+          sparse-checkout: src
           path: 'vanilla-web-assets'
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Replace symlinks with latest from vanilla-web-assets
         run: |
+          pwd
           rm vanilla-pattern-library/vanilla-web-assets/src
           cp -r vanilla-web-assets/src vanilla-pattern-library/vanilla-web-assets
 
