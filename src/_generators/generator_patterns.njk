@@ -34,9 +34,12 @@ layout: "pattern_detail.njk"
 			<h3>Relevant assets</h3>
 		</header>
 		<ul>
+			<li>
+				<i>Shared stylesheets</i> [See <a href="/{{ global.assets_path }}/css/index.css">index.css</a>]
+			</li>
 			{% for asset in pattern.assets %}
 				<li>
-					<a href="{{ global.assets_path }}{{ asset }}">{{ asset }}</a>
+					<a href="/{{ global.assets_path }}{{ asset }}">{{ asset }}</a>
 				</li>
 			{% endfor %}
 		</ul>
@@ -52,10 +55,40 @@ layout: "pattern_detail.njk"
 	</section>
 {% endif %}
 
-{% for variationType, variationObj in variations %}
-	{% if pattern[variationType] %}
-		{% set variationLabel = variationObj.name %}
-		{% set iterable = pattern[variationType] %}
-		{% include 'artefact_detail_variation.njk' %}
-	{% endif %}
-{% endfor %}
+{% if pattern.variants %}
+	<section id="section_{{ pattern.id }}_variants">
+		<header>
+			<h3>Variants</h3>
+		</header>
+		<ul class="list_accordions">
+			{% for variant in pattern.variants %}
+				<li>
+					<details open>
+						<summary><b>{{ variant.name }}</b>&nbsp;{% if variant.description %}
+								{{ variant.description | markdown | safe }}
+							{% endif %}</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/{{variant.id}}/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe 
+									width="{{ variant.example.width if variant.example.width else pattern.example.width }}"
+									height="{{ variant.example.height if variant.example.height else pattern.example.height }}"
+									src="variants/{{ variant.id }}/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							{% highlight "html" %}{{ variant.example.code | safe }}{% endhighlight %}
+
+							{% if variant.notes %}
+								<h4>Notes</h4>
+								{{ variant.notes | markdown | safe }}
+							{% endif %}
+						</div>
+					</details>
+				</li>
+			{% endfor %}
+		</ul>
+	</section>
+{% endif %}

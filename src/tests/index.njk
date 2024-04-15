@@ -1,0 +1,22 @@
+---
+title: All tests
+heading: All tests
+summary: A smorgasbord of various visual test cases
+description: A smorgasbord of various visual test cases
+---
+<h3>List of tests</h3>
+
+{% if tests %}
+	{% set templateList = tests | objToArray %}
+	<ul>
+	{% for template in templateList %}
+		<li>
+			<a href="{{ url.tests }}/{{ template.id }}/">
+				{{ template.name }}
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No tests defined yet</p>
+{% endif %}

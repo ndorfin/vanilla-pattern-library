@@ -1,8 +1,10 @@
 _structure:
   - /patterns
   - /templates
+  - /tests
 home: https://vanilla.co.za/
 patterns: /patterns
 root: /
 source: https://github.com/ndorfin/vanilla-pattern-library
 templates: /templates
+tests: /tests

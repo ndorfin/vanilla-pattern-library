@@ -1,0 +1,22 @@
+---
+pagination:
+  data: tests
+  size: 1
+  alias: test
+  resolve: values
+permalink: "{{ url.tests }}/{{ test.id }}/index.html"
+layout: "test_detail.njk"
+---
+{% for property in test.properties%}
+<article>
+	<header>
+		<h3>{{ property.name }}</h3>
+	</header>
+		{% for case in property.cases %}
+			<section>
+				{{ case.code | safe }}
+			</section>
+		{% endfor %}
+	</div>
+</article>
+{% endfor %}

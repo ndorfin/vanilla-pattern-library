@@ -1,0 +1,232 @@
+id: buttons
+name: Buttons
+summary: Test cases for all the various modes, schemes, and other configurations
+description: |-
+  Buttons are particularly tricky, since they can be applied to many different types of elements, and they have several aesthetic modifications.
+properties:
+  - 
+    id: elements
+    name: Elements
+    cases:
+      -
+        code: |-
+          <button>
+            I’m a button
+          </button>
+      -
+        code: |-
+          <a class="button">
+            I’m a button
+          </a>
+  - 
+    id: schemes
+    name: Schemes
+    cases:
+      -
+        code: |-
+          <button>
+            I’m a button
+          </button>
+          <a class="button">
+            I’m a button
+          </a>
+      -
+        code: |-
+          <button data-scheme="primary">
+            I’m a button
+          </button>
+          <a class="button" data-scheme="primary">
+            I’m a button
+          </a>
+      -
+        code: |-
+          <button data-scheme="secondary">
+            I’m a button
+          </button>
+          <a class="button" data-scheme="secondary">
+            I’m a button
+          </a>
+  - 
+    id: sizes
+    name: Sizes
+    cases:
+      -
+        code: |-
+          <button>
+            I’m a button
+          </button>
+          <button data-size="small">
+            I’m a button
+          </button>
+      -
+        code: |-
+          <button data-scheme="primary">
+            I’m a button
+          </button>
+          <button data-scheme="primary" data-size="small">
+            I’m a button
+          </button>
+      -
+        code: |-
+          <button data-scheme="secondary">
+            I’m a button
+          </button>
+          <button data-scheme="secondary" data-size="small">
+            I’m a button
+          </button>
+  - 
+    id: icon-before
+    name: Icon before
+    cases:
+      -
+        code: |-
+          <button data-mode="icon-before" data-icon="arrow-right">
+            I’m a button
+          </button>
+          <button data-mode="icon-before" data-icon="arrow-right" data-scheme="primary">
+            I’m a button
+          </button>
+          <button data-mode="icon-before" data-icon="arrow-right" data-scheme="secondary">
+            I’m a button
+          </button>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-mode="icon-before" data-icon="arrow-right">
+              I’m a button
+            </button>
+            <button data-mode="icon-before" data-icon="arrow-right" data-scheme="primary">
+              I’m a button
+            </button>
+            <button data-mode="icon-before" data-icon="arrow-right" data-scheme="secondary">
+              I’m a button
+            </button>
+          </div>
+      -
+        code: |-
+          <button data-mode="icon-before" data-icon="arrow-right" data-size="small">
+            I’m a button
+          </button>
+          <button data-mode="icon-before" data-icon="arrow-right" data-size="small" data-scheme="primary">
+            I’m a button
+          </button>
+          <button data-mode="icon-before" data-icon="arrow-right" data-size="small" data-scheme="secondary">
+            I’m a button
+          </button>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-mode="icon-before" data-icon="arrow-right" data-size="small">
+              I’m a button
+            </button>
+            <button data-mode="icon-before" data-icon="arrow-right" data-size="small" data-scheme="primary">
+              I’m a button
+            </button>
+            <button data-mode="icon-before" data-icon="arrow-right" data-size="small" data-scheme="secondary">
+              I’m a button
+            </button>
+          </div>
+  - 
+    id: icon-after
+    name: Icon after
+    cases:
+      -
+        code: |-
+          <button data-mode="icon-after" data-icon="arrow-right">
+            I’m a button
+          </button>
+          <button data-mode="icon-after" data-icon="arrow-right" data-scheme="primary">
+            I’m a button
+          </button>
+          <button data-mode="icon-after" data-icon="arrow-right" data-scheme="secondary">
+            I’m a button
+          </button>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-mode="icon-after" data-icon="arrow-right">
+              I’m a button
+            </button>
+            <button data-mode="icon-after" data-icon="arrow-right" data-scheme="primary">
+              I’m a button
+            </button>
+            <button data-mode="icon-after" data-icon="arrow-right" data-scheme="secondary">
+              I’m a button
+            </button>
+          </div>
+      -
+        code: |-
+          <button data-mode="icon-after" data-icon="arrow-right" data-size="small">
+            I’m a button
+          </button>
+          <button data-mode="icon-after" data-icon="arrow-right" data-size="small" data-scheme="primary">
+            I’m a button
+          </button>
+          <button data-mode="icon-after" data-icon="arrow-right" data-size="small" data-scheme="secondary">
+            I’m a button
+          </button>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-mode="icon-after" data-icon="arrow-right" data-size="small">
+              I’m a button
+            </button>
+            <button data-mode="icon-after" data-icon="arrow-right" data-size="small" data-scheme="primary">
+              I’m a button
+            </button>
+            <button data-mode="icon-after" data-icon="arrow-right" data-size="small" data-scheme="secondary">
+              I’m a button
+            </button>
+          </div>
+  - 
+    id: icon-only
+    name: Icon only
+    cases:
+      -
+        code: |-
+          <button data-mode="icon" data-icon="arrow-right">
+            I’m a button
+          </button>
+          <button data-mode="icon" data-icon="arrow-right" data-scheme="primary">
+            I’m a button
+          </button>
+          <button data-mode="icon" data-icon="arrow-right" data-scheme="secondary">
+            I’m a button
+          </button>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-mode="icon" data-icon="arrow-right">
+              I’m a button
+            </button>
+            <button data-mode="icon" data-icon="arrow-right" data-scheme="primary">
+              I’m a button
+            </button>
+            <button data-mode="icon" data-icon="arrow-right" data-scheme="secondary">
+              I’m a button
+            </button>
+          </div>
+      -
+        code: |-
+          <button data-mode="icon" data-icon="arrow-right" data-size="small">
+            I’m a button
+          </button>
+          <button data-mode="icon" data-icon="arrow-right" data-size="small" data-scheme="primary">
+            I’m a button
+          </button>
+          <button data-mode="icon" data-icon="arrow-right" data-size="small" data-scheme="secondary">
+            I’m a button
+          </button>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-mode="icon" data-icon="arrow-right" data-size="small">
+              I’m a button
+            </button>
+            <button data-mode="icon" data-icon="arrow-right" data-size="small" data-scheme="primary">
+              I’m a button
+            </button>
+            <button data-mode="icon" data-icon="arrow-right" data-size="small" data-scheme="secondary">
+              I’m a button
+            </button>
+          </div>

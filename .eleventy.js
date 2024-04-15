@@ -42,6 +42,25 @@ module.exports = function(config) {
 		return file.toString('utf8');
 	});
 
+	/* Custom collections */
+	config.addCollection('patternVariants', (collection) => {
+		const filteredPatterns = collection.getAll()[0].data['patterns'];
+		let truncatedCollection = Object.values(filteredPatterns).filter((item) => {
+			// Only filter by `patterns` that have `variants` sections
+			return item['variants'] && item['variants'].length > 0;
+		});
+		let variants = [];
+		if (truncatedCollection.length) {
+			truncatedCollection.forEach((pattern) => {
+				pattern.variants.forEach((variant) => {
+					variant.pattern_id = pattern.id;
+					variants.push(variant);
+				});
+			});
+		}
+		return variants;
+	});
+
 	return {
 		templateFormats: ['html', 'md', 'njk'],
 		htmlTemplateEngine: ['njk', 'md'],

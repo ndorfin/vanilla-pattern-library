@@ -1,0 +1,10 @@
+---
+pagination:
+  data: collections.patternVariants
+  size: 1
+  alias: variant
+  resolve: values
+permalink: "{{ url.patterns }}/{{ variant.pattern_id }}/variants/{{ variant.id }}/example/index.html"
+layout: "pattern_example.njk"
+---
+{{ variant.example.code | safe }}
