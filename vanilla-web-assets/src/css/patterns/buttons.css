@@ -1,0 +1,136 @@
+button,
+.button {
+	--button-font-size: var(--font-size-default);
+	--button-color-font: #111;
+	--button-color-background: #999;
+	--button-color-hover-background: #aaa;
+	--button-padding-inline: calc(var(--button-font-size) * 2.5);
+	--button-padding-block: calc(var(--button-font-size) * 1);
+	--button-icon-label-gap: var(--button-font-size);
+
+	display: inline-block;
+	font-size: var(--button-font-size);
+	font-weight: 400;
+	line-height: 1.25;
+	border-style: none;
+	border-radius: 10rem;
+	padding-inline: var(--button-padding-inline);
+	padding-block: var(--button-padding-block);
+	color: var(--button-color-font);
+	background-color: var(--button-color-background);
+	cursor: default;
+}
+
+:is(
+	button,
+	.button
+):hover {
+	background-color: var(--button-color-hover-background);
+	font-weight: 800;
+}
+
+/* Schemes */
+:is(
+	button,
+	.button
+)[data-scheme="primary"] {
+	--button-color-font: hsl(60, 5%, 96%);
+	--button-color-background: hsl(0, 3%, 6%);
+	--button-color-hover-background: hsl(16, 27%, 22%);
+}
+:is(
+	button,
+	.button
+)[data-scheme="secondary"] {
+	--button-color-font: hsl(24, 4%, 23%);
+	--button-color-background: hsl(0, 0%, 100%);
+	--button-color-hover-background: hsl(60, 5%, 96%);
+
+	border-width: 1px;
+	border-color: hsl(16, 26%, 17%);
+	border-style: solid;
+	padding-inline: calc(var(--button-padding-inline) - (var(--button-font-size) / 16));
+	padding-block: calc(var(--button-padding-block) - (var(--button-font-size) / 16));
+}
+
+/* Size adjustments */
+:is(
+	button,
+	.button
+)[data-size="small"] {
+	--button-font-size: 0.875rem;
+	--button-padding-block: calc(var(--button-font-size) * 0.85714); /* 12px */
+	--button-padding-inline: calc(var(--button-font-size) * 1.42857); /* 20px */
+}
+:is(
+	button,
+	.button
+)[data-size="small"][data-scheme="secondary"] {
+	padding-inline: calc(var(--button-padding-inline) - (var(--button-font-size) / 14));
+	padding-block: calc(var(--button-padding-block) - (var(--button-font-size) / 14));
+}
+
+/* Icon shared settings */
+:is(
+	button,
+	.button
+)[data-mode="icon"]::after,
+:is(
+	button,
+	.button
+)[data-mode="icon-before"]::before,
+:is(
+	button,
+	.button
+)[data-mode="icon-after"]::after {
+	content: '';
+	display: block;
+	block-size: 1em;
+	inline-size: 1em;
+	background-size: contain;
+	background-position: 50% 50%;
+	background-image: var(--icon-image-url);
+	background-repeat: no-repeat;
+}
+
+/* Icon and label */
+:is(
+	button,
+	.button
+)[data-mode^="icon-"] {
+	display: inline-flex;
+	flex-direction: row;
+	gap: var(--button-icon-label-gap);
+	align-items: center;
+}
+
+/* Icon only */
+:is(
+	button,
+	.button
+)[data-mode="icon"] {
+	text-indent: -999rem;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+	padding: calc(var(--button-font-size) * 0.75);
+	min-inline-size: var(--button-font-size);
+	min-block-size: var(--button-font-size);
+	box-sizing: content-box;
+	line-height: 1;
+}
+:is(
+	button,
+	.button
+)[data-mode="icon"][data-size="small"] {
+	padding: calc(var(--button-font-size) * 0.5714285714); /* 8px */
+}
+:is(
+	button,
+	.button
+)[data-mode="icon"]::after {
+	position: absolute;
+	inset-block-start: 50%;
+	inset-inline-start: 50%;
+	transform: translate(-50%, -50%);
+}

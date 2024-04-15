@@ -26,6 +26,7 @@
 	<ul>
 		<li><a href="/vanilla-pattern-library/patterns">Patterns</a></li>
 		<li><a href="/vanilla-pattern-library/templates">Templates</a></li>
+		<li><a href="/vanilla-pattern-library/tests">Tests</a></li>
 	</ul>
 </nav>
 <main>
@@ -50,7 +51,7 @@
 			<p><a href="example/" target="_blank">Open example in a new window</a></p>
 		</header>
 		<div class="container_iframe">
-			<iframe width="200" height="75" src="example/"></iframe>
+			<iframe width="250" height="75" src="example/"></iframe>
 		</div>
 	</section>
 	
@@ -59,7 +60,7 @@
 				<h3>Code sample</h3>
 			</header>
 			
-			<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">data-scheme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+			<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   I’m a button!
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
 		</section>
@@ -72,9 +73,16 @@
 			<h3>Relevant assets</h3>
 		</header>
 		<ul>
+			<li>
+				<i>Shared stylesheets</i> [See <a href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">index.css</a>]
+			</li>
 			
 				<li>
-					<a href="vanilla-web-assets/src/css/patterns/buttons/buttons.css">/css/patterns/buttons/buttons.css</a>
+					<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/icons.css">/css/icons.css</a>
+				</li>
+			
+				<li>
+					<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/patterns/buttons.css">/css/patterns/buttons.css</a>
 				</li>
 			
 		</ul>
@@ -82,16 +90,218 @@
 
 
 
-	<section id="section_notes">
+
+
+	<section id="section_button_variants">
 		<header>
-			<h3>Notes</h3>
+			<h3>Variants</h3>
 		</header>
-		<p>Test</p>
+		<ul class="list_accordions">
+			
+				<li>
+					<details open="">
+						<summary><b>Scheme: Primary</b>&nbsp;
+								<p>The primary call to action on a page, or within a form.</p>
 
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/scheme-primary/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="250" height="75" src="variants/scheme-primary/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">data-scheme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  I’m a button!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>Use the attribute: <code>data-scheme=&quot;primary&quot;</code>.</p>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Scheme: Secondary</b>&nbsp;
+								<p>The secondary call to action on a page, or within a form.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/scheme-secondary/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="250" height="75" src="variants/scheme-secondary/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">data-scheme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>secondary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  I’m a button!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>Use the attribute: <code>data-scheme=&quot;secondary&quot;</code>.</p>
+<p>This button style <strong>SHOULD</strong> only be shown if a Primary button (above) is already present in the form or page.</p>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Mode: Icon before label</b>&nbsp;
+								<p>Places the designated icon before the button’s label text.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/mode-icon-before/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="250" height="75" src="variants/mode-icon-before/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">data-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon-before<span class="token punctuation">"</span></span> <span class="token attr-name">data-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>arrow-right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  I’m a button!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>Use the attribute: <code>data-mode=&quot;icon-before&quot;</code> to trigger this icon mode, and then specify what icon you want by adding <code>data-icon=&quot;ICON_NAME&quot;</code>. For a full list of icons see: <code>icons.css</code>.</p>
+<p>You <strong>MUST</strong>:</p>
+<ul>
+<li>specify a predefined icon using the <code>data-icon=&quot;&quot;</code> attribute.</li>
+</ul>
+<p>This button mode can be freely mixed with:</p>
+<ul>
+<li>Primary and Secondary schemes</li>
+<li>Alternate sizes</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Mode: Icon after label</b>&nbsp;
+								<p>Places the designated icon after the button’s label text.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/mode-icon-after/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="250" height="75" src="variants/mode-icon-after/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">data-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon-after<span class="token punctuation">"</span></span> <span class="token attr-name">data-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>arrow-right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  I’m a button!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>Use the attribute: <code>data-mode=&quot;icon-after&quot;</code> to trigger this icon mode, and then specify what icon you want by adding <code>data-icon=&quot;ICON_NAME&quot;</code>. For a full list of icons see: <code>icons.css</code>.</p>
+<p>You <strong>MUST</strong>:</p>
+<ul>
+<li>specify a predefined icon using the <code>data-icon=&quot;&quot;</code> attribute.</li>
+</ul>
+<p>This button mode can be freely mixed with:</p>
+<ul>
+<li>Primary and Secondary schemes</li>
+<li>Alternate sizes</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Mode: Icon only</b>&nbsp;
+								<p>Replaces the button label with a designated icon.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/mode-icon-only/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="250" height="75" src="variants/mode-icon-only/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">data-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon<span class="token punctuation">"</span></span> <span class="token attr-name">data-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>arrow-right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  I’m a button!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>Use the attribute: <code>data-mode=&quot;icon&quot;</code> to trigger this icon-only mode, and then specify what icon you want by adding <code>data-icon=&quot;ICON_NAME&quot;</code>. For a full list of icons see: <code>icons.css</code>.</p>
+<p>You <strong>MUST</strong>:</p>
+<ul>
+<li>specify a button label as normal. This label will be read out in screen readers.</li>
+<li>specify a predefined icon using the <code>data-icon=&quot;&quot;</code> attribute.</li>
+</ul>
+<p>This button mode can be freely mixed with:</p>
+<ul>
+<li>Primary and Secondary schemes</li>
+<li>Alternate sizes</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Size: Small</b>&nbsp;
+								<p>Shrink the button down in size</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/size-small/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="250" height="75" src="variants/size-small/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">data-size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>small<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  I’m a button!
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>Use the attribute: <code>data-size=&quot;small&quot;</code> to reduce this button's visible size.</p>
+<p>This button mode can be freely mixed with:</p>
+<ul>
+<li>Primary and Secondary schemes</li>
+<li>Icon modes</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+		</ul>
 	</section>
-
-
-
 
 	</article>
 </main>
@@ -129,16 +339,90 @@ pattern: {
   summary: 'Clicky and blocky elements that beg for user interaction.',
   description: 'A call-to-action, and the conclusion of a form.',
   design_link: null,
-  assets: [ '/css/patterns/buttons/buttons.css' ],
+  assets: [ '/css/icons.css', '/css/patterns/buttons.css' ],
   example: {
-    width: 200,
+    width: 250,
     height: 75,
-    code: '<button type="submit" class="button" data-scheme="primary">\n' +
-      '  I’m a button!\n' +
-      '</button>'
+    code: '<button type="submit">\n  I’m a button!\n</button>'
   },
-  notes: 'Test',
-  variants: [ { id: 'primary' }, { id: 'secondary' }, { id: 'icon' } ]
+  variants: [
+    {
+      id: 'scheme-primary',
+      name: 'Scheme: Primary',
+      description: 'The primary call to action on a page, or within a form.',
+      notes: 'Use the attribute: `data-scheme="primary"`.',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'scheme-secondary',
+      name: 'Scheme: Secondary',
+      description: 'The secondary call to action on a page, or within a form.',
+      notes: 'Use the attribute: `data-scheme="secondary"`.\n' +
+        '\n' +
+        'This button style **SHOULD** only be shown if a Primary button (above) is already present in the form or page.',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'mode-icon-before',
+      name: 'Mode: Icon before label',
+      description: 'Places the designated icon before the button’s label text.',
+      notes: 'Use the attribute: `data-mode="icon-before"` to trigger this icon mode, and then specify what icon you want by adding `data-icon="ICON_NAME"`. For a full list of icons see: `icons.css`.\n' +
+        '\n' +
+        'You **MUST**:\n' +
+        '  - specify a predefined icon using the `data-icon=""` attribute.\n' +
+        '\n' +
+        'This button mode can be freely mixed with:\n' +
+        '  - Primary and Secondary schemes\n' +
+        '  - Alternate sizes',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'mode-icon-after',
+      name: 'Mode: Icon after label',
+      description: 'Places the designated icon after the button’s label text.',
+      notes: 'Use the attribute: `data-mode="icon-after"` to trigger this icon mode, and then specify what icon you want by adding `data-icon="ICON_NAME"`. For a full list of icons see: `icons.css`.\n' +
+        '\n' +
+        'You **MUST**:\n' +
+        '  - specify a predefined icon using the `data-icon=""` attribute.\n' +
+        '\n' +
+        'This button mode can be freely mixed with:\n' +
+        '  - Primary and Secondary schemes\n' +
+        '  - Alternate sizes',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'mode-icon-only',
+      name: 'Mode: Icon only',
+      description: 'Replaces the button label with a designated icon.',
+      notes: 'Use the attribute: `data-mode="icon"` to trigger this icon-only mode, and then specify what icon you want by adding `data-icon="ICON_NAME"`. For a full list of icons see: `icons.css`.\n' +
+        '\n' +
+        'You **MUST**:\n' +
+        '  - specify a button label as normal. This label will be read out in screen readers.\n' +
+        '  - specify a predefined icon using the `data-icon=""` attribute.\n' +
+        '\n' +
+        'This button mode can be freely mixed with:\n' +
+        '  - Primary and Secondary schemes\n' +
+        '  - Alternate sizes',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'size-small',
+      name: 'Size: Small',
+      description: 'Shrink the button down in size',
+      notes: 'Use the attribute: `data-size="small"` to reduce this button\'s visible size.\n' +
+        '\n' +
+        'This button mode can be freely mixed with:\n' +
+        '  - Primary and Secondary schemes\n' +
+        '  - Icon modes',
+      example: [Object],
+      pattern_id: 'button'
+    }
+  ]
 }
 ============================
 -->

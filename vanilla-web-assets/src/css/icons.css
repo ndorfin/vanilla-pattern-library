@@ -1,0 +1,8 @@
+[data-icon="arrow-right"] {
+	--icon-image-url: url('../../img/icon_arrow_right_black.svg');
+}
+
+[data-theme="dark"] [data-icon="arrow-right"],
+[data-scheme="primary"][data-icon="arrow-right"] {
+	--icon-image-url: url('../../img/icon_arrow_right_brown_100.svg');
+}
