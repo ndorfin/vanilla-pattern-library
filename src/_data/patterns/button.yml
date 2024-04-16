@@ -14,14 +14,14 @@ example:
     <button type="submit">
       I’m a button!
     </button>
-# notes: |-
-#   Test
+notes: |-
+  If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.
 variants:
   -
     id: scheme-primary
     name: 'Scheme: Primary'
     description: |-
-      The primary call to action on a page, or within a form.
+      The primary call to action on a page, or within a form. This is the default styling for all `<button>` elements, or elements with the `button` class attribute.
     notes: |-
       Use the attribute: `data-scheme="primary"`.
     example:
@@ -33,7 +33,7 @@ variants:
     id: scheme-secondary
     name: 'Scheme: Secondary'
     description: |-
-      The secondary call to action on a page, or within a form.
+      The secondary call to action on a page, or within a form. These elements have a transparent background and a stencilled or stroked outline.
     notes: |-
       Use the attribute: `data-scheme="secondary"`.
 
@@ -103,7 +103,7 @@ variants:
         </button>
   -
     id: size-small
-    name: 'Size: Small'
+    name: 'Size: Small or Pills'
     description: |-
       Shrink the button down in size
     notes: |-

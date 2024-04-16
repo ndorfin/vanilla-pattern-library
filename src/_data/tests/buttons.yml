@@ -49,14 +49,6 @@ properties:
     cases:
       -
         code: |-
-          <button>
-            I’m a button
-          </button>
-          <a class="button" href="#">
-            I’m a button
-          </a>
-      -
-        code: |-
           <button data-scheme="primary">
             I’m a button
           </button>
@@ -95,14 +87,6 @@ properties:
     id: sizes
     name: Sizes
     cases:
-      -
-        code: |-
-          <button>
-            I’m a button
-          </button>
-          <button data-size="small">
-            I’m a button
-          </button>
       -
         code: |-
           <button data-scheme="primary">
@@ -145,9 +129,6 @@ properties:
     cases:
       -
         code: |-
-          <button data-mode="icon-before" data-icon="arrow-right">
-            I’m a button
-          </button>
           <button data-mode="icon-before" data-icon="arrow-right" data-scheme="primary">
             I’m a button
           </button>
@@ -157,9 +138,6 @@ properties:
       -
         code: |-
           <div data-theme="dark">
-            <button data-mode="icon-before" data-icon="arrow-right">
-              I’m a button
-            </button>
             <button data-mode="icon-before" data-icon="arrow-right" data-scheme="primary">
               I’m a button
             </button>
@@ -169,9 +147,6 @@ properties:
           </div>
       -
         code: |-
-          <button data-mode="icon-before" data-icon="arrow-right" data-size="small">
-            I’m a button
-          </button>
           <button data-mode="icon-before" data-icon="arrow-right" data-size="small" data-scheme="primary">
             I’m a button
           </button>
@@ -181,9 +156,6 @@ properties:
       -
         code: |-
           <div data-theme="dark">
-            <button data-mode="icon-before" data-icon="arrow-right" data-size="small">
-              I’m a button
-            </button>
             <button data-mode="icon-before" data-icon="arrow-right" data-size="small" data-scheme="primary">
               I’m a button
             </button>
@@ -197,9 +169,6 @@ properties:
     cases:
       -
         code: |-
-          <button data-mode="icon-after" data-icon="arrow-right">
-            I’m a button
-          </button>
           <button data-mode="icon-after" data-icon="arrow-right" data-scheme="primary">
             I’m a button
           </button>
@@ -209,9 +178,6 @@ properties:
       -
         code: |-
           <div data-theme="dark">
-            <button data-mode="icon-after" data-icon="arrow-right">
-              I’m a button
-            </button>
             <button data-mode="icon-after" data-icon="arrow-right" data-scheme="primary">
               I’m a button
             </button>
@@ -221,9 +187,6 @@ properties:
           </div>
       -
         code: |-
-          <button data-mode="icon-after" data-icon="arrow-right" data-size="small">
-            I’m a button
-          </button>
           <button data-mode="icon-after" data-icon="arrow-right" data-size="small" data-scheme="primary">
             I’m a button
           </button>
@@ -233,9 +196,6 @@ properties:
       -
         code: |-
           <div data-theme="dark">
-            <button data-mode="icon-after" data-icon="arrow-right" data-size="small">
-              I’m a button
-            </button>
             <button data-mode="icon-after" data-icon="arrow-right" data-size="small" data-scheme="primary">
               I’m a button
             </button>
@@ -249,9 +209,6 @@ properties:
     cases:
       -
         code: |-
-          <button data-mode="icon" data-icon="arrow-right">
-            I’m a button
-          </button>
           <button data-mode="icon" data-icon="arrow-right" data-scheme="primary">
             I’m a button
           </button>
@@ -261,9 +218,6 @@ properties:
       -
         code: |-
           <div data-theme="dark">
-            <button data-mode="icon" data-icon="arrow-right">
-              I’m a button
-            </button>
             <button data-mode="icon" data-icon="arrow-right" data-scheme="primary">
               I’m a button
             </button>
@@ -273,9 +227,6 @@ properties:
           </div>
       -
         code: |-
-          <button data-mode="icon" data-icon="arrow-right" data-size="small">
-            I’m a button
-          </button>
           <button data-mode="icon" data-icon="arrow-right" data-size="small" data-scheme="primary">
             I’m a button
           </button>
@@ -285,9 +236,6 @@ properties:
       -
         code: |-
           <div data-theme="dark">
-            <button data-mode="icon" data-icon="arrow-right" data-size="small">
-              I’m a button
-            </button>
             <button data-mode="icon" data-icon="arrow-right" data-size="small" data-scheme="primary">
               I’m a button
             </button>
