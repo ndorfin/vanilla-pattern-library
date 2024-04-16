@@ -13,11 +13,36 @@ properties:
           <button>
             I’m a button
           </button>
-      -
-        code: |-
-          <a class="button">
+          <a class="button" href="#">
             I’m a button
           </a>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button>
+              I’m a button
+            </button>
+            <a class="button" href="#">
+              I’m a button
+            </a>
+          </div>
+  - 
+    id: only-child
+    name: Only-child goes full-width @ viewport sizes < 640px
+    cases:
+      -
+        code: |-
+          <button>
+            I’m a button
+          </button>
+      -
+        code: |-
+          <button>
+            I’m a button
+          </button>
+          <span>
+            Sibling element
+          </span>
   - 
     id: schemes
     name: Schemes
@@ -27,7 +52,7 @@ properties:
           <button>
             I’m a button
           </button>
-          <a class="button">
+          <a class="button" href="#">
             I’m a button
           </a>
       -
@@ -35,17 +60,37 @@ properties:
           <button data-scheme="primary">
             I’m a button
           </button>
-          <a class="button" data-scheme="primary">
+          <a class="button" href="#" data-scheme="primary">
             I’m a button
           </a>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-scheme="primary">
+              I’m a button
+            </button>
+            <a class="button" href="#" data-scheme="primary">
+              I’m a button
+            </a>
+          </div>
       -
         code: |-
           <button data-scheme="secondary">
             I’m a button
           </button>
-          <a class="button" data-scheme="secondary">
+          <a class="button" href="#" data-scheme="secondary">
             I’m a button
           </a>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-scheme="secondary">
+              I’m a button
+            </button>
+            <a class="button" href="#" data-scheme="secondary">
+              I’m a button
+            </a>
+          </div>
   - 
     id: sizes
     name: Sizes
@@ -68,12 +113,32 @@ properties:
           </button>
       -
         code: |-
+          <div data-theme="dark">
+            <button data-scheme="primary">
+              I’m a button
+            </button>
+            <button data-scheme="primary" data-size="small">
+              I’m a button
+            </button>
+          </div>
+      -
+        code: |-
           <button data-scheme="secondary">
             I’m a button
           </button>
           <button data-scheme="secondary" data-size="small">
             I’m a button
           </button>
+      -
+        code: |-
+          <div data-theme="dark">
+            <button data-scheme="secondary">
+              I’m a button
+            </button>
+            <button data-scheme="secondary" data-size="small">
+              I’m a button
+            </button>
+          </div>
   - 
     id: icon-before
     name: Icon before
