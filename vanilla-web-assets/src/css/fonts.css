@@ -16,7 +16,7 @@
 	src: 
 		local('Be Vietnam Pro ExtraBold'),
 		local('BeVietnamPro-ExtraBold'),
-		url(../fonts/be-vietnam-pro/be-vietnam-pro-500.woff2) format('font/woff2');
+		url(../fonts/be-vietnam-pro/be-vietnam-pro-800.woff2) format('font/woff2');
 }
 
 html {

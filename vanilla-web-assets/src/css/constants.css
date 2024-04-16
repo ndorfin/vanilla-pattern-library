@@ -1,4 +1,5 @@
 html {
 	--spacing-default: 1rem;
 	--font-size-default: 1rem;
+	--speed-blink: 0.2s;
 }

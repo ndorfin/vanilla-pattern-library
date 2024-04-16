@@ -1,5 +1,10 @@
 @import "./fonts.css";
+@import "./colours.css";
 @import "./constants.css";
 @import "./defaults.css";
 @import "./icons.css";
 @import "./patterns/buttons.css";
+
+[data-theme="dark"] {
+	background-color: hsla(24, 4%, 23%, 1);
+}
