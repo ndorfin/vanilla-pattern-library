@@ -90,6 +90,14 @@
 
 
 
+	<section id="section_notes">
+		<header>
+			<h3>Notes</h3>
+		</header>
+		<p>If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.</p>
+
+	</section>
+
 
 
 	<section id="section_button_variants">
@@ -101,7 +109,7 @@
 				<li>
 					<details open="">
 						<summary><b>Scheme: Primary</b>&nbsp;
-								<p>The primary call to action on a page, or within a form.</p>
+								<p>The primary call to action on a page, or within a form. This is the default styling for all <code>&lt;button&gt;</code> elements, or elements with the <code>button</code> class attribute.</p>
 
 							</summary>
 						<div>
@@ -129,7 +137,7 @@
 				<li>
 					<details open="">
 						<summary><b>Scheme: Secondary</b>&nbsp;
-								<p>The secondary call to action on a page, or within a form.</p>
+								<p>The secondary call to action on a page, or within a form. These elements have a transparent background and a stencilled or stroked outline.</p>
 
 							</summary>
 						<div>
@@ -269,7 +277,7 @@
 			
 				<li>
 					<details open="">
-						<summary><b>Size: Small</b>&nbsp;
+						<summary><b>Size: Small or Pills</b>&nbsp;
 								<p>Shrink the button down in size</p>
 
 							</summary>
@@ -345,11 +353,12 @@ pattern: {
     height: 75,
     code: '<button type="submit">\n  I’m a button!\n</button>'
   },
+  notes: 'If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.',
   variants: [
     {
       id: 'scheme-primary',
       name: 'Scheme: Primary',
-      description: 'The primary call to action on a page, or within a form.',
+      description: 'The primary call to action on a page, or within a form. This is the default styling for all `<button>` elements, or elements with the `button` class attribute.',
       notes: 'Use the attribute: `data-scheme="primary"`.',
       example: [Object],
       pattern_id: 'button'
@@ -357,7 +366,7 @@ pattern: {
     {
       id: 'scheme-secondary',
       name: 'Scheme: Secondary',
-      description: 'The secondary call to action on a page, or within a form.',
+      description: 'The secondary call to action on a page, or within a form. These elements have a transparent background and a stencilled or stroked outline.',
       notes: 'Use the attribute: `data-scheme="secondary"`.\n' +
         '\n' +
         'This button style **SHOULD** only be shown if a Primary button (above) is already present in the form or page.',
@@ -412,7 +421,7 @@ pattern: {
     },
     {
       id: 'size-small',
-      name: 'Size: Small',
+      name: 'Size: Small or Pills',
       description: 'Shrink the button down in size',
       notes: 'Use the attribute: `data-size="small"` to reduce this button\'s visible size.\n' +
         '\n' +

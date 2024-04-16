@@ -4,9 +4,9 @@ button,
 	--button-font-units: 16;
 	--button-padding-inline-multiplier: 2.5;
 	--button-padding-block-multiplier: 1;
-	--button-color-font: #111;
-	--button-color-background: #999;
-	--button-color-hover-background: #aaa;
+	--button-color-font: var(--color-greyscale-text);
+	--button-color-background: var(--color-black-950);
+	--button-color-hover-background: var(--color-brown-600);
 	--button-padding-inline: calc((var(--button-font-size) * var(--button-padding-inline-multiplier)) - (var(--button-font-size) / var(--button-font-units)));
 	--button-padding-block: calc((var(--button-font-size) * var(--button-padding-block-multiplier)) - (var(--button-font-size) / var(--button-font-units)));
 	--button-icon-label-gap: var(--button-font-size);
@@ -25,6 +25,7 @@ button,
 	padding-block: var(--button-padding-block);
 	color: var(--button-color-font);
 	background-color: var(--button-color-background);
+	box-shadow: 0 0 4px 0 var(--color-transparent);
 	cursor: default;
 	transition-duration: var(--speed-blink);
 	transition-property: background-color, border-color, box-shadow;
@@ -48,18 +49,22 @@ button,
 	.button
 ):hover {
 	background-color: var(--button-color-hover-background);
-	box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, 0.1);
+	box-shadow: 
+		0 2px 4px 0 hsla(23, 5%, 34%, 0.12),
+		0px 28px 48px -8px hsla(23, 5%, 34%, 0.12);
 }
 
-/* Schemes */
 :is(
 	button,
 	.button
-)[data-scheme="primary"] {
-	--button-color-font: var(--color-greyscale-text);
-	--button-color-background: var(--color-black-950);
-	--button-color-hover-background: var(--color-brown-600);
+):focus-visible {
+	box-shadow: 
+		0 2px 4px 0 hsla(23, 5%, 34%, 0.12),
+		0px 56px 112px -20px hsla(23, 5%, 34%, 0.12);
 }
+
+/* Schemes */
+/* button[data-scheme="primary"] is the default button */ 
 :is(
 	button,
 	.button
@@ -73,7 +78,7 @@ button,
 [data-theme="dark"] :is(
 	button,
 	.button
-)[data-scheme="primary"] {
+):not([data-scheme="secondary"]) {
 	--button-color-font: var(--color-surface-darker);
 	--button-color-background: var(--color-white);
 	--button-color-hover-background: var(--color-brown-100);
