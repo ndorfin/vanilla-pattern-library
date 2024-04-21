@@ -3,24 +3,22 @@ body > footer {
 	color: var(--color-footer-foreground);
 }
 
+body > footer > nav {
+	display: grid;
+	grid-template-areas:
+		"name"
+		"values";
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+body > footer > nav > p {
+	grid-row: 1;
+}
+
 body > footer > nav > ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 4rem;
+	grid-row: 2;
 }
 
 body > footer > nav > ul > li {
-	font-weight: 600;
-}
 
-body > footer > nav > ul > li > ul {
-	font-weight: 400;
-	list-style: none;
-	padding: 0;
-	margin-block-start: 1.5rem;
-}
-
-body > footer > nav > ul > li > ul > li {
-	margin-block-start: 0.5rem;
 }

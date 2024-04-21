@@ -1,0 +1,66 @@
+---
+title: Release notes
+heading: Release notes
+summary: A log of all changes during each publication event of the pattern library and the web assets
+description: A log of all changes during each publication event of the pattern library and the web assets
+---
+<h3>Most recent releases</h3>
+{% set releaseList = releases | objToArray %}
+
+<ul>
+	{% for release in releaseList %}
+		<li>
+			<dl>
+				<dt>
+					Date
+				</dt>
+				<dd>
+					{% datetime release.date %}
+				</dd>
+				<dt>
+					Versions
+				</dt>
+				<dd>
+					Pattern library: <code>{{ release.library_version }}</code><br>
+					Web Assets: <code>{{ release.assets_version }}</code>
+				</dd>
+				<dt>
+					Description
+				</dt>
+				<dd>
+					{{ release.description | markdown | safe }}
+				</dd>
+				{% if release.patterns %}
+				<dt>
+					Patterns affected
+				</dt>
+				<dd>
+					<ul>
+						{% for pattern in release.patterns %}
+							<li>
+								<a href="/patterns/{{ pattern.id }}"><code>{{ pattern.id }}</code></a>
+								{{ pattern.description | markdown | safe }}
+							</li>
+						{% endfor %}
+					</ul>
+				</dd>
+				{% endif %}
+				{% if release.tests %}
+				<dt>
+					Tests affected
+				</dt>
+				<dd>
+					<ul>
+						{% for test in release.tests %}
+							<li>
+								<a href="/tests/{{ test.id }}"><code>{{ test.id }}</code></a>
+								{{ test.description | markdown | safe }}
+							</li>
+						{% endfor %}
+					</ul>
+				</dd>
+				{% endif %}
+			</dl>
+		</li>
+	{% endfor %}
+</ul>

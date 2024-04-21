@@ -6,6 +6,13 @@ const md = new markdownIt({html: true});
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { EleventyHtmlBasePlugin } = require('@11ty/eleventy');
 
+function dateWithTimeZoneOffset(date) {
+	let newDate = new Date(date);
+	const timeZoneOffset = newDate.getTimezoneOffset();
+	newDate.setMinutes(timeZoneOffset);
+	return newDate;
+}
+
 module.exports = function(config) {
 	/* Add plugins */
 	config.addPlugin(syntaxHighlight);
@@ -40,6 +47,13 @@ module.exports = function(config) {
 			return contents;
 		});
 		return file.toString('utf8');
+	});
+
+	/* Shortcodes */
+	config.addShortcode('datetime', function(date) {
+		return `<time datetime="${ dateWithTimeZoneOffset(date).toISOString() }">
+			${ dateWithTimeZoneOffset(date).toUTCString() }
+		</time>`;
 	});
 
 	/* Custom collections */

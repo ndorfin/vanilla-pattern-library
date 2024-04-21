@@ -1,0 +1,27 @@
+# -
+#   library_version: 1.1.0
+#   assets_version: 0.0.1
+#   date: 2024-04-22
+#   description: |-
+#     Added release notes to Pattern Library.
+#   patterns:
+#     - 
+#       id: buttons
+#       description: |-
+#         Updated implementation notes. Buttons should never be disabled.
+#   tests:
+#     -
+#       id: buttons
+#       description: |-
+#         Test test mctest.
+-
+  library_version: 1.1.0
+  assets_version: 0.0.1
+  date: 2024-04-22
+  description: |-
+    Added <a href="/releases/">release notes</a> to the Pattern Library. Updated button implementation notes.
+  patterns:
+    - 
+      id: buttons
+      description: |-
+        Updated implementation notes: Buttons should never be disabled.

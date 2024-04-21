@@ -7,6 +7,8 @@ design_link:
 assets:
   - /css/icons.css
   - /css/patterns/buttons.css
+tests:
+  - buttons
 example:
   width: 250
   height: 75
@@ -15,7 +17,8 @@ example:
       I’m a button!
     </button>
 notes: |-
-  If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.
+  - If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.
+  - Please don't use the `disabled` attribute on buttons.
 variants:
   -
     id: scheme-primary
