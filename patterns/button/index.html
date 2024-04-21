@@ -94,7 +94,10 @@
 		<header>
 			<h3>Notes</h3>
 		</header>
-		<p>If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.</p>
+		<ul>
+<li>If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.</li>
+<li>Please don't use the <code>disabled</code> attribute on buttons.</li>
+</ul>
 
 	</section>
 
@@ -318,9 +321,21 @@
 		<h2 id="heading_sitemap">Sitemap</h2>
 	</screenreader-only>
 	<nav aria-labelledby="heading_sitemap">
+		<p>Main menu</p>
 		<ul>
 			<li><a href="/vanilla-pattern-library/patterns">HTML/CSS patterns</a></li>
 			<li><a href="/vanilla-pattern-library/templates">Templates</a></li>
+			<li><a href="/vanilla-pattern-library/tests">Tests</a></li>
+		</ul>
+		<p>Meta</p>
+		<ul>
+			<li><a href="https://vanilla.co.za/">vanilla.co.za</a></li>
+			<li><a href="/vanilla-pattern-library/releases">Release notes</a></li>
+		</ul>
+		<p>Source code</p>
+		<ul>
+			<li><a href="https://github.com/ndorfin/vanilla-pattern-library">Pattern library</a></li>
+			<li><a href="https://github.com/ndorfin/vanilla-pattern-library">Web assets</a></li>
 		</ul>
 	</nav>
 </footer>
@@ -348,12 +363,14 @@ pattern: {
   description: 'A call-to-action, and the conclusion of a form.',
   design_link: null,
   assets: [ '/css/icons.css', '/css/patterns/buttons.css' ],
+  tests: [ 'buttons' ],
   example: {
     width: 250,
     height: 75,
     code: '<button type="submit">\n  I’m a button!\n</button>'
   },
-  notes: 'If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.',
+  notes: '- If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.\n' +
+    "- Please don't use the `disabled` attribute on buttons.",
   variants: [
     {
       id: 'scheme-primary',

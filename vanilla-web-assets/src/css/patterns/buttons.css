@@ -61,6 +61,8 @@ button,
 	box-shadow: 
 		0 2px 4px 0 hsla(23, 5%, 34%, 0.12),
 		0px 56px 112px -20px hsla(23, 5%, 34%, 0.12);
+	outline-offset: 0.25rem;
+	outline-width: 0.5rem;
 }
 
 /* Schemes */
