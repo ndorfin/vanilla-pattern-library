@@ -1,0 +1,137 @@
+id: input
+name: Input
+summary: Allows a user to add information via form controls
+description: |-
+  Allows a user to add information via form controls
+design_link: 
+assets:
+  - /css/patterns/inputs.css
+tests:
+  - inputs
+example:
+  width: 400
+  height: 75
+  code: |-
+    <input type="text">
+notes: |-
+  - Inputs can cater for many different types of input (See the variants below)
+  - When capturing known numeric patterns such as Credit Cards, ID numbers, etc. use the `inputmode="numeric"` attribute combined with the `pattern="…"` attribute.
+  - Don't forget to add `autocomplete` attributes and their associated values. See [MDN: `autocomplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
+  - Avoid using any of the button-like input types (`button`, `image`, `reset`, `submit`). Use `<button>` elements instead.
+  - If you want to accept multi-line text input, use a `<textarea></textarea>` instead.
+variants:
+  -
+    id: placeholder
+    name: Placeholder
+    description: |-
+      Give the user a helpful example
+    notes: |-
+      This attribute **must not** be used as a replacement for the `<label>`
+    example:
+      code: |-
+        <input type="text" placeholder="e.g. Jesse Brown">
+  -
+    id: type-color
+    name: 'Type: color'
+    description: |-
+      Colour entry with free validation!
+    # notes: |-
+    example:
+      code: |-
+        <input type="color">
+  -
+    id: type-date
+    name: 'Type: date'
+    description: |-
+      Date entry with free validation!
+    # notes: |-
+    example:
+      code: |-
+        <input type="date">
+  -
+    id: type-email
+    name: 'Type: email'
+    description: |-
+      Email address entry with free validation!
+    # notes: |-
+    example:
+      code: |-
+        <input type="email" autocomplete="email">
+  -
+    id: type-file
+    name: 'Type: file'
+    description: |-
+      File uploads, and capturing photos / camera inputs.
+    notes: |-
+      - If you want to use this input type, then your associated `<form>` **must** include the following attribute: `enctype="multipart/form-data"`
+      - Use the [`accept` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) to specify what types of files are allowed
+    example:
+      code: |-
+        <input type="file">
+  -
+    id: type-number
+    name: 'Type: number'
+    description: |-
+      Numbers such as integers and decimals.
+    notes: |-
+      - This input type can only be used for true numbers, such as integers, decimals, etc.
+      - **Don’t** use this input type for values such as Credit Cards, ID numbers, etc.
+      - Use the `max`, `min`, `step` if those values are known or predictable.
+    example:
+      code: |-
+        <input type="number">
+  -
+    id: type-password
+    name: 'Type: password'
+    description: |-
+      Input masking when entering sensitive information
+    # notes: |-
+    example:
+      code: |-
+        <input name="password" type="password" autocomplete="current-password">
+  -
+    id: type-range
+    name: 'Type: range'
+    description: |-
+      Letting the user set a threshhold via a range input or _slider_.
+    # notes: |-
+    example:
+      code: |-
+        <input type="range">
+  -
+    id: type-search
+    name: 'Type: search'
+    description: |-
+      Use this input type when creating search forms
+    # notes: |-
+    example:
+      code: |-
+        <input type="search">
+  -
+    id: type-tel
+    name: 'Type: tel'
+    description: |-
+      Phone number input with free validation!
+    # notes: |-
+    example:
+      code: |-
+        <input type="tel">
+  -
+    id: type-number-like
+    name: 'Type: number-like'
+    description: |-
+      Numeric input, but not a number
+    notes: |-
+      Details on the gov.uk blog about [capturing credit card numbers](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/)
+    example:
+      code: |-
+        <input type="text" pattern="[0-9]*" inputmode="numeric">
+  -
+    id: type-url
+    name: 'Type: URL'
+    description: |-
+      Capture online addresses and other <abbr title="Uniform Resource Locator">URL</abbr>s with `type="url"`.
+    # notes: |-
+    example:
+      code: |-
+        <input type="url">

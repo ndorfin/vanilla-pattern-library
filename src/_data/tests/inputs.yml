@@ -1,0 +1,74 @@
+id: inputs
+name: Inputs
+summary: Test cases for all the various types of Input fields
+description: |-
+  
+properties:
+  - 
+    id: types
+    name: Types
+    cases:
+      -
+        code: |-
+          <input type="checkbox">
+          <code>checkbox</code>
+      -
+        code: |-
+          <input type="color">
+          <code>color</code>
+      -
+        code: |-
+          <input type="date">
+          <code>date</code>
+      -
+        code: |-
+          <input type="email">
+          <code>email</code>
+      -
+        code: |-
+          <input type="file">
+          <code>file</code>
+      -
+        code: |-
+          <input type="number">
+          <code>number</code>
+      -
+        code: |-
+          <input type="password">
+          <code>password</code>
+      -
+        code: |-
+          <input type="radio">
+          <code>radio</code>
+      -
+        code: |-
+          <input type="range">
+          <code>range</code>
+      -
+        code: |-
+          <input type="tel">
+          <code>tel</code>
+      -
+        code: |-
+          <input type="text">
+          <code>text</code> (Default)
+      -
+        code: |-
+          <input type="url">
+          <code>url</code>
+  - 
+    id: heights
+    name: Equal heights
+    cases:
+      -
+        code: |-
+          <input type="color">
+          <input type="date">
+          <input type="email">
+          <input type="file">
+          <input type="number">
+          <input type="password">
+          <input type="range">
+          <input type="tel">
+          <input type="text">
+          <input type="url">
