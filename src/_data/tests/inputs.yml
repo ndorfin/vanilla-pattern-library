@@ -14,10 +14,6 @@ properties:
           <code>checkbox</code>
       -
         code: |-
-          <input type="color">
-          <code>color</code>
-      -
-        code: |-
           <input type="date">
           <code>date</code>
       -
@@ -42,10 +38,6 @@ properties:
           <code>radio</code>
       -
         code: |-
-          <input type="range">
-          <code>range</code>
-      -
-        code: |-
           <input type="tel">
           <code>tel</code>
       -
@@ -62,13 +54,13 @@ properties:
     cases:
       -
         code: |-
-          <input type="color">
           <input type="date">
           <input type="email">
           <input type="file">
           <input type="number">
           <input type="password">
-          <input type="range">
           <input type="tel">
           <input type="text">
           <input type="url">
+          <button type="submit" data-scheme="primary">Submit</button>
+          <button type="submit" data-scheme="secondary">Save</button>

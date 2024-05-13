@@ -31,15 +31,6 @@ variants:
       code: |-
         <input type="text" placeholder="e.g. Jesse Brown">
   -
-    id: type-color
-    name: 'Type: color'
-    description: |-
-      Colour entry with free validation!
-    # notes: |-
-    example:
-      code: |-
-        <input type="color">
-  -
     id: type-date
     name: 'Type: date'
     description: |-
@@ -89,15 +80,6 @@ variants:
     example:
       code: |-
         <input name="password" type="password" autocomplete="current-password">
-  -
-    id: type-range
-    name: 'Type: range'
-    description: |-
-      Letting the user set a threshhold via a range input or _slider_.
-    # notes: |-
-    example:
-      code: |-
-        <input type="range">
   -
     id: type-search
     name: 'Type: search'
