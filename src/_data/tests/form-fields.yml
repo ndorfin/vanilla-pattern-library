@@ -1,5 +1,5 @@
-id: inputs
-name: Inputs
+id: form-fields
+name: Form fields
 summary: Test cases for all the various types of Input fields
 description: |-
   
@@ -10,44 +10,60 @@ properties:
     cases:
       -
         code: |-
-          <input type="checkbox">
+          <input type="checkbox" required>
           <code>checkbox</code>
       -
         code: |-
-          <input type="date">
+          <input type="date" required>
           <code>date</code>
       -
         code: |-
-          <input type="email">
+          <input type="email" required>
           <code>email</code>
       -
         code: |-
-          <input type="file">
+          <input type="file" required>
           <code>file</code>
       -
         code: |-
-          <input type="number">
+          <input type="number" required>
           <code>number</code>
       -
         code: |-
-          <input type="password">
+          <input type="password" required>
           <code>password</code>
       -
         code: |-
-          <input type="radio">
+          <input type="radio" required>
           <code>radio</code>
       -
         code: |-
-          <input type="tel">
+          <input type="tel" required>
           <code>tel</code>
       -
         code: |-
-          <input type="text">
+          <input type="text" required>
           <code>text</code> (Default)
       -
         code: |-
-          <input type="url">
+          <input type="url" required>
           <code>url</code>
+      -
+        code: |-
+          <select>
+            <optgroup label="A">
+              <option>Apples
+              <option>Aubergines
+            </optgroup>
+            <optgroup label="C">
+              <option>Carrots
+              <option>Coconuts
+            </optgroup>
+            <option>Other
+          </select>
+      -
+        code: |-
+          <textarea rows="3" cols="30" required></textarea>
   - 
     id: heights
     name: Equal heights
@@ -62,5 +78,16 @@ properties:
           <input type="tel">
           <input type="text">
           <input type="url">
+          <select>
+            <optgroup label="A">
+              <option>Apples
+              <option>Aubergines
+            </optgroup>
+            <optgroup label="C">
+              <option>Carrots
+              <option>Coconuts
+            </optgroup>
+            <option>Other
+          </select>
           <button type="submit" data-scheme="primary">Submit</button>
           <button type="submit" data-scheme="secondary">Save</button>

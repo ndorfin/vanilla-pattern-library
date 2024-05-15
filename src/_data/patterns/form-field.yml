@@ -1,24 +1,25 @@
-id: input
-name: Input
+id: form-field
+name: Form field
 summary: Allows a user to add information via form controls
 description: |-
   Allows a user to add information via form controls
 design_link: 
 assets:
-  - /css/patterns/inputs.css
+  - /css/patterns/form-fields.css
 tests:
-  - inputs
+  - form-fields
 example:
   width: 400
   height: 75
   code: |-
-    <input type="text">
+    <input type="text" required>
 notes: |-
   - Inputs can cater for many different types of input (See the variants below)
+  - All form fields are considered required by default and must use the `required` attribute. If a field is not required, remove the `required` attribute, and label the field as optional.
   - When capturing known numeric patterns such as Credit Cards, ID numbers, etc. use the `inputmode="numeric"` attribute combined with the `pattern="…"` attribute.
   - Don't forget to add `autocomplete` attributes and their associated values. See [MDN: `autocomplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
   - Avoid using any of the button-like input types (`button`, `image`, `reset`, `submit`). Use `<button>` elements instead.
-  - If you want to accept multi-line text input, use a `<textarea></textarea>` instead.
+  - If you want to accept multi-line text input, use a `<textarea></textarea>` rather than a text input.
 variants:
   -
     id: placeholder
@@ -26,7 +27,17 @@ variants:
     description: |-
       Give the user a helpful example
     notes: |-
-      This attribute **must not** be used as a replacement for the `<label>`
+      This attribute **must not** be used as a replacement for the field's associated `<label>`.
+    example:
+      code: |-
+        <input type="text" placeholder="e.g. Jesse Brown" required>
+  -
+    id: optional
+    name: Optional field
+    description: |-
+      Some fields will be treated as optional.
+    notes: |-
+      Note the lack of a `required` attribute.
     example:
       code: |-
         <input type="text" placeholder="e.g. Jesse Brown">
@@ -38,7 +49,7 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="date">
+        <input type="date" required>
   -
     id: type-email
     name: 'Type: email'
@@ -47,7 +58,7 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="email" autocomplete="email">
+        <input type="email" autocomplete="email" required>
   -
     id: type-file
     name: 'Type: file'
@@ -58,7 +69,7 @@ variants:
       - Use the [`accept` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) to specify what types of files are allowed
     example:
       code: |-
-        <input type="file">
+        <input type="file" required>
   -
     id: type-number
     name: 'Type: number'
@@ -70,16 +81,17 @@ variants:
       - Use the `max`, `min`, `step` if those values are known or predictable.
     example:
       code: |-
-        <input type="number">
+        <input type="number" required>
   -
     id: type-password
     name: 'Type: password'
     description: |-
       Input masking when entering sensitive information
-    # notes: |-
+    notes: |-
+      The example below is for a log-in prompt. If you instead want to capture a user's password during registration, use the appropriate alternative `autocomplete` value.
     example:
       code: |-
-        <input name="password" type="password" autocomplete="current-password">
+        <input name="password" type="password" autocomplete="current-password" required>
   -
     id: type-search
     name: 'Type: search'
@@ -88,7 +100,7 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="search">
+        <input type="search" required>
   -
     id: type-tel
     name: 'Type: tel'
@@ -97,7 +109,7 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="tel">
+        <input type="tel" required>
   -
     id: type-number-like
     name: 'Type: number-like'
@@ -107,7 +119,7 @@ variants:
       Details on the gov.uk blog about [capturing credit card numbers](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/)
     example:
       code: |-
-        <input type="text" pattern="[0-9]*" inputmode="numeric">
+        <input type="text" pattern="[0-9]*" inputmode="numeric" required>
   -
     id: type-url
     name: 'Type: URL'
@@ -116,4 +128,34 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="url">
+        <input type="url" required>
+  -
+    id: select
+    name: Select
+    description: |-
+      If the number of options for a field exceeds 5 items, then use a `<select>` instead.
+    # notes: |-
+    example:
+      code: |-
+        <select required>
+          <optgroup label="A">
+            <option>Apples
+            <option>Aubergines
+          </optgroup>
+          <optgroup label="C">
+            <option>Carrots
+            <option>Coconuts
+          </optgroup>
+          <option>Other
+        </select>
+  -
+    id: textarea
+    name: Textarea
+    description: |-
+      If you want to support multi-line text, then the `<textarea>` element is the correct choice.
+    # notes: |-
+    example:
+      width: 350
+      height: 100
+      code: |-
+        <textarea rows="3" cols="30" required></textarea>
