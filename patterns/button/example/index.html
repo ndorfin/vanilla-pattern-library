@@ -1,11 +1,139 @@
+
+	
+
 <!DOCTYPE html>
 <html lang="en-ZA">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<title>Pattern example: Button</title>
+
+	
+
+<title>Button — Vanilla Pattern Library</title>
+<meta property="og:title" content="Button">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="Clicky and blocky elements that beg for user interaction.">
+<meta property="og:site_name" content="Vanilla Pattern Library">
+<meta property="og:description" content="Clicky and blocky elements that beg for user interaction.">
+
 <link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
 <button type="submit">
   I’m a button!
 </button>
 
-<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script></html>
+<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
+<!--
+============================
+page: {
+  url: '/patterns/button/example/',
+  outputPath: 'public/patterns/button/example/index.html'
+}
+page_meta: {
+  title: 'Button',
+  summary: 'Clicky and blocky elements that beg for user interaction.',
+  description: 'A call-to-action, and the conclusion of a form.'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: {
+  id: 'button',
+  name: 'Button',
+  summary: 'Clicky and blocky elements that beg for user interaction.',
+  description: 'A call-to-action, and the conclusion of a form.',
+  design_link: null,
+  assets: [ '/css/icons.css', '/css/patterns/buttons.css' ],
+  tests: [ 'buttons' ],
+  example: {
+    width: 250,
+    height: 75,
+    code: '<button type="submit">\n  I’m a button!\n</button>'
+  },
+  notes: '- If the button is the only child element of a container element, then at small screen sizes it will change to a full-width button.\n' +
+    "- Please don't use the `disabled` attribute on buttons.",
+  variants: [
+    {
+      id: 'scheme-primary',
+      name: 'Scheme: Primary',
+      description: 'The primary call to action on a page, or within a form. This is the default styling for all `<button>` elements, or elements with the `button` class attribute.',
+      notes: 'Use the attribute: `data-scheme="primary"`.',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'scheme-secondary',
+      name: 'Scheme: Secondary',
+      description: 'The secondary call to action on a page, or within a form. These elements have a transparent background and a stencilled or stroked outline.',
+      notes: 'Use the attribute: `data-scheme="secondary"`.\n' +
+        '\n' +
+        'This button style **SHOULD** only be shown if a Primary button (above) is already present in the form or page.',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'mode-icon-before',
+      name: 'Mode: Icon before label',
+      description: 'Places the designated icon before the button’s label text.',
+      notes: 'Use the attribute: `data-mode="icon-before"` to trigger this icon mode, and then specify what icon you want by adding `data-icon="ICON_NAME"`. For a full list of icons see: `icons.css`.\n' +
+        '\n' +
+        'You **MUST**:\n' +
+        '  - specify a predefined icon using the `data-icon=""` attribute.\n' +
+        '\n' +
+        'This button mode can be freely mixed with:\n' +
+        '  - Primary and Secondary schemes\n' +
+        '  - Alternate sizes',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'mode-icon-after',
+      name: 'Mode: Icon after label',
+      description: 'Places the designated icon after the button’s label text.',
+      notes: 'Use the attribute: `data-mode="icon-after"` to trigger this icon mode, and then specify what icon you want by adding `data-icon="ICON_NAME"`. For a full list of icons see: `icons.css`.\n' +
+        '\n' +
+        'You **MUST**:\n' +
+        '  - specify a predefined icon using the `data-icon=""` attribute.\n' +
+        '\n' +
+        'This button mode can be freely mixed with:\n' +
+        '  - Primary and Secondary schemes\n' +
+        '  - Alternate sizes',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'mode-icon-only',
+      name: 'Mode: Icon only',
+      description: 'Replaces the button label with a designated icon.',
+      notes: 'Use the attribute: `data-mode="icon"` to trigger this icon-only mode, and then specify what icon you want by adding `data-icon="ICON_NAME"`. For a full list of icons see: `icons.css`.\n' +
+        '\n' +
+        'You **MUST**:\n' +
+        '  - specify a button label as normal. This label will be read out in screen readers.\n' +
+        '  - specify a predefined icon using the `data-icon=""` attribute.\n' +
+        '\n' +
+        'This button mode can be freely mixed with:\n' +
+        '  - Primary and Secondary schemes\n' +
+        '  - Alternate sizes',
+      example: [Object],
+      pattern_id: 'button'
+    },
+    {
+      id: 'size-small',
+      name: 'Size: Small or Pills',
+      description: 'Shrink the button down in size',
+      notes: 'Use the attribute: `data-size="small"` to reduce this button\'s visible size.\n' +
+        '\n' +
+        'This button mode can be freely mixed with:\n' +
+        '  - Primary and Secondary schemes\n' +
+        '  - Icon modes',
+      example: [Object],
+      pattern_id: 'button'
+    }
+  ]
+}
+test: undefined
+============================
+--></html>

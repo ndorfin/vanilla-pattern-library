@@ -1,8 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en-ZA">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<title>Test cases: Buttons</title>
+
+	
+
+<title>Buttons — Vanilla Pattern Library</title>
+<meta property="og:title" content="Buttons">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="Buttons are particularly tricky, since they can be applied to many different types of elements, and they have several aesthetic modifications.">
+<meta property="og:site_name" content="Vanilla Pattern Library">
+<meta property="og:description" content="Buttons are particularly tricky, since they can be applied to many different types of elements, and they have several aesthetic modifications.">
+
 <link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
 
 <article>
@@ -296,4 +309,42 @@
 	
 </article>
 
-<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script></html>
+<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
+<!--
+============================
+page: {
+  url: '/tests/buttons/',
+  outputPath: 'public/tests/buttons/index.html'
+}
+page_meta: {
+  title: 'Buttons',
+  summary: 'Buttons are particularly tricky, since they can be applied to many different types of elements, and they have several aesthetic modifications.',
+  description: 'Buttons are particularly tricky, since they can be applied to many different types of elements, and they have several aesthetic modifications.'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: undefined
+test: {
+  id: 'buttons',
+  name: 'Buttons',
+  summary: 'Test cases for all the various modes, schemes, and other configurations',
+  description: 'Buttons are particularly tricky, since they can be applied to many different types of elements, and they have several aesthetic modifications.',
+  properties: [
+    { id: 'elements', name: 'Elements', cases: [Array] },
+    {
+      id: 'only-child',
+      name: 'Only-child goes full-width @ viewport sizes < 640px',
+      cases: [Array]
+    },
+    { id: 'schemes', name: 'Schemes', cases: [Array] },
+    { id: 'sizes', name: 'Sizes', cases: [Array] },
+    { id: 'icon-before', name: 'Icon before', cases: [Array] },
+    { id: 'icon-after', name: 'Icon after', cases: [Array] },
+    { id: 'icon-only', name: 'Icon only', cases: [Array] }
+  ]
+}
+============================
+--></html>

@@ -1,9 +1,161 @@
+
+	
+
 <!DOCTYPE html>
 <html lang="en-ZA">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<title>Pattern example: Form field</title>
+
+	
+
+<title>Form field — Vanilla Pattern Library</title>
+<meta property="og:title" content="Form field">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="Allows a user to add information via form controls">
+<meta property="og:site_name" content="Vanilla Pattern Library">
+<meta property="og:description" content="Allows a user to add information via form controls">
+
 <link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
 <input type="text" required="">
 
-<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script></html>
+<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
+<!--
+============================
+page: {
+  url: '/patterns/form-field/example/',
+  outputPath: 'public/patterns/form-field/example/index.html'
+}
+page_meta: {
+  title: 'Form field',
+  summary: 'Allows a user to add information via form controls',
+  description: 'Allows a user to add information via form controls'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: {
+  id: 'form-field',
+  name: 'Form field',
+  summary: 'Allows a user to add information via form controls',
+  description: 'Allows a user to add information via form controls',
+  design_link: null,
+  assets: [ '/css/patterns/form-fields.css' ],
+  tests: [ 'form-fields' ],
+  example: { width: 400, height: 75, code: '<input type="text" required>' },
+  notes: '- Inputs can cater for many different types of input (See the variants below)\n' +
+    '- All form fields are considered required by default and must use the `required` attribute. If a field is not required, remove the `required` attribute, and label the field as optional.\n' +
+    '- When capturing known numeric patterns such as Credit Cards, ID numbers, etc. use the `inputmode="numeric"` attribute combined with the `pattern="…"` attribute.\n' +
+    "- Don't forget to add `autocomplete` attributes and their associated values. See [MDN: `autocomplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)\n" +
+    '- Avoid using any of the button-like input types (`button`, `image`, `reset`, `submit`). Use `<button>` elements instead.\n' +
+    '- If you want to accept multi-line text input, use a `<textarea></textarea>` rather than a text input.',
+  variants: [
+    {
+      id: 'placeholder',
+      name: 'Placeholder',
+      description: 'Give the user a helpful example',
+      notes: "This attribute **must not** be used as a replacement for the field's associated `<label>`.",
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'optional',
+      name: 'Optional field',
+      description: 'Some fields will be treated as optional.',
+      notes: 'Note the lack of a `required` attribute.',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-date',
+      name: 'Type: date',
+      description: 'Date entry with free validation!',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-email',
+      name: 'Type: email',
+      description: 'Email address entry with free validation!',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-file',
+      name: 'Type: file',
+      description: 'File uploads, and capturing photos / camera inputs.',
+      notes: '- If you want to use this input type, then your associated `<form>` **must** include the following attribute: `enctype="multipart/form-data"`\n' +
+        '- Use the [`accept` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) to specify what types of files are allowed',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-number',
+      name: 'Type: number',
+      description: 'Numbers such as integers and decimals.',
+      notes: '- This input type can only be used for true numbers, such as integers, decimals, etc.\n' +
+        '- **Don’t** use this input type for values such as Credit Cards, ID numbers, etc.\n' +
+        '- Use the `max`, `min`, `step` if those values are known or predictable.',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-password',
+      name: 'Type: password',
+      description: 'Input masking when entering sensitive information',
+      notes: "The example below is for a log-in prompt. If you instead want to capture a user's password during registration, use the appropriate alternative `autocomplete` value.",
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-search',
+      name: 'Type: search',
+      description: 'Use this input type when creating search forms',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-tel',
+      name: 'Type: tel',
+      description: 'Phone number input with free validation!',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-number-like',
+      name: 'Type: number-like',
+      description: 'Numeric input, but not a number',
+      notes: 'Details on the gov.uk blog about [capturing credit card numbers](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/)',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-url',
+      name: 'Type: URL',
+      description: 'Capture online addresses and other <abbr title="Uniform Resource Locator">URL</abbr>s with `type="url"`.',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'select',
+      name: 'Select',
+      description: 'If the number of options for a field exceeds 5 items, then use a `<select>` instead.',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'textarea',
+      name: 'Textarea',
+      description: 'If you want to support multi-line text, then the `<textarea>` element is the correct choice.',
+      example: [Object],
+      pattern_id: 'form-field'
+    }
+  ]
+}
+test: undefined
+============================
+--></html>
