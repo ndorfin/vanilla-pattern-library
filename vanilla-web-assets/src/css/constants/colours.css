@@ -1,0 +1,16 @@
+html {
+	--color-white: hsla(0, 0%, 100%, 1);
+	--color-brown-100: hsla(16, 27%, 86%, 1);
+	--color-brown-600: hsla(16, 27%, 22%, 1);
+	--color-black-950: hsla(0, 3%, 6%, 1);
+	--color-black-200: hsla(0, 0%, 60%, 1);
+	--color-text-title: hsla(30, 4%, 11%, 1);
+	--color-greyscale-text: hsla(60, 5%, 96%, 1);
+	--color-surface-darker: hsla(16, 26%, 17%, 1);
+	--color-surface-subtitle: var(--color-greyscale-text);
+	--color-surface-lighter: hsla(60, 5%, 96%, 1);
+	--color-border-default: hsla(16, 27%, 28%, 1);
+	--color-border-subtle: hsla(18, 28%, 93%, 1);
+	--color-border-lighter: hsla(17, 27%, 71%, 1);
+	--color-transparent: hsla(0, 0%, 0%, 0);
+}

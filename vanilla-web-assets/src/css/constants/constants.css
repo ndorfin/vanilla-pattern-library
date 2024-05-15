@@ -1,0 +1,6 @@
+html {
+	--spacing-default: 1rem;
+	--font-size-default: 1rem;
+	--font-size-pixel-units: 16;
+	--speed-blink: 0.2s;
+}

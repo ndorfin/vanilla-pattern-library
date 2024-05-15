@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/vanilla-pattern-library/pattern-library-assets/css/index.css">
+
+
+
+<title>Form field — Vanilla Pattern Library</title>
+<meta name="og:title" content="Form field — Vanilla Pattern Library">
+
+
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="Allows a user to add information via form controls">
+
+<header>
+	<h1>
+		<a href="/vanilla-pattern-library/" lang="" class="logo logo_vanilla">Vanilla Pattern Library</a>
+	</h1>
+</header>
+<nav aria-labelledby="heading_site_structure">
+	<screenreader-only>
+		<h2 id="heading_site_structure">Site structure</h2>
+	</screenreader-only>
+	<ul>
+		<li><a href="/vanilla-pattern-library/patterns">Patterns</a></li>
+		<li><a href="/vanilla-pattern-library/templates">Templates</a></li>
+		<li><a href="/vanilla-pattern-library/tests">Tests</a></li>
+	</ul>
+</nav>
+<main>
+	
+
+
+
+
+
+<header>
+	<h2>Form field</h2>
+	
+		<p>Allows a user to add information via form controls</p>
+
+	
+</header>
+	<article>
+		
+	<section id="section_example">
+		<header>
+			<h3>Example</h3>
+			<p><a href="example/" target="_blank">Open example in a new window</a></p>
+		</header>
+		<div class="container_iframe">
+			<iframe width="400" height="75" src="example/"></iframe>
+		</div>
+	</section>
+	
+		<section id="section_code">
+			<header>
+				<h3>Code sample</h3>
+			</header>
+			
+			<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+		</section>
+	
+
+
+
+	<section id="section_assets">
+		<header>
+			<h3>Relevant assets</h3>
+		</header>
+		<ul>
+			<li>
+				<i>Shared stylesheets</i> [See <a href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">index.css</a>]
+			</li>
+			
+				<li>
+					<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/patterns/form-fields.css">/css/patterns/form-fields.css</a>
+				</li>
+			
+		</ul>
+	</section>
+
+
+
+	<section id="section_notes">
+		<header>
+			<h3>Notes</h3>
+		</header>
+		<ul>
+<li>Inputs can cater for many different types of input (See the variants below)</li>
+<li>All form fields are considered required by default and must use the <code>required</code> attribute. If a field is not required, remove the <code>required</code> attribute, and label the field as optional.</li>
+<li>When capturing known numeric patterns such as Credit Cards, ID numbers, etc. use the <code>inputmode=&quot;numeric&quot;</code> attribute combined with the <code>pattern=&quot;…&quot;</code> attribute.</li>
+<li>Don't forget to add <code>autocomplete</code> attributes and their associated values. See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">MDN: <code>autocomplete</code></a></li>
+<li>Avoid using any of the button-like input types (<code>button</code>, <code>image</code>, <code>reset</code>, <code>submit</code>). Use <code>&lt;button&gt;</code> elements instead.</li>
+<li>If you want to accept multi-line text input, use a <code>&lt;textarea&gt;&lt;/textarea&gt;</code> rather than a text input.</li>
+</ul>
+
+	</section>
+
+
+
+	<section id="section_form-field_variants">
+		<header>
+			<h3>Variants</h3>
+		</header>
+		<ul class="list_accordions">
+			
+				<li>
+					<details open="">
+						<summary><b>Placeholder</b>&nbsp;
+								<p>Give the user a helpful example</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/placeholder/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/placeholder/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>e.g. Jesse Brown<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>This attribute <strong>must not</strong> be used as a replacement for the field's associated <code>&lt;label&gt;</code>.</p>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Optional field</b>&nbsp;
+								<p>Some fields will be treated as optional.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/optional/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/optional/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>e.g. Jesse Brown<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>Note the lack of a <code>required</code> attribute.</p>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: date</b>&nbsp;
+								<p>Date entry with free validation!</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-date/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-date/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>date<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: email</b>&nbsp;
+								<p>Email address entry with free validation!</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-email/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-email/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: file</b>&nbsp;
+								<p>File uploads, and capturing photos / camera inputs.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-file/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-file/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>file<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<ul>
+<li>If you want to use this input type, then your associated <code>&lt;form&gt;</code> <strong>must</strong> include the following attribute: <code>enctype=&quot;multipart/form-data&quot;</code></li>
+<li>Use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept"><code>accept</code> attribute</a> to specify what types of files are allowed</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: number</b>&nbsp;
+								<p>Numbers such as integers and decimals.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-number/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-number/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>number<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<ul>
+<li>This input type can only be used for true numbers, such as integers, decimals, etc.</li>
+<li><strong>Don’t</strong> use this input type for values such as Credit Cards, ID numbers, etc.</li>
+<li>Use the <code>max</code>, <code>min</code>, <code>step</code> if those values are known or predictable.</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: password</b>&nbsp;
+								<p>Input masking when entering sensitive information</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-password/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-password/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>current-password<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>The example below is for a log-in prompt. If you instead want to capture a user's password during registration, use the appropriate alternative <code>autocomplete</code> value.</p>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: search</b>&nbsp;
+								<p>Use this input type when creating search forms</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-search/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-search/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: tel</b>&nbsp;
+								<p>Phone number input with free validation!</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-tel/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-tel/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: number-like</b>&nbsp;
+								<p>Numeric input, but not a number</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-number-like/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-number-like/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">pattern</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>[0-9]*<span class="token punctuation">"</span></span> <span class="token attr-name">inputmode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>numeric<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<p>Details on the gov.uk blog about <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">capturing credit card numbers</a></p>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Type: URL</b>&nbsp;
+								<p>Capture online addresses and other <abbr title="Uniform Resource Locator">URL</abbr>s with <code>type=&quot;url&quot;</code>.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/type-url/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/type-url/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span></code></pre>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Select</b>&nbsp;
+								<p>If the number of options for a field exceeds 5 items, then use a <code>&lt;select&gt;</code> instead.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/select/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="75" src="variants/select/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>optgroup</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>A<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Apples
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Aubergines
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>optgroup</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>optgroup</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>C<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Carrots
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Coconuts
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>optgroup</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Other
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span></code></pre>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Textarea</b>&nbsp;
+								<p>If you want to support multi-line text, then the <code>&lt;textarea&gt;</code> element is the correct choice.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/textarea/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="350" height="100" src="variants/textarea/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>30<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span></code></pre>
+
+							
+						</div>
+					</details>
+				</li>
+			
+		</ul>
+	</section>
+
+	</article>
+</main>
+<footer>
+	<screenreader-only>
+		<h2 id="heading_sitemap">Sitemap</h2>
+	</screenreader-only>
+	<nav aria-labelledby="heading_sitemap">
+		<p>Main menu</p>
+		<ul>
+			<li><a href="/vanilla-pattern-library/patterns">HTML/CSS patterns</a></li>
+			<li><a href="/vanilla-pattern-library/templates">Templates</a></li>
+			<li><a href="/vanilla-pattern-library/tests">Tests</a></li>
+		</ul>
+		<p>Meta</p>
+		<ul>
+			<li><a href="https://vanilla.co.za/">vanilla.co.za</a></li>
+			<li><a href="/vanilla-pattern-library/releases">Release notes</a></li>
+		</ul>
+		<p>Source code</p>
+		<ul>
+			<li><a href="https://github.com/ndorfin/vanilla-pattern-library">Pattern library</a></li>
+			<li><a href="https://github.com/ndorfin/vanilla-pattern-library">Web assets</a></li>
+		</ul>
+	</nav>
+</footer>
+<!--
+============================
+page: {
+  url: '/patterns/form-field/',
+  outputPath: 'public/patterns/form-field/index.html'
+}
+page_meta: {
+  title: 'Form field',
+  heading: 'Form field',
+  summary: 'Allows a user to add information via form controls',
+  description: 'Allows a user to add information via form controls'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: {
+  id: 'form-field',
+  name: 'Form field',
+  summary: 'Allows a user to add information via form controls',
+  description: 'Allows a user to add information via form controls',
+  design_link: null,
+  assets: [ '/css/patterns/form-fields.css' ],
+  tests: [ 'form-fields' ],
+  example: { width: 400, height: 75, code: '<input type="text" required>' },
+  notes: '- Inputs can cater for many different types of input (See the variants below)\n' +
+    '- All form fields are considered required by default and must use the `required` attribute. If a field is not required, remove the `required` attribute, and label the field as optional.\n' +
+    '- When capturing known numeric patterns such as Credit Cards, ID numbers, etc. use the `inputmode="numeric"` attribute combined with the `pattern="…"` attribute.\n' +
+    "- Don't forget to add `autocomplete` attributes and their associated values. See [MDN: `autocomplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)\n" +
+    '- Avoid using any of the button-like input types (`button`, `image`, `reset`, `submit`). Use `<button>` elements instead.\n' +
+    '- If you want to accept multi-line text input, use a `<textarea></textarea>` rather than a text input.',
+  variants: [
+    {
+      id: 'placeholder',
+      name: 'Placeholder',
+      description: 'Give the user a helpful example',
+      notes: "This attribute **must not** be used as a replacement for the field's associated `<label>`.",
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'optional',
+      name: 'Optional field',
+      description: 'Some fields will be treated as optional.',
+      notes: 'Note the lack of a `required` attribute.',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-date',
+      name: 'Type: date',
+      description: 'Date entry with free validation!',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-email',
+      name: 'Type: email',
+      description: 'Email address entry with free validation!',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-file',
+      name: 'Type: file',
+      description: 'File uploads, and capturing photos / camera inputs.',
+      notes: '- If you want to use this input type, then your associated `<form>` **must** include the following attribute: `enctype="multipart/form-data"`\n' +
+        '- Use the [`accept` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) to specify what types of files are allowed',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-number',
+      name: 'Type: number',
+      description: 'Numbers such as integers and decimals.',
+      notes: '- This input type can only be used for true numbers, such as integers, decimals, etc.\n' +
+        '- **Don’t** use this input type for values such as Credit Cards, ID numbers, etc.\n' +
+        '- Use the `max`, `min`, `step` if those values are known or predictable.',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-password',
+      name: 'Type: password',
+      description: 'Input masking when entering sensitive information',
+      notes: "The example below is for a log-in prompt. If you instead want to capture a user's password during registration, use the appropriate alternative `autocomplete` value.",
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-search',
+      name: 'Type: search',
+      description: 'Use this input type when creating search forms',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-tel',
+      name: 'Type: tel',
+      description: 'Phone number input with free validation!',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-number-like',
+      name: 'Type: number-like',
+      description: 'Numeric input, but not a number',
+      notes: 'Details on the gov.uk blog about [capturing credit card numbers](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/)',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'type-url',
+      name: 'Type: URL',
+      description: 'Capture online addresses and other <abbr title="Uniform Resource Locator">URL</abbr>s with `type="url"`.',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'select',
+      name: 'Select',
+      description: 'If the number of options for a field exceeds 5 items, then use a `<select>` instead.',
+      example: [Object],
+      pattern_id: 'form-field'
+    },
+    {
+      id: 'textarea',
+      name: 'Textarea',
+      description: 'If you want to support multi-line text, then the `<textarea>` element is the correct choice.',
+      example: [Object],
+      pattern_id: 'form-field'
+    }
+  ]
+}
+============================
+-->
+</html>

@@ -1,0 +1,192 @@
+/* Shared settings */
+/* Set variables to all form controls */
+[type="checkbox"],
+[type="date"],
+[type="email"],
+[type="file"],
+[type="number"],
+[type="password"],
+[type="radio"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"],
+textarea,
+select {
+	--input-font-size: var(--font-size-default);
+	--input-font-color: var(--color-brown-600);
+	--input-font-color-active: var(--color-black-950);
+	--input-font-color-placeholder: var(--color-black-200);
+	--input-padding-block: calc((var(--input-font-size) * 0.75) - (var(--input-font-size) / var(--font-size-pixel-units))); /* 12px - 1 */
+	--input-padding-inline: calc((var(--input-font-size) * 1.25) - (var(--input-font-size) / var(--font-size-pixel-units))); /* 20px - 1 */
+	--input-border-radius: var(--border-radius-s);
+	--input-border-color: var(--color-border-subtle);
+	--input-background-color: var(--color-white);
+	--input-size-min-block: calc(var(--font-size-default) * 1.25);
+	--input-size-min-inline: calc(var(--font-size-default) * 1.25);
+	--input-box-shadow: var(--elevation-none);
+}
+
+/* General settings */
+/* Set default styles for all form controls */
+[type="checkbox"],
+[type="date"],
+[type="email"],
+[type="file"],
+[type="number"],
+[type="password"],
+[type="radio"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"],
+textarea,
+select {
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: middle;
+	font-family: inherit;
+	box-shadow: var(--input-box-shadow);
+	border-radius: var(--input-border-radius);
+	transition-property: border-radius, box-shadow, border-color, background-color;
+	transition-duration: var(--speed-blink);
+}
+
+/* Give native controls color theming using accent color */
+[type="checkbox"],
+[type="radio"],
+select {
+	accent-color: var(--input-font-color);
+}
+
+:is(
+	[type="checkbox"],
+	[type="date"],
+	[type="email"],
+	[type="file"],
+	[type="number"],
+	[type="password"],
+	[type="radio"],
+	[type="search"],
+	[type="tel"],
+	[type="text"],
+	[type="url"],
+	textarea,
+	select
+):hover {
+	--input-box-shadow: var(--elevation-s);
+	--input-background-color: var(--color-surface-lighter);
+}
+
+:is(
+	[type="checkbox"],
+	[type="date"],
+	[type="email"],
+	[type="number"],
+	[type="password"],
+	[type="radio"],
+	[type="search"],
+	[type="tel"],
+	[type="text"],
+	[type="url"],
+	textarea,
+	select
+):focus {
+	--input-box-shadow: var(--elevation-s);
+	--input-border-color: var(--color-border-lighter);
+	--input-background-color: var(--color-white);
+	
+	color: var(--input-font-color-active);
+	outline: none;
+}
+
+:is(
+	[type="file"]
+):is(
+	:focus,
+	:hover
+) {
+	box-shadow: var(--elevation-none);
+	outline: none;
+}
+
+/* Text input */
+[type="date"],
+[type="email"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="url"],
+textarea,
+select {
+	appearance: none;
+	min-block-size: var(--input-size-min-block);
+	min-inline-size: var(--input-size-min-inline);
+	padding-block: var(--input-padding-block);
+	padding-inline: var(--input-padding-inline);
+	border-width: 1px;
+	border-color: var(--input-border-color);
+	border-style: solid;
+	font-size: var(--input-font-size);
+	line-height: 1.25;
+	background-color: var(--input-background-color);
+	color: var(--input-font-color);
+	border-radius: var(--input-border-radius);
+}
+
+::placeholder {
+	color: var(--input-font-color-placeholder);
+}
+
+/* File inputs */
+[type="file"] {
+	font-size: 1rem;
+}
+::-webkit-file-upload-button {
+
+}
+
+/* Date inputs */
+::-webkit-datetime-edit {
+	line-height: 1;
+}
+
+/* Checkboxes and Radios */
+[type="checkbox"],
+[type="radio"] {
+	border-width: 1px;
+	border-color: var(--input-border-color);
+	border-style: solid;
+	margin: 0;
+	block-size: calc(var(--input-font-size) * 1.5);
+	inline-size: calc(var(--input-font-size) * 1.5);
+}
+
+/* Checkboxes */
+[type="checkbox"] {
+	border-radius: var(--border-radius-s);
+}
+
+/* Radio buttons */
+[type="radio"] {
+	border-radius: 100%;
+}
+
+select {
+	--select-icon-dropdown-width: 1rem;
+	--select-icon-gap: 0.5rem;
+
+	padding-inline-end: calc(var(--input-padding-inline) + var(--select-icon-dropdown-width) + var(--select-icon-gap));
+	background-image: url('../../img/icon_arrow_down_brown_600.svg');
+	background-position: top 50% right calc(var(--input-padding-inline));
+	background-size: var(--select-icon-dropdown-width) var(--select-icon-dropdown-width);
+	background-repeat: no-repeat;
+}
+
+textarea {
+	min-block-size: 2.75rem;
+	min-inline-size: 375px;
+	max-inline-size: 100%;
+}

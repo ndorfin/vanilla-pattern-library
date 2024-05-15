@@ -1,10 +1,13 @@
 @import "./fonts.css";
-@import "./colours.css";
-@import "./constants.css";
+@import "./constants/colours.css";
+@import "./constants/border-radius.css";
+@import "./constants/background-blur.css";
+@import "./constants/elevation.css";
+@import "./constants/constants.css";
 @import "./defaults.css";
 @import "./icons.css";
 @import "./patterns/buttons.css";
-@import "./patterns/inputs.css";
+@import "./patterns/form-fields.css";
 
 [data-theme="dark"] {
 	background-color: hsla(24, 4%, 23%, 1);

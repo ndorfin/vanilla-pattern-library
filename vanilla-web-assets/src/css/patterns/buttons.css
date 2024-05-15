@@ -101,7 +101,8 @@ button,
 :is(
 	button,
 	.button
-)[data-size="small"] {
+)[data-size="small"],
+::-webkit-file-upload-button {
 	--button-font-size: 0.875rem;
 	--button-font-units: 14;
 	--button-padding-block-multiplier: 0.85714;

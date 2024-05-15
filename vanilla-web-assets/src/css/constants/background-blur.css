@@ -1,0 +1,7 @@
+html {
+	--background-blur-xs:  8px;
+	--background-blur-s:  16px;
+	--background-blur-m:  32px;
+	--background-blur-l:  48px;
+	--background-blur-xl: 64px;
+}
