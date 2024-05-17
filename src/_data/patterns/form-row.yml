@@ -1,0 +1,80 @@
+id: form-row
+name: Form row
+summary: Associate a form field with a label, and optionally provide help text, error messages.
+description: |-
+  A container for a form field and its associated label, help text, and feedback messages.
+design_link: 
+assets:
+  - /css/patterns/form_row.css
+tests:
+  - form-rows
+example:
+  width: 400
+  height: 150
+  code: |-
+    <div class="form_row">
+      <label for="input_organisation">Organisation</label>
+      <div class="form_field">
+        <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>
+      </div>
+      <em class="form_field_help_text">This value will appear on your invoice</em>
+    </div>
+notes: |-
+  - This element is designed to have one label with a matching form field.
+  - The `<label>` element needs a `for` attribute. This attribute value must use the `id` value of the `<input>` or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.
+  - For more detail on the various controls contained by the `.form_field` element see [form fields](../form-field).
+variants:
+  -
+    id: status-success
+    name: 'Status: Success'
+    description: |-
+      If the field validations / conditions have been met.
+    notes: |-
+      - The `.form_field_status_text` element in this example is optional.
+      - Be sure to include any status text before any existing help text
+    example:
+      code: |-
+        <div class="form_row" data-status="success">
+          <label for="input_organisation">Organisation</label>
+          <div class="form_field">
+            <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>
+          </div>
+          <em class="form_field_status_text">Thanks, that looks correct!</em>
+          <em class="form_field_help_text">This value will appear on your invoice</em>
+        </div>
+  -
+    id: status-warning
+    name: 'Status: Warning'
+    description: |-
+      If the field validations / conditions might be wrong
+    notes: |-
+      - You **must** include the `.form_field_status_text` element, to help explain what's potentially wrong with the given input.
+      - Be sure to include any status text before any existing help text
+    example:
+      code: |-
+        <div class="form_row" data-status="warning">
+          <label for="input_organisation">Organisation</label>
+          <div class="form_field">
+            <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>
+          </div>
+          <em class="form_field_status_text">Hmm, that doesn’t seem right!</em>
+          <em class="form_field_help_text">This value will appear on your invoice</em>
+        </div>
+  -
+    id: status-error
+    name: 'Status: Error'
+    description: |-
+      If the field validations / conditions are wrong
+    notes: |-
+      - You **must** include the `.form_field_status_text` element, to help explain what's wrong with the given input.
+      - Be sure to include any status text before any existing help text
+    example:
+      code: |-
+        <div class="form_row" data-status="error">
+          <label for="input_organisation">Organisation</label>
+          <div class="form_field">
+            <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>
+          </div>
+          <em class="form_field_status_text">This field is required</em>
+          <em class="form_field_help_text">This value will appear on your invoice</em>
+        </div>
