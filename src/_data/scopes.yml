@@ -1,8 +1,9 @@
 atom:
   name: Atom
-  description: |-
-    The smallest possible pattern, independent.
+  description: The smallest possible pattern, independent
 molecule:
   name: Molecule
-  description: |-
-    A combination of disparate atoms
+  description: A combination of disparate Atoms
+organism:
+  name: Organism
+  description: A superset of molecules and atoms, often includes behaviour
