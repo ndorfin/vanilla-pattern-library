@@ -7,6 +7,6 @@ patterns: /patterns
 releases: /releases
 root: /
 source: https://github.com/ndorfin/vanilla-pattern-library
-source_assets: https://github.com/ndorfin/vanilla-pattern-library
+source_assets: https://github.com/ndorfin/vanilla-web-assets
 templates: /templates
 tests: /tests
