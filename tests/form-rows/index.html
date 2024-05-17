@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+	
+
+<title>Form rows — Vanilla Pattern Library</title>
+<meta property="og:title" content="Form rows">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="">
+<meta property="og:site_name" content="Vanilla Pattern Library">
+<meta property="og:description" content="">
+
+<link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
+
+<article>
+	<header>
+		<h3>Vertical stacking</h3>
+	</header>
+		
+			<section>
+				<div class="form_row">
+  <label for="input_name">Name</label>
+  <div class="form_field">
+    <input type="text" name="name" id="input_name" autocomplete="name" required="">
+  </div>
+</div>
+<div class="form_row">
+  <label for="input_introduction">Introduction</label>
+  <div class="form_field">
+    <textarea name="input_introduction" id="input_input_introduction" aria-describedby="input_input_introduction_help" required="">
+    </textarea>
+  </div>
+  <em class="form_field_help_text" id="input_input_introduction_help">
+    Tell us more about yourself
+  </em>
+</div>
+			</section>
+		
+	
+</article>
+
+<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
+<!--
+============================
+page: {
+  url: '/tests/form-rows/',
+  outputPath: 'public/tests/form-rows/index.html'
+}
+page_meta: { title: 'Form rows', summary: '', description: '' }
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: undefined
+test: {
+  id: 'form-rows',
+  name: 'Form rows',
+  summary: 'Test cases for all the various types of form rows',
+  description: '',
+  properties: [
+    {
+      id: 'vertical-stacking',
+      name: 'Vertical stacking',
+      cases: [Array]
+    }
+  ]
+}
+============================
+--></html>
