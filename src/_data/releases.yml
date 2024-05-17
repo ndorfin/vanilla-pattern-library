@@ -47,3 +47,14 @@
       id: buttons
       description: |-
         The un-schemed button matches `data-scheme="primary"`, so use the same icon colours there.
+-
+  library_version: 1.3.0
+  assets_version: 0.3.0
+  date: 2024-05-17
+  description: |-
+    Added form row styles.
+  patterns:
+    - 
+      id: form-row
+      description: |-
+        Introducing the containers for form fields and their associated labels. These can optionally be marked with a `data-status` attribute, for feedback during and after form validation.
