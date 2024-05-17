@@ -47,6 +47,7 @@
 </header>
 	<article>
 		
+
 	<section id="section_example">
 		<header>
 			<h3>Example</h3>
@@ -68,24 +69,6 @@
 
 
 
-	<section id="section_assets">
-		<header>
-			<h3>Relevant assets</h3>
-		</header>
-		<ul>
-			<li>
-				<i>Shared stylesheets</i> [See <a href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">index.css</a>]
-			</li>
-			
-				<li>
-					<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/patterns/form-fields.css">/css/patterns/form-fields.css</a>
-				</li>
-			
-		</ul>
-	</section>
-
-
-
 	<section id="section_notes">
 		<header>
 			<h3>Notes</h3>
@@ -95,11 +78,54 @@
 <li>All form fields are considered required by default and must use the <code>required</code> attribute. If a field is not required, remove the <code>required</code> attribute, and label the field as optional.</li>
 <li>When capturing known numeric patterns such as Credit Cards, ID numbers, etc. use the <code>inputmode=&quot;numeric&quot;</code> attribute combined with the <code>pattern=&quot;…&quot;</code> attribute.</li>
 <li>Don't forget to add <code>autocomplete</code> attributes and their associated values. See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">MDN: <code>autocomplete</code></a></li>
-<li>Avoid using any of the button-like input types (<code>button</code>, <code>image</code>, <code>reset</code>, <code>submit</code>). Use <code>&lt;button&gt;</code> elements instead.</li>
+<li>Avoid using any of the button-like input types (<code>&lt;input type=&quot;button|image|reset|submit&quot;&gt;</code>). Use <code>&lt;button&gt;</code> elements instead.</li>
 <li>If you want to accept multi-line text input, use a <code>&lt;textarea&gt;&lt;/textarea&gt;</code> rather than a text input.</li>
+<li>After validation, if the field is invalid, you <strong>must</strong> use the <code>aria-invalid=&quot;true&quot;</code> attribute. See <a href="../form-row">form rows</a> for more error/success details.</li>
 </ul>
 
 	</section>
+
+
+<section id="section_meta">
+	<header>
+		<h3>Details</h3>
+	</header>
+	<dl>
+		<dt>
+			Pattern scope:
+		</dt>
+		<dd>
+			<b>Atom</b>
+			<p>The smallest possible pattern, independent.</p>
+
+		</dd>
+		
+			<dt>
+				Design source:
+			</dt>
+			<dd>
+				<a href="https://www.figma.com/design/mvalf0TtRnGrKABAc0JD5Y/VANILLA-Design-System?node-id=1128-270&amp;m=dev">Figma</a>
+			</dd>
+		
+		
+			<dt>
+				Relevant assets:
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<i>Shared stylesheets</i> [See <a href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">index.css</a>]
+					</li>
+					
+						<li>
+							<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/patterns/form_field.css">/css/patterns/form_field.css</a>
+						</li>
+					
+				</ul>
+			</dd>
+		
+	</dl>
+</section>
 
 
 
@@ -484,18 +510,20 @@ description: undefined
 pattern: {
   id: 'form-field',
   name: 'Form field',
+  scope: 'atom',
   summary: 'Allows a user to add information via form controls',
   description: 'Allows a user to add information via form controls',
-  design_link: null,
-  assets: [ '/css/patterns/form-fields.css' ],
+  design_link: 'https://www.figma.com/design/mvalf0TtRnGrKABAc0JD5Y/VANILLA-Design-System?node-id=1128-270&m=dev',
+  assets: [ '/css/patterns/form_field.css' ],
   tests: [ 'form-fields' ],
   example: { width: 400, height: 75, code: '<input type="text" required>' },
   notes: '- Inputs can cater for many different types of input (See the variants below)\n' +
     '- All form fields are considered required by default and must use the `required` attribute. If a field is not required, remove the `required` attribute, and label the field as optional.\n' +
     '- When capturing known numeric patterns such as Credit Cards, ID numbers, etc. use the `inputmode="numeric"` attribute combined with the `pattern="…"` attribute.\n' +
     "- Don't forget to add `autocomplete` attributes and their associated values. See [MDN: `autocomplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)\n" +
-    '- Avoid using any of the button-like input types (`button`, `image`, `reset`, `submit`). Use `<button>` elements instead.\n' +
-    '- If you want to accept multi-line text input, use a `<textarea></textarea>` rather than a text input.',
+    '- Avoid using any of the button-like input types (`<input type="button|image|reset|submit">`). Use `<button>` elements instead.\n' +
+    '- If you want to accept multi-line text input, use a `<textarea></textarea>` rather than a text input.\n' +
+    '- After validation, if the field is invalid, you **must** use the `aria-invalid="true"` attribute. See [form rows](../form-row) for more error/success details.',
   variants: [
     {
       id: 'placeholder',

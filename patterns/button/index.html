@@ -47,6 +47,7 @@
 </header>
 	<article>
 		
+
 	<section id="section_example">
 		<header>
 			<h3>Example</h3>
@@ -70,28 +71,6 @@
 
 
 
-	<section id="section_assets">
-		<header>
-			<h3>Relevant assets</h3>
-		</header>
-		<ul>
-			<li>
-				<i>Shared stylesheets</i> [See <a href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">index.css</a>]
-			</li>
-			
-				<li>
-					<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/icons.css">/css/icons.css</a>
-				</li>
-			
-				<li>
-					<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/patterns/buttons.css">/css/patterns/buttons.css</a>
-				</li>
-			
-		</ul>
-	</section>
-
-
-
 	<section id="section_notes">
 		<header>
 			<h3>Notes</h3>
@@ -102,6 +81,52 @@
 </ul>
 
 	</section>
+
+
+<section id="section_meta">
+	<header>
+		<h3>Details</h3>
+	</header>
+	<dl>
+		<dt>
+			Pattern scope:
+		</dt>
+		<dd>
+			<b>Atom</b>
+			<p>The smallest possible pattern, independent.</p>
+
+		</dd>
+		
+			<dt>
+				Design source:
+			</dt>
+			<dd>
+				<a href="https://www.figma.com/design/mvalf0TtRnGrKABAc0JD5Y/VANILLA-Design-System?node-id=1021-1867&amp;m=dev">Figma</a>
+			</dd>
+		
+		
+			<dt>
+				Relevant assets:
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<i>Shared stylesheets</i> [See <a href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">index.css</a>]
+					</li>
+					
+						<li>
+							<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/icons.css">/css/icons.css</a>
+						</li>
+					
+						<li>
+							<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/patterns/button.css">/css/patterns/button.css</a>
+						</li>
+					
+				</ul>
+			</dd>
+		
+	</dl>
+</section>
 
 
 
@@ -361,10 +386,11 @@ description: undefined
 pattern: {
   id: 'button',
   name: 'Button',
+  scope: 'atom',
   summary: 'Clicky and blocky elements that beg for user interaction.',
   description: 'A call-to-action, and the conclusion of a form.',
-  design_link: null,
-  assets: [ '/css/icons.css', '/css/patterns/buttons.css' ],
+  design_link: 'https://www.figma.com/design/mvalf0TtRnGrKABAc0JD5Y/VANILLA-Design-System?node-id=1021-1867&m=dev',
+  assets: [ '/css/icons.css', '/css/patterns/button.css' ],
   tests: [ 'buttons' ],
   example: {
     width: 250,
