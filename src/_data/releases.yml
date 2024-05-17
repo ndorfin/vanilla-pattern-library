@@ -36,3 +36,14 @@
       id: inputs
       description: |-
         First stab at inputs, sans design. Expect an update here once the design artefacts are ready.
+-
+  library_version: 1.2.1
+  assets_version: 0.2.1
+  date: 2024-05-17
+  description: |-
+    Fix the link in the footer to the web assets source code. Set the default colour for icons in un-schemed buttons.
+  patterns:
+    - 
+      id: buttons
+      description: |-
+        The un-schemed button matches `data-scheme="primary"`, so use the same icon colours there.
