@@ -1,3 +1,4 @@
+button[data-icon="arrow-right"],
 [data-scheme="primary"][data-icon="arrow-right"] {
 	--icon-image-url: url('../../img/icon_arrow_right_white.svg');
 }

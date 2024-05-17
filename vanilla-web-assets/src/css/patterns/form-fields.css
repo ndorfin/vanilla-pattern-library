@@ -100,9 +100,7 @@ select {
 	outline: none;
 }
 
-:is(
-	[type="file"]
-):is(
+[type="file"]:is(
 	:focus,
 	:hover
 ) {
@@ -180,7 +178,7 @@ select {
 
 	padding-inline-end: calc(var(--input-padding-inline) + var(--select-icon-dropdown-width) + var(--select-icon-gap));
 	background-image: url('../../img/icon_arrow_down_brown_600.svg');
-	background-position: top 50% right calc(var(--input-padding-inline));
+	background-position: top 50% right var(--input-padding-inline);
 	background-size: var(--select-icon-dropdown-width) var(--select-icon-dropdown-width);
 	background-repeat: no-repeat;
 }
