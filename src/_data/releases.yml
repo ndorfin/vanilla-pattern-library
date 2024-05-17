@@ -22,7 +22,7 @@
     Added <a href="/releases/">release notes</a> to the Pattern Library. Updated button implementation notes.
   patterns:
     - 
-      id: buttons
+      id: button
       description: |-
         Updated implementation notes: Buttons should never be disabled.
 -
@@ -33,7 +33,7 @@
     Added input fields, and simple tests for them.
   patterns:
     - 
-      id: inputs
+      id: input
       description: |-
         First stab at inputs, sans design. Expect an update here once the design artefacts are ready.
 -
@@ -44,7 +44,7 @@
     Fix the link in the footer to the web assets source code. Set the default colour for icons in un-schemed buttons.
   patterns:
     - 
-      id: buttons
+      id: button
       description: |-
         The un-schemed button matches `data-scheme="primary"`, so use the same icon colours there.
 -
