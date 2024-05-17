@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/vanilla-pattern-library/pattern-library-assets/css/index.css">
+
+	
+
+<title>Form row — Vanilla Pattern Library</title>
+<meta property="og:title" content="Form row">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="Associate a form field with a label, and optionally provide help text, error messages.">
+<meta property="og:site_name" content="Vanilla Pattern Library">
+<meta property="og:description" content="Associate a form field with a label, and optionally provide help text, error messages.">
+
+<header>
+	<h1>
+		<a href="/vanilla-pattern-library/" lang="" class="logo logo_vanilla">Vanilla Pattern Library</a>
+	</h1>
+</header>
+<nav aria-labelledby="heading_site_structure">
+	<screenreader-only>
+		<h2 id="heading_site_structure">Site structure</h2>
+	</screenreader-only>
+	<ul>
+		<li><a href="/vanilla-pattern-library/patterns">Patterns</a></li>
+		<li><a href="/vanilla-pattern-library/templates">Templates</a></li>
+		<li><a href="/vanilla-pattern-library/tests">Tests</a></li>
+	</ul>
+</nav>
+<main>
+	
+
+
+
+
+
+<header>
+	<h2>Form row</h2>
+	
+		<p>A container for a form field and its associated label, help text, and feedback messages.</p>
+
+	
+</header>
+	<article>
+		
+	<section id="section_example">
+		<header>
+			<h3>Example</h3>
+			<p><a href="example/" target="_blank">Open example in a new window</a></p>
+		</header>
+		<div class="container_iframe">
+			<iframe width="400" height="150" src="example/"></iframe>
+		</div>
+	</section>
+	
+		<section id="section_code">
+			<header>
+				<h3>Code sample</h3>
+			</header>
+			
+			<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Organisation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This value will appear on your invoice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+		</section>
+	
+
+
+
+	<section id="section_assets">
+		<header>
+			<h3>Relevant assets</h3>
+		</header>
+		<ul>
+			<li>
+				<i>Shared stylesheets</i> [See <a href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">index.css</a>]
+			</li>
+			
+				<li>
+					<a href="/vanilla-pattern-library/vanilla-web-assets/src/css/patterns/form_row.css">/css/patterns/form_row.css</a>
+				</li>
+			
+		</ul>
+	</section>
+
+
+
+	<section id="section_notes">
+		<header>
+			<h3>Notes</h3>
+		</header>
+		<ul>
+<li>This element is designed to have one label with a matching form field.</li>
+<li>The <code>&lt;label&gt;</code> element needs a <code>for</code> attribute. This attribute value must use the <code>id</code> value of the <code>&lt;input&gt;</code> or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.</li>
+<li>For more detail on the various controls contained by the <code>.form_field</code> element see <a href="../form-field">form fields</a>.</li>
+</ul>
+
+	</section>
+
+
+
+	<section id="section_form-row_variants">
+		<header>
+			<h3>Variants</h3>
+		</header>
+		<ul class="list_accordions">
+			
+				<li>
+					<details open="">
+						<summary><b>Status: Success</b>&nbsp;
+								<p>If the field validations / conditions have been met.</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/status-success/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="150" src="variants/status-success/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row<span class="token punctuation">"</span></span> <span class="token attr-name">data-status</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>success<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Organisation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_status_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Thanks, that looks correct!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This value will appear on your invoice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<ul>
+<li>The <code>.form_field_status_text</code> element in this example is optional.</li>
+<li>Be sure to include any status text before any existing help text</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Status: Warning</b>&nbsp;
+								<p>If the field validations / conditions might be wrong</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/status-warning/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="150" src="variants/status-warning/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row<span class="token punctuation">"</span></span> <span class="token attr-name">data-status</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>warning<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Organisation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_status_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Hmm, that doesn’t seem right!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This value will appear on your invoice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<ul>
+<li>You <strong>must</strong> include the <code>.form_field_status_text</code> element, to help explain what's potentially wrong with the given input.</li>
+<li>Be sure to include any status text before any existing help text</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+				<li>
+					<details open="">
+						<summary><b>Status: Error</b>&nbsp;
+								<p>If the field validations / conditions are wrong</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/status-error/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="150" src="variants/status-error/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row<span class="token punctuation">"</span></span> <span class="token attr-name">data-status</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Organisation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_status_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This field is required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This value will appear on your invoice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<ul>
+<li>You <strong>must</strong> include the <code>.form_field_status_text</code> element, to help explain what's wrong with the given input.</li>
+<li>Be sure to include any status text before any existing help text</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
+		</ul>
+	</section>
+
+	</article>
+</main>
+<footer>
+	<screenreader-only>
+		<h2 id="heading_sitemap">Sitemap</h2>
+	</screenreader-only>
+	<nav aria-labelledby="heading_sitemap">
+		<p>Main menu</p>
+		<ul>
+			<li><a href="/vanilla-pattern-library/patterns">HTML/CSS patterns</a></li>
+			<li><a href="/vanilla-pattern-library/templates">Templates</a></li>
+			<li><a href="/vanilla-pattern-library/tests">Tests</a></li>
+		</ul>
+		<p>Meta</p>
+		<ul>
+			<li><a href="https://vanilla.co.za/">vanilla.co.za</a></li>
+			<li><a href="/vanilla-pattern-library/releases">Release notes</a></li>
+		</ul>
+		<p>Source code</p>
+		<ul>
+			<li><a href="https://github.com/ndorfin/vanilla-pattern-library">Pattern library</a></li>
+			<li><a href="https://github.com/ndorfin/vanilla-web-assets">Web assets</a></li>
+		</ul>
+	</nav>
+</footer>
+<!--
+============================
+page: {
+  url: '/patterns/form-row/',
+  outputPath: 'public/patterns/form-row/index.html'
+}
+page_meta: {
+  title: 'Form row',
+  heading: 'Form row',
+  summary: 'Associate a form field with a label, and optionally provide help text, error messages.',
+  description: 'A container for a form field and its associated label, help text, and feedback messages.'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: {
+  id: 'form-row',
+  name: 'Form row',
+  summary: 'Associate a form field with a label, and optionally provide help text, error messages.',
+  description: 'A container for a form field and its associated label, help text, and feedback messages.',
+  design_link: null,
+  assets: [ '/css/patterns/form_row.css' ],
+  tests: [ 'form-rows' ],
+  example: {
+    width: 400,
+    height: 150,
+    code: '<div class="form_row">\n' +
+      '  <label for="input_organisation">Organisation</label>\n' +
+      '  <div class="form_field">\n' +
+      '    <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>\n' +
+      '  </div>\n' +
+      '  <em class="form_field_help_text">This value will appear on your invoice</em>\n' +
+      '</div>'
+  },
+  notes: '- This element is designed to have one label with a matching form field.\n' +
+    '- The `<label>` element needs a `for` attribute. This attribute value must use the `id` value of the `<input>` or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.\n' +
+    '- For more detail on the various controls contained by the `.form_field` element see [form fields](../form-field).',
+  variants: [
+    {
+      id: 'status-success',
+      name: 'Status: Success',
+      description: 'If the field validations / conditions have been met.',
+      notes: '- The `.form_field_status_text` element in this example is optional.\n' +
+        '- Be sure to include any status text before any existing help text',
+      example: [Object],
+      pattern_id: 'form-row'
+    },
+    {
+      id: 'status-warning',
+      name: 'Status: Warning',
+      description: 'If the field validations / conditions might be wrong',
+      notes: "- You **must** include the `.form_field_status_text` element, to help explain what's potentially wrong with the given input.\n" +
+        '- Be sure to include any status text before any existing help text',
+      example: [Object],
+      pattern_id: 'form-row'
+    },
+    {
+      id: 'status-error',
+      name: 'Status: Error',
+      description: 'If the field validations / conditions are wrong',
+      notes: "- You **must** include the `.form_field_status_text` element, to help explain what's wrong with the given input.\n" +
+        '- Be sure to include any status text before any existing help text',
+      example: [Object],
+      pattern_id: 'form-row'
+    }
+  ]
+}
+test: undefined
+============================
+-->
+</html>
