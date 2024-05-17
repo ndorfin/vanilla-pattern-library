@@ -7,7 +7,8 @@
 @import "./defaults.css";
 @import "./icons.css";
 @import "./patterns/buttons.css";
-@import "./patterns/form-fields.css";
+@import "./patterns/form_field.css";
+@import "./patterns/form_row.css";
 
 [data-theme="dark"] {
 	background-color: hsla(24, 4%, 23%, 1);

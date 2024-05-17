@@ -1,0 +1,55 @@
+.form_row {
+	--form-row-font-size: var(--font-size-default);
+	/* Default colours, to be overriden by `[data-status="…"]` below. */
+	--form-row-color-label: var(--color-text-label);
+	/* Status colouring: Success */
+	--form-row-color-label-success: hsl(86, 67%, 31%);
+	--form-row-color-accent-success: hsl(86, 67%, 51%);
+	/* Status colouring: Error */
+	--form-row-color-label-error: hsl(356, 100%, 39%);
+	--form-row-color-accent-error: hsl(356, 100%, 65%);
+}
+
+.form_row + .form_row {
+	margin-block-start: 1.75rem; /* 28px */
+}
+
+.form_row > label {
+	font-size: 0.875rem;
+	line-height: 1rem;
+	font-weight: 700;
+	color: var(--form-row-color-label);
+	margin-inline-start: calc(var(--form-row-font-size) * 1.25); /* 20px - this is to match the padding-inline of the form field. */
+}
+
+.form_row > .form_field {
+	margin-block-start: 0.5rem;
+}
+
+.form_field_help_text,
+.form_field_status_text {
+	display: block;
+	margin-block-start: 0.5rem;
+	margin-inline-start: calc(var(--form-row-font-size) * 1.25); /* 20px - this is to match the padding-inline of the form field. */
+	font-size: 0.625rem;
+	line-height: 0.75rem;
+	font-style: normal;
+}
+
+.form_field_help_text {
+	color: var(--color-greyscale-text-caption);
+}
+
+.form_field_status_text {
+	color: var(--form-row-color-accent);
+}
+
+.form_row[data-status="success"] {
+	--form-row-color-label: var(--form-row-color-label-success);
+	--form-row-color-accent: var(--form-row-color-accent-success);
+}
+
+.form_row[data-status="error"] {
+	--form-row-color-label: var(--form-row-color-label-error);
+	--form-row-color-accent: var(--form-row-color-accent-error);
+}

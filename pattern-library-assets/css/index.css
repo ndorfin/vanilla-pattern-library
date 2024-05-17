@@ -62,3 +62,10 @@ body > footer {
 	flex-shrink: 0;
 }
 
+code {
+	font-size: 1rem;
+	color: #a33;
+	padding: 0.25rem 0.25rem;
+	background-color: #fafafa;
+	border-radius: 0.125rem;
+}

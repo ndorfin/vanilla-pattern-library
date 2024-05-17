@@ -20,7 +20,7 @@ select {
 	--input-padding-block: calc((var(--input-font-size) * 0.75) - (var(--input-font-size) / var(--font-size-pixel-units))); /* 12px - 1 */
 	--input-padding-inline: calc((var(--input-font-size) * 1.25) - (var(--input-font-size) / var(--font-size-pixel-units))); /* 20px - 1 */
 	--input-border-radius: var(--border-radius-s);
-	--input-border-color: var(--color-border-subtle);
+	--input-border-color: var(--form-row-color-accent, var(--color-border-subtle)); /* If a form_row is controlling the colour, then use that value rather than the fallback */
 	--input-background-color: var(--color-white);
 	--input-size-min-block: calc(var(--font-size-default) * 1.25);
 	--input-size-min-inline: calc(var(--font-size-default) * 1.25);

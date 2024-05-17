@@ -22,9 +22,11 @@
 <div class="form_row">
   <label for="input_organisation">Organisation</label>
   <div class="form_field">
-    <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required="">
+    <input type="text" name="organisation" id="input_organisation" aria-describedby="input_organisation_help" autocomplete="organization" required="">
   </div>
-  <em class="form_field_help_text">This value will appear on your invoice</em>
+  <em class="form_field_help_text" id="input_organisation_help">
+    This value will appear on your invoice
+  </em>
 </div>
 
 <script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
@@ -58,13 +60,22 @@ pattern: {
     code: '<div class="form_row">\n' +
       '  <label for="input_organisation">Organisation</label>\n' +
       '  <div class="form_field">\n' +
-      '    <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>\n' +
+      '    <input type="text"\n' +
+      '           name="organisation"\n' +
+      '           id="input_organisation"\n' +
+      '           aria-describedby="input_organisation_help"\n' +
+      '           autocomplete="organization"\n' +
+      '           required>\n' +
       '  </div>\n' +
-      '  <em class="form_field_help_text">This value will appear on your invoice</em>\n' +
+      '  <em class="form_field_help_text" id="input_organisation_help">\n' +
+      '    This value will appear on your invoice\n' +
+      '  </em>\n' +
       '</div>'
   },
-  notes: '- This element is designed to have one label with a matching form field.\n' +
-    '- The `<label>` element needs a `for` attribute. This attribute value must use the `id` value of the `<input>` or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.\n' +
+  notes: '- This element is designed to have one main label with a matching form field.\n' +
+    "- If there's a one to one relationship between the label and its field, then the `<label>` element needs a `for` attribute. This attribute value must use the `id` value of the `<input>` or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.\n" +
+    "- If there are more than one fields such as an array of checkboxes (or radios) then the main label doesn't need a `for` attribute.\n" +
+    "- If you add any optional help text, make sure to use the help text element's ID in the field's `aria-describedby` attribute.\n" +
     '- For more detail on the various controls contained by the `.form_field` element see [form fields](../form-field).',
   variants: [
     {
@@ -77,20 +88,13 @@ pattern: {
       pattern_id: 'form-row'
     },
     {
-      id: 'status-warning',
-      name: 'Status: Warning',
-      description: 'If the field validations / conditions might be wrong',
-      notes: "- You **must** include the `.form_field_status_text` element, to help explain what's potentially wrong with the given input.\n" +
-        '- Be sure to include any status text before any existing help text',
-      example: [Object],
-      pattern_id: 'form-row'
-    },
-    {
       id: 'status-error',
       name: 'Status: Error',
-      description: 'If the field validations / conditions are wrong',
+      description: "If the field validations / conditions haven't been met",
       notes: "- You **must** include the `.form_field_status_text` element, to help explain what's wrong with the given input.\n" +
-        '- Be sure to include any status text before any existing help text',
+        '- Be sure to include any status text before any existing help text\n' +
+        '- Mark the field as invalid using `ara-invalid="true"`\n' +
+        "- Add the error message element's ID to the `aria-describedby` attribute.",
       example: [Object],
       pattern_id: 'form-row'
     }

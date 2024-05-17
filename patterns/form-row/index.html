@@ -65,9 +65,16 @@
 			<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Organisation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+           <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span>
+           <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span>
+           <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation_help<span class="token punctuation">"</span></span>
+           <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span>
+           <span class="token attr-name">required</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This value will appear on your invoice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation_help<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    This value will appear on your invoice
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 		</section>
 	
@@ -97,8 +104,10 @@
 			<h3>Notes</h3>
 		</header>
 		<ul>
-<li>This element is designed to have one label with a matching form field.</li>
-<li>The <code>&lt;label&gt;</code> element needs a <code>for</code> attribute. This attribute value must use the <code>id</code> value of the <code>&lt;input&gt;</code> or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.</li>
+<li>This element is designed to have one main label with a matching form field.</li>
+<li>If there's a one to one relationship between the label and its field, then the <code>&lt;label&gt;</code> element needs a <code>for</code> attribute. This attribute value must use the <code>id</code> value of the <code>&lt;input&gt;</code> or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.</li>
+<li>If there are more than one fields such as an array of checkboxes (or radios) then the main label doesn't need a <code>for</code> attribute.</li>
+<li>If you add any optional help text, make sure to use the help text element's ID in the field's <code>aria-describedby</code> attribute.</li>
 <li>For more detail on the various controls contained by the <code>.form_field</code> element see <a href="../form-field">form fields</a>.</li>
 </ul>
 
@@ -130,10 +139,19 @@
 							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row<span class="token punctuation">"</span></span> <span class="token attr-name">data-status</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>success<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Organisation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+           <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span>
+           <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span>
+           <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation_help<span class="token punctuation">"</span></span>
+           <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span>
+           <span class="token attr-name">required</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_status_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Thanks, that looks correct!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This value will appear on your invoice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_status_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    Thanks, nice name.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation_help<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    This value will appear on your invoice
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 
 							
@@ -150,44 +168,8 @@
 			
 				<li>
 					<details open="">
-						<summary><b>Status: Warning</b>&nbsp;
-								<p>If the field validations / conditions might be wrong</p>
-
-							</summary>
-						<div>
-							
-							<h4>Example</h4>
-							<p><a href="variants/status-warning/example/" target="_blank">Open type in a new window</a></p>
-							<div class="container_iframe">
-								<iframe width="400" height="150" src="variants/status-warning/example/"></iframe>
-							</div>
-						
-							<h4>Code sample</h4>
-							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row<span class="token punctuation">"</span></span> <span class="token attr-name">data-status</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>warning<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Organisation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_status_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Hmm, that doesn’t seem right!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This value will appear on your invoice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-
-							
-								<h4>Notes</h4>
-								<ul>
-<li>You <strong>must</strong> include the <code>.form_field_status_text</code> element, to help explain what's potentially wrong with the given input.</li>
-<li>Be sure to include any status text before any existing help text</li>
-</ul>
-
-							
-						</div>
-					</details>
-				</li>
-			
-				<li>
-					<details open="">
 						<summary><b>Status: Error</b>&nbsp;
-								<p>If the field validations / conditions are wrong</p>
+								<p>If the field validations / conditions haven't been met</p>
 
 							</summary>
 						<div>
@@ -202,10 +184,20 @@
 							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row<span class="token punctuation">"</span></span> <span class="token attr-name">data-status</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>error<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Organisation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+           <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organisation<span class="token punctuation">"</span></span>
+           <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation<span class="token punctuation">"</span></span>
+           <span class="token attr-name">aria-invalid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span>
+           <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation_error input_organisation_help<span class="token punctuation">"</span></span>
+           <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>organization<span class="token punctuation">"</span></span>
+           <span class="token attr-name">required</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_status_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This field is required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This value will appear on your invoice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_status_text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation_error<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    This field is required
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_field_help_text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>input_organisation_help<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    This value will appear on your invoice
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 
 							
@@ -213,6 +205,8 @@
 								<ul>
 <li>You <strong>must</strong> include the <code>.form_field_status_text</code> element, to help explain what's wrong with the given input.</li>
 <li>Be sure to include any status text before any existing help text</li>
+<li>Mark the field as invalid using <code>ara-invalid=&quot;true&quot;</code></li>
+<li>Add the error message element's ID to the <code>aria-describedby</code> attribute.</li>
 </ul>
 
 							
@@ -279,13 +273,22 @@ pattern: {
     code: '<div class="form_row">\n' +
       '  <label for="input_organisation">Organisation</label>\n' +
       '  <div class="form_field">\n' +
-      '    <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>\n' +
+      '    <input type="text"\n' +
+      '           name="organisation"\n' +
+      '           id="input_organisation"\n' +
+      '           aria-describedby="input_organisation_help"\n' +
+      '           autocomplete="organization"\n' +
+      '           required>\n' +
       '  </div>\n' +
-      '  <em class="form_field_help_text">This value will appear on your invoice</em>\n' +
+      '  <em class="form_field_help_text" id="input_organisation_help">\n' +
+      '    This value will appear on your invoice\n' +
+      '  </em>\n' +
       '</div>'
   },
-  notes: '- This element is designed to have one label with a matching form field.\n' +
-    '- The `<label>` element needs a `for` attribute. This attribute value must use the `id` value of the `<input>` or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.\n' +
+  notes: '- This element is designed to have one main label with a matching form field.\n' +
+    "- If there's a one to one relationship between the label and its field, then the `<label>` element needs a `for` attribute. This attribute value must use the `id` value of the `<input>` or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.\n" +
+    "- If there are more than one fields such as an array of checkboxes (or radios) then the main label doesn't need a `for` attribute.\n" +
+    "- If you add any optional help text, make sure to use the help text element's ID in the field's `aria-describedby` attribute.\n" +
     '- For more detail on the various controls contained by the `.form_field` element see [form fields](../form-field).',
   variants: [
     {
@@ -298,20 +301,13 @@ pattern: {
       pattern_id: 'form-row'
     },
     {
-      id: 'status-warning',
-      name: 'Status: Warning',
-      description: 'If the field validations / conditions might be wrong',
-      notes: "- You **must** include the `.form_field_status_text` element, to help explain what's potentially wrong with the given input.\n" +
-        '- Be sure to include any status text before any existing help text',
-      example: [Object],
-      pattern_id: 'form-row'
-    },
-    {
       id: 'status-error',
       name: 'Status: Error',
-      description: 'If the field validations / conditions are wrong',
+      description: "If the field validations / conditions haven't been met",
       notes: "- You **must** include the `.form_field_status_text` element, to help explain what's wrong with the given input.\n" +
-        '- Be sure to include any status text before any existing help text',
+        '- Be sure to include any status text before any existing help text\n' +
+        '- Mark the field as invalid using `ara-invalid="true"`\n' +
+        "- Add the error message element's ID to the `aria-describedby` attribute.",
       example: [Object],
       pattern_id: 'form-row'
     }

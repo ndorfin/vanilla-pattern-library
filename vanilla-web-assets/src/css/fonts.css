@@ -12,6 +12,16 @@
 @font-face {
 	font-family: 'be-vietnam-pro';
 	font-style: normal;
+	font-weight: 700;
+	src: 
+		local('Be Vietnam Pro Bold'),
+		local('BeVietnamPro-Bold'),
+		url(../fonts/be-vietnam-pro/be-vietnam-pro-700.woff2) format('font/woff2');
+}
+
+@font-face {
+	font-family: 'be-vietnam-pro';
+	font-style: normal;
 	font-weight: 800; /* Replaces `Bold` or `700` */
 	src: 
 		local('Be Vietnam Pro ExtraBold'),
