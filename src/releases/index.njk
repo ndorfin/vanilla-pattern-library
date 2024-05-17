@@ -5,7 +5,7 @@ summary: A log of all changes during each publication event of the pattern libra
 description: A log of all changes during each publication event of the pattern library and the web assets
 ---
 <h3>Most recent releases</h3>
-{% set releaseList = releases | objToArray %}
+{% set releaseList = releases | objToArray | reverse %}
 
 <ul>
 	{% for release in releaseList %}
