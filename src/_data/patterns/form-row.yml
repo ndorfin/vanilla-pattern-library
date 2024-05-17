@@ -15,13 +15,22 @@ example:
     <div class="form_row">
       <label for="input_organisation">Organisation</label>
       <div class="form_field">
-        <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>
+        <input type="text"
+               name="organisation"
+               id="input_organisation"
+               aria-describedby="input_organisation_help"
+               autocomplete="organization"
+               required>
       </div>
-      <em class="form_field_help_text">This value will appear on your invoice</em>
+      <em class="form_field_help_text" id="input_organisation_help">
+        This value will appear on your invoice
+      </em>
     </div>
 notes: |-
-  - This element is designed to have one label with a matching form field.
-  - The `<label>` element needs a `for` attribute. This attribute value must use the `id` value of the `<input>` or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.
+  - This element is designed to have one main label with a matching form field.
+  - If there's a one to one relationship between the label and its field, then the `<label>` element needs a `for` attribute. This attribute value must use the `id` value of the `<input>` or form field. Doing so will associate the control with this label, as well as allowing the user to click the label.
+  - If there are more than one fields such as an array of checkboxes (or radios) then the main label doesn't need a `for` attribute.
+  - If you add any optional help text, make sure to use the help text element's ID in the field's `aria-describedby` attribute.
   - For more detail on the various controls contained by the `.form_field` element see [form fields](../form-field).
 variants:
   -
@@ -37,44 +46,47 @@ variants:
         <div class="form_row" data-status="success">
           <label for="input_organisation">Organisation</label>
           <div class="form_field">
-            <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>
+            <input type="text"
+                   name="organisation"
+                   id="input_organisation"
+                   aria-describedby="input_organisation_help"
+                   autocomplete="organization"
+                   required>
           </div>
-          <em class="form_field_status_text">Thanks, that looks correct!</em>
-          <em class="form_field_help_text">This value will appear on your invoice</em>
-        </div>
-  -
-    id: status-warning
-    name: 'Status: Warning'
-    description: |-
-      If the field validations / conditions might be wrong
-    notes: |-
-      - You **must** include the `.form_field_status_text` element, to help explain what's potentially wrong with the given input.
-      - Be sure to include any status text before any existing help text
-    example:
-      code: |-
-        <div class="form_row" data-status="warning">
-          <label for="input_organisation">Organisation</label>
-          <div class="form_field">
-            <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>
-          </div>
-          <em class="form_field_status_text">Hmm, that doesn’t seem right!</em>
-          <em class="form_field_help_text">This value will appear on your invoice</em>
+          <em class="form_field_status_text">
+            Thanks, nice name.
+          </em>
+          <em class="form_field_help_text" id="input_organisation_help">
+            This value will appear on your invoice
+          </em>
         </div>
   -
     id: status-error
     name: 'Status: Error'
     description: |-
-      If the field validations / conditions are wrong
+      If the field validations / conditions haven't been met
     notes: |-
       - You **must** include the `.form_field_status_text` element, to help explain what's wrong with the given input.
       - Be sure to include any status text before any existing help text
+      - Mark the field as invalid using `ara-invalid="true"`
+      - Add the error message element's ID to the `aria-describedby` attribute.
     example:
       code: |-
         <div class="form_row" data-status="error">
           <label for="input_organisation">Organisation</label>
           <div class="form_field">
-            <input type="text" name="organisation" id="input_organisation" autocomplete="organization" required>
+            <input type="text"
+                   name="organisation"
+                   id="input_organisation"
+                   aria-invalid="true"
+                   aria-describedby="input_organisation_error input_organisation_help"
+                   autocomplete="organization"
+                   required>
           </div>
-          <em class="form_field_status_text">This field is required</em>
-          <em class="form_field_help_text">This value will appear on your invoice</em>
+          <em class="form_field_status_text" id="input_organisation_error">
+            This field is required
+          </em>
+          <em class="form_field_help_text" id="input_organisation_help">
+            This value will appear on your invoice
+          </em>
         </div>
