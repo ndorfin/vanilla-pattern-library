@@ -1,0 +1,36 @@
+id: form-rows
+name: Form rows
+summary: Test cases for all the various types of form rows
+description: |-
+  
+properties:
+  - 
+    id: vertical-stacking
+    name: Vertical stacking
+    cases:
+      -
+        code: |-
+          <div class="form_row">
+            <label for="input_name">Name</label>
+            <div class="form_field">
+              <input type="text"
+                    name="name"
+                    id="input_name"
+                    autocomplete="name"
+                    required>
+            </div>
+          </div>
+          <div class="form_row">
+            <label for="input_introduction">Introduction</label>
+            <div class="form_field">
+              <textarea
+                    name="input_introduction"
+                    id="input_input_introduction"
+                    aria-describedby="input_input_introduction_help"
+                    required>
+              </textarea>
+            </div>
+            <em class="form_field_help_text" id="input_input_introduction_help">
+              Tell us more about yourself
+            </em>
+          </div>
