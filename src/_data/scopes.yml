@@ -1,0 +1,8 @@
+atom:
+  name: Atom
+  description: |-
+    The smallest possible pattern, independent.
+molecule:
+  name: Molecule
+  description: |-
+    A combination of disparate atoms

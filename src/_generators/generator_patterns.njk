@@ -7,6 +7,7 @@ pagination:
 permalink: "{{ url.patterns }}/{{ pattern.id }}/index.html"
 layout: "pattern_detail.njk"
 ---
+
 {% if pattern.example %}
 	<section id="section_example">
 		<header>
@@ -28,24 +29,6 @@ layout: "pattern_detail.njk"
 	{% endif %}
 {% endif %}
 
-{% if pattern.assets %}
-	<section id="section_assets">
-		<header>
-			<h3>Relevant assets</h3>
-		</header>
-		<ul>
-			<li>
-				<i>Shared stylesheets</i> [See <a href="/{{ global.assets_path }}/css/index.css">index.css</a>]
-			</li>
-			{% for asset in pattern.assets %}
-				<li>
-					<a href="/{{ global.assets_path }}{{ asset }}">{{ asset }}</a>
-				</li>
-			{% endfor %}
-		</ul>
-	</section>
-{% endif %}
-
 {% if pattern.notes %}
 	<section id="section_notes">
 		<header>
@@ -54,6 +37,47 @@ layout: "pattern_detail.njk"
 		{{ pattern.notes | markdown | safe }}
 	</section>
 {% endif %}
+
+<section id="section_meta">
+	<header>
+		<h3>Details</h3>
+	</header>
+	<dl>
+		<dt>
+			Pattern scope:
+		</dt>
+		<dd>
+			<b>{{ scopes[pattern.scope].name }}</b>
+			{{ scopes[pattern.scope].description | markdown | safe }}
+		</dd>
+		{% if pattern.design_link %}
+			<dt>
+				Design source:
+			</dt>
+			<dd>
+				<a href="{{ pattern.design_link }}">Figma</a>
+			</dd>
+		{% endif %}
+		{% if pattern.assets %}
+			<dt>
+				Relevant assets:
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<i>Shared stylesheets</i> [See <a href="/{{ global.assets_path }}/css/index.css">index.css</a>]
+					</li>
+					{% for asset in pattern.assets %}
+						<li>
+							<a href="/{{ global.assets_path }}{{ asset }}">{{ asset }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</dd>
+		{% endif %}
+	</dl>
+</section>
+
 
 {% if pattern.variants %}
 	<section id="section_{{ pattern.id }}_variants">

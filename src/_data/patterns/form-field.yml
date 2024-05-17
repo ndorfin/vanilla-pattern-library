@@ -1,11 +1,12 @@
 id: form-field
 name: Form field
+scope: atom
 summary: Allows a user to add information via form controls
 description: |-
   Allows a user to add information via form controls
-design_link: 
+design_link: https://www.figma.com/design/mvalf0TtRnGrKABAc0JD5Y/VANILLA-Design-System?node-id=1128-270&m=dev
 assets:
-  - /css/patterns/form-fields.css
+  - /css/patterns/form_field.css
 tests:
   - form-fields
 example:
@@ -18,8 +19,9 @@ notes: |-
   - All form fields are considered required by default and must use the `required` attribute. If a field is not required, remove the `required` attribute, and label the field as optional.
   - When capturing known numeric patterns such as Credit Cards, ID numbers, etc. use the `inputmode="numeric"` attribute combined with the `pattern="…"` attribute.
   - Don't forget to add `autocomplete` attributes and their associated values. See [MDN: `autocomplete`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
-  - Avoid using any of the button-like input types (`button`, `image`, `reset`, `submit`). Use `<button>` elements instead.
+  - Avoid using any of the button-like input types (`<input type="button|image|reset|submit">`). Use `<button>` elements instead.
   - If you want to accept multi-line text input, use a `<textarea></textarea>` rather than a text input.
+  - After validation, if the field is invalid, you **must** use the `aria-invalid="true"` attribute. See [form rows](../form-row) for more error/success details.
 variants:
   -
     id: placeholder
