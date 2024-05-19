@@ -1,18 +1,6 @@
 /* Shared settings */
 /* Set variables to all form controls */
-[type="checkbox"],
-[type="date"],
-[type="email"],
-[type="file"],
-[type="number"],
-[type="password"],
-[type="radio"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="url"],
-textarea,
-select {
+.form_field {
 	--input-font-size: var(--font-size-default);
 	--input-font-color: var(--color-brown-600);
 	--input-font-color-active: var(--color-black-950);
@@ -27,21 +15,7 @@ select {
 	--input-box-shadow: var(--elevation-none);
 }
 
-/* General settings */
-/* Set default styles for all form controls */
-[type="checkbox"],
-[type="date"],
-[type="email"],
-[type="file"],
-[type="number"],
-[type="password"],
-[type="radio"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="url"],
-textarea,
-select {
+.form_field > * {
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: middle;
@@ -59,39 +33,103 @@ select {
 	accent-color: var(--input-font-color);
 }
 
-:is(
-	[type="checkbox"],
-	[type="date"],
-	[type="email"],
-	[type="file"],
-	[type="number"],
-	[type="password"],
-	[type="radio"],
-	[type="search"],
-	[type="tel"],
-	[type="text"],
-	[type="url"],
-	textarea,
-	select
-):hover {
+/* Checkboxes and Radios */
+[type="checkbox"],
+[type="radio"] {
+	border-width: 1px;
+	border-color: var(--input-border-color);
+	border-style: solid;
+	margin: 0;
+	block-size: calc(var(--input-font-size) * 1.5);
+	inline-size: calc(var(--input-font-size) * 1.5);
+}
+
+/* Checkboxes */
+[type="checkbox"] {
+	border-radius: var(--border-radius-s);
+}
+
+/* Radio buttons */
+[type="radio"] {
+	border-radius: 100%;
+}
+
+/* Checkbox and radio groups */
+.form_field > ul {
+	list-style-type: '';
+	margin: 0;
+	padding: 0;
+}
+
+.form_field li + li {
+	margin-block-start: 0.5rem;
+}
+
+.form_field li label {
+	display: block;
+	padding: 0.5rem;
+}
+
+.form_field li label input {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+}
+
+.form_field li span {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--color-surface-default);
+	font-size: 0.875rem;
+}
+
+.form_field li input ~ span::before {
+	content: "";
+	border-width: 1px;
+	border-color: var(--input-border-color);
+	border-style: solid;
+	display: block;
+	inline-size: 2rem;
+	block-size: 2rem;
+	box-sizing: border-box;
+	box-shadow: var(--input-box-shadow);
+}
+
+.form_field li [type="checkbox"] ~ span::before {
+	border-radius: var(--input-border-radius);
+}
+
+.form_field li [type="radio"] ~ span::before {
+	border-radius: var(--border-radius-full);
+	padding: 0.5rem;
+}
+
+.form_field li [type="checkbox"]:checked ~ span::before {
+	background-image: url(../../img/icon_tick_brown_600.svg);
+	background-size: 18px 14px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.form_field li [type="radio"]:checked ~ span::before {
+	background-color: var(--color-brown-600);
+	background-clip: content-box;
+}
+
+.form_field li label:hover span::before,
+.form_field > *:not(ul):hover {
 	--input-box-shadow: var(--elevation-s);
 	--input-background-color: var(--color-surface-lighter);
 }
 
-:is(
-	[type="checkbox"],
-	[type="date"],
-	[type="email"],
-	[type="number"],
-	[type="password"],
-	[type="radio"],
-	[type="search"],
-	[type="tel"],
-	[type="text"],
-	[type="url"],
-	textarea,
-	select
-):focus {
+.form_field li input:focus ~ span::before,
+.form_field > *:not(ul):focus {
 	--input-box-shadow: var(--elevation-s);
 	--input-border-color: var(--color-border-lighter);
 	--input-background-color: var(--color-white);
@@ -149,27 +187,6 @@ select {
 /* Date inputs */
 ::-webkit-datetime-edit {
 	line-height: 1;
-}
-
-/* Checkboxes and Radios */
-[type="checkbox"],
-[type="radio"] {
-	border-width: 1px;
-	border-color: var(--input-border-color);
-	border-style: solid;
-	margin: 0;
-	block-size: calc(var(--input-font-size) * 1.5);
-	inline-size: calc(var(--input-font-size) * 1.5);
-}
-
-/* Checkboxes */
-[type="checkbox"] {
-	border-radius: var(--border-radius-s);
-}
-
-/* Radio buttons */
-[type="radio"] {
-	border-radius: 100%;
 }
 
 select {
