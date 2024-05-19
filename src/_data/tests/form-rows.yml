@@ -34,3 +34,57 @@ properties:
               Tell us more about yourself
             </em>
           </div>
+          <div class="form_row">
+            <label>What are your reason(s) for joining?</label>
+            <div class="form_field">
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="reason" value="curiousity">
+                    <span>
+                      Curiousity
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="reason" value="friend">
+                    <span>
+                      A friend
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="reason" value="interesting">
+                    <span>
+                      Looks interesting
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form_row">
+            <label>What is your marital status?</label>
+            <div class="form_field">
+              <ul>
+                <li>
+                  <label>
+                    <input type="radio" name="marital_status" value="single">
+                    <span>
+                      Single
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="marital_status" value="married">
+                    <span>
+                      Married
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>

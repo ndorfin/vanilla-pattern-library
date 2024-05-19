@@ -13,7 +13,9 @@ example:
   width: 400
   height: 75
   code: |-
-    <input type="text" required>
+    <div class="form_field">
+      <input type="text" required>
+    </div>
 notes: |-
   - Inputs can cater for many different types of input (See the variants below)
   - All form fields are considered required by default and must use the `required` attribute. If a field is not required, remove the `required` attribute, and label the field as optional.
@@ -32,7 +34,9 @@ variants:
       This attribute **must not** be used as a replacement for the field's associated `<label>`.
     example:
       code: |-
-        <input type="text" placeholder="e.g. Jesse Brown" required>
+        <div class="form_field">
+          <input type="text" placeholder="e.g. Jesse Brown" required>
+        </div>
   -
     id: optional
     name: Optional field
@@ -42,7 +46,9 @@ variants:
       Note the lack of a `required` attribute.
     example:
       code: |-
-        <input type="text" placeholder="e.g. Jesse Brown">
+        <div class="form_field">
+          <input type="text" placeholder="e.g. Jesse Brown">
+        </div>
   -
     id: type-date
     name: 'Type: date'
@@ -51,7 +57,9 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="date" required>
+        <div class="form_field">
+          <input type="date" required>
+        </div>
   -
     id: type-email
     name: 'Type: email'
@@ -60,7 +68,9 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="email" autocomplete="email" required>
+        <div class="form_field">
+          <input type="email" autocomplete="email" required>
+        </div>
   -
     id: type-file
     name: 'Type: file'
@@ -71,7 +81,9 @@ variants:
       - Use the [`accept` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#accept) to specify what types of files are allowed
     example:
       code: |-
-        <input type="file" required>
+        <div class="form_field">
+          <input type="file" required>
+        </div>
   -
     id: type-number
     name: 'Type: number'
@@ -83,7 +95,9 @@ variants:
       - Use the `max`, `min`, `step` if those values are known or predictable.
     example:
       code: |-
-        <input type="number" required>
+        <div class="form_field">
+          <input type="number" required>
+        </div>
   -
     id: type-password
     name: 'Type: password'
@@ -93,7 +107,9 @@ variants:
       The example below is for a log-in prompt. If you instead want to capture a user's password during registration, use the appropriate alternative `autocomplete` value.
     example:
       code: |-
-        <input name="password" type="password" autocomplete="current-password" required>
+        <div class="form_field">
+          <input name="password" type="password" autocomplete="current-password" required>
+        </div>
   -
     id: type-search
     name: 'Type: search'
@@ -102,7 +118,9 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="search" required>
+        <div class="form_field">
+          <input type="search" required>
+        </div>
   -
     id: type-tel
     name: 'Type: tel'
@@ -111,7 +129,9 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="tel" required>
+        <div class="form_field">
+          <input type="tel" required>
+        </div>
   -
     id: type-number-like
     name: 'Type: number-like'
@@ -121,7 +141,9 @@ variants:
       Details on the gov.uk blog about [capturing credit card numbers](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/)
     example:
       code: |-
-        <input type="text" pattern="[0-9]*" inputmode="numeric" required>
+        <div class="form_field">
+          <input type="text" pattern="[0-9]*" inputmode="numeric" required>
+        </div>
   -
     id: type-url
     name: 'Type: URL'
@@ -130,7 +152,85 @@ variants:
     # notes: |-
     example:
       code: |-
-        <input type="url" required>
+        <div class="form_field">
+          <input type="url" required>
+        </div>
+  -
+    id: checkboxes
+    name: Checkboxes
+    description: |-
+      If you want the user to select one (or more) from five (or less) items, then use a group of checkboxes
+    notes: |-
+      - Use the same `name` attribute value for each checkbox so they're grouped logically
+    example:
+      height: 200
+      code: |-
+        <div class="form_field">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="fruit" value="apples">
+                <span>
+                  Apples
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="fruit" value="bananas">
+                <span>
+                  Bananas
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="fruit" value="peaches">
+                <span>
+                  Peaches
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+  -
+    id: radios
+    name: Radios
+    description: |-
+      If you want the user to select at most one from five or less items, then use a group of radio buttons
+    notes: |-
+      - Use the same `name` attribute value for each radio button so they're grouped logically
+    example:
+      height: 200
+      code: |-
+        <div class="form_field">
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="fruit" value="apples">
+                <span>
+                  Apples
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="fruit" value="bananas">
+                <span>
+                  Bananas
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="fruit" value="peaches">
+                <span>
+                  Peaches
+                </span>
+              </label>
+            </li>
+          </ul>
+        </div>
   -
     id: select
     name: Select
@@ -139,17 +239,19 @@ variants:
     # notes: |-
     example:
       code: |-
-        <select required>
-          <optgroup label="A">
-            <option>Apples
-            <option>Aubergines
-          </optgroup>
-          <optgroup label="C">
-            <option>Carrots
-            <option>Coconuts
-          </optgroup>
-          <option>Other
-        </select>
+        <div class="form_field">
+          <select required>
+            <optgroup label="A">
+              <option>Apples
+              <option>Aubergines
+            </optgroup>
+            <optgroup label="C">
+              <option>Carrots
+              <option>Coconuts
+            </optgroup>
+            <option>Other
+          </select>
+        </div>
   -
     id: textarea
     name: Textarea
@@ -160,4 +262,6 @@ variants:
       width: 350
       height: 100
       code: |-
-        <textarea rows="3" cols="30" required></textarea>
+        <div class="form_field">
+          <textarea rows="3" cols="30" required></textarea>
+        </div>
