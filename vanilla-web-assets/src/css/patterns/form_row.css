@@ -8,6 +8,8 @@
 	/* Status colouring: Error */
 	--form-row-color-label-error: hsl(356, 100%, 39%);
 	--form-row-color-accent-error: hsl(356, 100%, 65%);
+
+	max-inline-size: 40ch;
 }
 
 .form_row + .form_row {
@@ -15,11 +17,12 @@
 }
 
 .form_row > label {
+	display: inline-block;
+	margin-inline-start: calc(var(--form-row-font-size) * 1.25); /* 20px - this is to match the padding-inline of the form field. */
 	font-size: 0.875rem;
 	line-height: 1rem;
 	font-weight: 700;
 	color: var(--form-row-color-label);
-	margin-inline-start: calc(var(--form-row-font-size) * 1.25); /* 20px - this is to match the padding-inline of the form field. */
 }
 
 .form_row > .form_field {

@@ -15,7 +15,7 @@
 	--input-box-shadow: var(--elevation-none);
 }
 
-.form_field > * {
+.form_field > *:not(button) {
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: middle;
@@ -170,6 +170,19 @@ select {
 	background-color: var(--input-background-color);
 	color: var(--input-font-color);
 	border-radius: var(--input-border-radius);
+}
+
+:is(
+	[type="email"],
+	[type="number"],
+	[type="password"],
+	[type="search"],
+	[type="tel"],
+	[type="text"],
+	[type="url"],
+	textarea
+):only-child {
+	inline-size: 100%;
 }
 
 ::placeholder {
