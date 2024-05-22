@@ -1,0 +1,13 @@
+@container form-condensed (width > 320px) {
+	form {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 0;
+	}
+
+	.form_buttons button {
+		margin-inline-start: calc(var(--border-radius-s) * -1);
+		border-radius: 0 var(--button-border-radius) var(--button-border-radius) 0;
+	}
+}

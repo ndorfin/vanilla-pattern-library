@@ -1,0 +1,118 @@
+
+	
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+	
+
+<title>Form — Vanilla Pattern Library</title>
+<meta property="og:title" content="Form">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="A collection of controls that prompt for user input.">
+<meta property="og:site_name" content="Vanilla Pattern Library">
+<meta property="og:description" content="A collection of controls that prompt for user input.">
+
+<link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
+<form action="." method="POST">
+  <div class="form_row">
+    <label for="input_email">
+      E-mail address
+    </label>
+    <div class="form_field">
+      <input type="email" id="input_email" autocomplete="email" required="">
+    </div>
+  </div>
+  <div class="form_row">
+    <label for="input_password">
+      Password
+    </label>
+    <div class="form_field">
+      <input type="password" id="input_password" autocomplete="password" required="">
+    </div>
+  </div>
+  <div class="form_row form_buttons">
+    <button type="submit" data-scheme="primary">Save</button>
+  </div>
+  <p>Not a customer yet? <a href=".">Sign up!</a></p>
+</form>
+
+<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
+<!--
+============================
+page: {
+  url: '/patterns/form/example/',
+  outputPath: 'public/patterns/form/example/index.html'
+}
+page_meta: {
+  title: 'Form',
+  summary: 'A collection of controls that prompt for user input.',
+  description: 'A collection of controls that prompt for user input.'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: {
+  id: 'form',
+  name: 'Form',
+  scope: 'organism',
+  summary: 'A collection of controls that prompt for user input.',
+  description: 'A collection of controls that prompt for user input.',
+  design_link: null,
+  assets: [ '/css/patterns/form.css' ],
+  example: {
+    width: 400,
+    height: 600,
+    code: '<form action="." method="POST">\n' +
+      '  <div class="form_row">\n' +
+      '    <label for="input_email">\n' +
+      '      E-mail address\n' +
+      '    </label>\n' +
+      '    <div class="form_field">\n' +
+      '      <input type="email"\n' +
+      '             id="input_email"\n' +
+      '             autocomplete="email"\n' +
+      '             required>\n' +
+      '    </div>\n' +
+      '  </div>\n' +
+      '  <div class="form_row">\n' +
+      '    <label for="input_password">\n' +
+      '      Password\n' +
+      '    </label>\n' +
+      '    <div class="form_field">\n' +
+      '      <input type="password"\n' +
+      '             id="input_password"\n' +
+      '             autocomplete="password"\n' +
+      '             required>\n' +
+      '    </div>\n' +
+      '  </div>\n' +
+      '  <div class="form_row form_buttons">\n' +
+      '    <button type="submit" data-scheme="primary">Save</button>\n' +
+      '  </div>\n' +
+      '  <p>Not a customer yet? <a href=".">Sign up!</a></p>\n' +
+      '</form>'
+  },
+  notes: '- This pattern (organism) is made up of one or more [form rows](../form-row/), as well as a modified form row for buttons.\n' +
+    '- If your form includes any file uploads, be sure to use the `enctype="multipart/form-data"` attribute on the `<form>` element.',
+  variants: [
+    {
+      id: 'location-lookup',
+      name: 'Location look-up',
+      description: 'Start a potential customer interaction by prompting them for their desired installation address',
+      notes: '- This variant is reliant on a parent (container) query. Be sure to only use this pattern inside the `location-lookup` [container](../container/)\n' +
+        '- You need to use a small-sized button in the form.',
+      example: [Object],
+      pattern_id: 'form'
+    }
+  ]
+}
+test: undefined
+============================
+--></html>

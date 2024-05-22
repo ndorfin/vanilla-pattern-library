@@ -12,3 +12,7 @@ button[data-icon="arrow-right"],
 [data-theme="dark"] [data-scheme="secondary"][data-icon="arrow-right"] {
 	--icon-image-url: url('../../img/icon_arrow_right_brown_100.svg');
 }
+
+[data-icon="location"] {
+	--icon-image-url: url('../../img/icon_location_brown_600.svg');
+}

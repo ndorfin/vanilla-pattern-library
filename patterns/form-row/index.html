@@ -238,6 +238,44 @@
 					</details>
 				</li>
 			
+				<li>
+					<details open="">
+						<summary><b>Button row</b>&nbsp;
+								<p>The last row in a form, acts as a marked container for buttons</p>
+
+							</summary>
+						<div>
+							
+							<h4>Example</h4>
+							<p><a href="variants/buttons/example/" target="_blank">Open type in a new window</a></p>
+							<div class="container_iframe">
+								<iframe width="400" height="150" src="variants/buttons/example/"></iframe>
+							</div>
+						
+							<h4>Code sample</h4>
+							<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form_row form_buttons<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>action<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">data-scheme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    Submit
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>action<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>save<span class="token punctuation">"</span></span> <span class="token attr-name">data-scheme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>secondary<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    Save for later
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>.<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Cancel<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+							
+								<h4>Notes</h4>
+								<ul>
+<li>Ideally you should only have one button or action at the end of the form</li>
+<li>If you need multiple submit buttons, then add the <code>name</code> and <code>value</code> attributes as shown below. Then interpret the value on receiving this form data.</li>
+<li>Any cancel actions should be links</li>
+</ul>
+
+							
+						</div>
+					</details>
+				</li>
+			
 		</ul>
 	</section>
 
@@ -333,6 +371,16 @@ pattern: {
         '- Be sure to include any status text before any existing help text\n' +
         '- Mark the field as invalid using `ara-invalid="true"`\n' +
         "- Add the error message element's ID to the `aria-describedby` attribute.",
+      example: [Object],
+      pattern_id: 'form-row'
+    },
+    {
+      id: 'buttons',
+      name: 'Button row',
+      description: 'The last row in a form, acts as a marked container for buttons',
+      notes: '- Ideally you should only have one button or action at the end of the form\n' +
+        '- If you need multiple submit buttons, then add the `name` and `value` attributes as shown below. Then interpret the value on receiving this form data.\n' +
+        '- Any cancel actions should be links',
       example: [Object],
       pattern_id: 'form-row'
     }

@@ -33,7 +33,7 @@
 .form_field_status_text {
 	display: block;
 	margin-block-start: 0.5rem;
-	margin-inline-start: calc(var(--form-row-font-size) * 1.25); /* 20px - this is to match the padding-inline of the form field. */
+	margin-inline: calc(var(--form-row-font-size) * 1.25); /* 20px - this is to match the padding-inline of the form field. */
 	font-size: 0.625rem;
 	line-height: 0.75rem;
 	font-style: normal;

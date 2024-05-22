@@ -98,6 +98,16 @@ pattern: {
         "- Add the error message element's ID to the `aria-describedby` attribute.",
       example: [Object],
       pattern_id: 'form-row'
+    },
+    {
+      id: 'buttons',
+      name: 'Button row',
+      description: 'The last row in a form, acts as a marked container for buttons',
+      notes: '- Ideally you should only have one button or action at the end of the form\n' +
+        '- If you need multiple submit buttons, then add the `name` and `value` attributes as shown below. Then interpret the value on receiving this form data.\n' +
+        '- Any cancel actions should be links',
+      example: [Object],
+      pattern_id: 'form-row'
     }
   ]
 }

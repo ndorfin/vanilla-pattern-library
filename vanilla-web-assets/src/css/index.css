@@ -9,6 +9,8 @@
 @import "./patterns/button.css";
 @import "./patterns/form_field.css";
 @import "./patterns/form_row.css";
+@import "./patterns/form.css";
+@import "./patterns/container.css";
 
 [data-theme="dark"] {
 	background-color: hsla(24, 4%, 23%, 1);

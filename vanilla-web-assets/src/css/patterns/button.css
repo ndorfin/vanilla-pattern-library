@@ -12,17 +12,18 @@ button,
 	--button-padding-block: calc((var(--button-font-size) * var(--button-padding-block-multiplier)) - (var(--button-font-size) / var(--button-font-units)));
 	--button-icon-label-gap: var(--button-font-size);
 	--button-color-border: hsla(0, 0%, 0%, 0);
+	--button-border-radius: 10rem;
 
 	display: inline-block;
 	font-size: var(--button-font-size);
 	font-weight: 400;
 	font-family: inherit;
-	line-height: 1.25;
+	line-height: 1.25rem;
 	text-align: center;
 	border-width: 1px;
 	border-style: solid;
 	border-color: var(--button-color-border);
-	border-radius: 10rem;
+	border-radius: var(--button-border-radius);
 	padding-inline: var(--button-padding-inline);
 	padding-block: var(--button-padding-block);
 	color: var(--button-color-font);
@@ -130,6 +131,7 @@ button,
 	background-position: 50% 50%;
 	background-image: var(--icon-image-url);
 	background-repeat: no-repeat;
+	flex-shrink: 0;
 }
 
 /* Icon and label */

@@ -1,0 +1,61 @@
+
+	
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+	
+
+<title>container variant: Location look-up — Vanilla Pattern Library</title>
+<meta property="og:title" content="container variant: Location look-up">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="container variant: Start a potential customer interaction by prompting them for their desired installation address">
+<meta property="og:site_name" content="Vanilla Pattern Library">
+<meta property="og:description" content="container variant: Start a potential customer interaction by prompting them for their desired installation address">
+
+<link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
+<div class="container" data-mode="location-lookup">
+  <form action="#step-2" method="GET">
+    <div class="form_row">
+      <label for="input_location">What’s your address?</label>
+      <div class="form_field">
+        <input type="search" name="location" id="input_location" aria-describedby="input_location_help" data-icon="location" data-mode="icon-after" required="">
+      </div>
+      <em class="form_field_help_text" id="input_organisation_help">
+        We’ll only use this to find out where you need internet access
+      </em>
+    </div>
+    <div class="form_row form_buttons">
+      <button type="submit" data-size="small" data-scheme="primary" data-icon="arrow-right" data-mode="icon-after">
+        Go!
+      </button>
+    </div>
+  </form>
+</div>
+
+<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
+<!--
+============================
+page: {
+  url: '/patterns/container/variants/location-lookup/example/',
+  outputPath: 'public/patterns/container/variants/location-lookup/example/index.html'
+}
+page_meta: {
+  title: 'container variant: Location look-up',
+  summary: 'container variant: Start a potential customer interaction by prompting them for their desired installation address',
+  description: 'container variant: Start a potential customer interaction by prompting them for their desired installation address'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: undefined
+test: undefined
+============================
+--></html>

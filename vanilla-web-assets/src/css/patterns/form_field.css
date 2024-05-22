@@ -8,6 +8,7 @@
 	--input-padding-block: calc((var(--input-font-size) * 0.75) - (var(--input-font-size) / var(--font-size-pixel-units))); /* 12px - 1 */
 	--input-padding-inline: calc((var(--input-font-size) * 1.25) - (var(--input-font-size) / var(--font-size-pixel-units))); /* 20px - 1 */
 	--input-border-radius: var(--border-radius-s);
+	--input-border-width: 1px;
 	--input-border-color: var(--form-row-color-accent, var(--color-border-subtle)); /* If a form_row is controlling the colour, then use that value rather than the fallback */
 	--input-background-color: var(--color-white);
 	--input-size-min-block: calc(var(--font-size-default) * 1.25);
@@ -15,11 +16,20 @@
 	--input-box-shadow: var(--elevation-none);
 }
 
-.form_field > *:not(button) {
+.form_field > *:is(
+	input,
+	select,
+	textarea
+):not(:is(
+	[type="file"]
+)) {
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: middle;
 	font-family: inherit;
+	border-width: var(--input-border-width);
+	border-color: var(--input-border-color);
+	border-style: solid;
 	box-shadow: var(--input-box-shadow);
 	border-radius: var(--input-border-radius);
 	transition-property: border-radius, box-shadow, border-color, background-color;
@@ -36,7 +46,7 @@ select {
 /* Checkboxes and Radios */
 [type="checkbox"],
 [type="radio"] {
-	border-width: 1px;
+	border-width: var(--input-border-width);
 	border-color: var(--input-border-color);
 	border-style: solid;
 	margin: 0;
@@ -91,7 +101,7 @@ select {
 
 .form_field li input ~ span::before {
 	content: "";
-	border-width: 1px;
+	border-width: var(--input-border-width);
 	border-color: var(--input-border-color);
 	border-style: solid;
 	display: block;
@@ -138,6 +148,12 @@ select {
 	outline: none;
 }
 
+/* Search inputs */
+[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+
+/* File inputs */
 [type="file"]:is(
 	:focus,
 	:hover
@@ -217,4 +233,25 @@ textarea {
 	min-block-size: 2.75rem;
 	min-inline-size: 375px;
 	max-inline-size: 100%;
+}
+
+/* Icon adornment */
+input[data-mode="icon-before"],
+input[data-mode="icon-after"] {
+	--input-internal-gap: 0.5rem;
+	--input-icon-size: 1.5rem;
+
+	background-image: var(--icon-image-url);
+	background-repeat: no-repeat;
+	background-size: var(--input-icon-size) var(--input-icon-size);
+}
+
+input[data-mode="icon-before"] {
+	background-position: top 50% left var(--input-padding-inline);
+	padding-inline-start: calc(var(--input-padding-inline) + var(--input-icon-size) + var(--input-internal-gap));
+}
+
+input[data-mode="icon-after"] {
+	background-position: top 50% right var(--input-padding-inline);
+	padding-inline-end: calc(var(--input-padding-inline) + var(--input-icon-size) + var(--input-internal-gap));
 }

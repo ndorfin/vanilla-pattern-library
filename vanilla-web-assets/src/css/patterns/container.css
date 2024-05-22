@@ -1,0 +1,4 @@
+.container[data-mode="location-lookup"] {
+	container-type: inline-size;
+	container-name: form-condensed; /* See ../form.css */
+}
