@@ -1,0 +1,4 @@
+.container_iframe iframe {
+	resize: both;
+	overflow: auto;
+}
