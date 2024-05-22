@@ -19,7 +19,7 @@ example:
         <div class="form_field">
           <input type="email"
                  id="input_email"
-                 autocomplete="email"
+                 autocomplete="username"
                  required>
         </div>
       </div>
