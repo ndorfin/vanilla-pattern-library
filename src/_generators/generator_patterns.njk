@@ -87,7 +87,7 @@ layout: "pattern_detail.njk"
 		<ul class="list_accordions">
 			{% for variant in pattern.variants %}
 				<li>
-					<details open>
+					<details open id="variant_{{ variant.id }}">
 						<summary><b>{{ variant.name }}</b>&nbsp;{% if variant.description %}
 								{{ variant.description | markdown | safe }}
 							{% endif %}</summary>
