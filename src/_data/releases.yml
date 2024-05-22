@@ -96,3 +96,26 @@
       id: form-row
       description: |-
         Form rows now have a max-width of 40 characters.
+-
+  library_version: 1.4.0
+  assets_version: 0.5.0
+  date: 2024-05-23
+  description: |-
+    Start work on forms and containers, specifically the location-lookup form. Added the location icon.
+  patterns:
+    - 
+      id: button
+      description: |-
+        Explicit line-heights and border-radius now set on buttons so that we can use a small button alongside a `form_row` in the location-lookup form.
+    - 
+      id: container
+      description: |-
+        Introducing containers, with the first variant catering for the location-lookup.
+    - 
+      id: form
+      description: |-
+        Introducing forms, with the first variant catering for the location-lookup.
+    -
+      id: form-row
+      description: |-
+        Added a variant that caters for a row of buttons

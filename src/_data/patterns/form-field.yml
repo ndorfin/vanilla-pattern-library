@@ -259,8 +259,8 @@ variants:
       If you want to support multi-line text, then the `<textarea>` element is the correct choice.
     # notes: |-
     example:
-      width: 350
-      height: 100
+      width: 400
+      height: 120
       code: |-
         <div class="form_field">
           <textarea rows="3" cols="30" required></textarea>
