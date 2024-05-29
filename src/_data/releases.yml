@@ -119,3 +119,14 @@
       id: form-row
       description: |-
         Added a variant that caters for a row of buttons
+-
+  library_version: 1.5.0
+  assets_version: 0.6.0
+  date: 2024-05-29
+  description: |-
+    Add headings
+  patterns:
+    - 
+      id: heading
+      description: |-
+        Introducing headings

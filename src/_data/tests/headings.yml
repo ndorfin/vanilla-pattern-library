@@ -1,0 +1,156 @@
+id: headings
+name: Headings
+summary: Headings can be used interchangeably with the h1 to h6 elements, paragraphs and even lists.
+description: |-
+  Headings can be used interchangeably with the `<h1>` to `<h6>` elements, paragraphs and even lists.
+properties:
+  - 
+    id: page-level
+    name: Page-level headings
+    cases:
+      -
+        code: |-
+          <h1 class="heading" data-scheme="page">
+            Our history
+          </h1>
+          <h2 class="heading" data-scheme="page">
+            Our history
+          </h2>
+          <h3 class="heading" data-scheme="page">
+            Our history
+          </h3>
+          <h4 class="heading" data-scheme="page">
+            Our history
+          </h4>
+          <h5 class="heading" data-scheme="page">
+            Our history
+          </h5>
+          <h6 class="heading" data-scheme="page">
+            Our history
+          </h6>
+          <p class="heading" data-scheme="page">
+            Our history
+          </p>
+  - 
+    id: section-level
+    name: Section-level headings
+    cases:
+      -
+        code: |-
+          <h1 class="heading" data-scheme="section">
+            Our history
+          </h1>
+          <h2 class="heading" data-scheme="section">
+            Our history
+          </h2>
+          <h3 class="heading" data-scheme="section">
+            Our history
+          </h3>
+          <h4 class="heading" data-scheme="section">
+            Our history
+          </h4>
+          <h5 class="heading" data-scheme="section">
+            Our history
+          </h5>
+          <h6 class="heading" data-scheme="section">
+            Our history
+          </h6>
+          <p class="heading" data-scheme="section">
+            Our history
+          </p>
+  - 
+    id: block-level
+    name: Block-level headings
+    cases:
+      -
+        code: |-
+          <h1 class="heading" data-scheme="block">
+            Our history
+          </h1>
+          <h2 class="heading" data-scheme="block">
+            Our history
+          </h2>
+          <h3 class="heading" data-scheme="block">
+            Our history
+          </h3>
+          <h4 class="heading" data-scheme="block">
+            Our history
+          </h4>
+          <h5 class="heading" data-scheme="block">
+            Our history
+          </h5>
+          <h6 class="heading" data-scheme="block">
+            Our history
+          </h6>
+          <p class="heading" data-scheme="block">
+            Our history
+          </p>
+  - 
+    id: paragraph-level
+    name: Paragraph-level headings
+    cases:
+      -
+        code: |-
+          <h1 class="heading" data-scheme="paragraph">
+            Our history
+          </h1>
+          <h2 class="heading" data-scheme="paragraph">
+            Our history
+          </h2>
+          <h3 class="heading" data-scheme="paragraph">
+            Our history
+          </h3>
+          <h4 class="heading" data-scheme="paragraph">
+            Our history
+          </h4>
+          <h5 class="heading" data-scheme="paragraph">
+            Our history
+          </h5>
+          <h6 class="heading" data-scheme="paragraph">
+            Our history
+          </h6>
+          <p class="heading" data-scheme="paragraph">
+            Our history
+          </p>
+  - 
+    id: uppercase
+    name: Uppercase
+    cases:
+      -
+        code: |-
+          <h3 class="heading" data-scheme="page" data-variant="uppercase"">
+            Our history
+          </h3>
+          <h3 class="heading" data-scheme="section" data-variant="uppercase"">
+            Our history
+          </h3>
+          <h3 class="heading" data-scheme="block" data-variant="uppercase"">
+            Our history
+          </h3>
+          <h3 class="heading" data-scheme="block" data-icon="spark" data-mode="icon-before" data-variant="uppercase"">
+            Our history
+          </h3>
+          <h3 class="heading" data-scheme="paragraph" data-variant="uppercase"">
+            Our history
+          </h3>
+  - 
+    id: overflow
+    name: Overflow
+    cases:
+      -
+        code: |-
+          <h3 class="heading" data-scheme="page">
+            More about us and our wonderful legacy reaching back all the way to year dot
+          </h3>
+          <h3 class="heading" data-scheme="section">
+            More about us and our wonderful legacy reaching back all the way to year dot
+          </h3>
+          <h3 class="heading" data-scheme="block">
+            More about us and our wonderful legacy reaching back all the way to year dot
+          </h3>
+          <h3 class="heading" data-scheme="block" data-icon="spark" data-mode="icon-before">
+            More about us and our wonderful legacy reaching back all the way to year dot
+          </h3>
+          <h3 class="heading" data-scheme="paragraph">
+            More about us and our wonderful legacy reaching back all the way to year dot
+          </h3>
