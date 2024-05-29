@@ -16,3 +16,7 @@ button[data-icon="arrow-right"],
 [data-icon="location"] {
 	--icon-image-url: url('../../img/icon_location_brown_600.svg');
 }
+
+[data-icon="spark"] {
+	--icon-image-url: url('../../img/icon_spark_brown_600.svg');
+}

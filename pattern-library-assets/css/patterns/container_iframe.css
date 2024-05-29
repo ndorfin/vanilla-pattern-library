@@ -1,4 +1,7 @@
 .container_iframe iframe {
 	resize: both;
 	overflow: auto;
+	border-style: inset;
+  border-color: hsla(0, 0%, 80%, 0.5);
+  border-width: 2px;
 }

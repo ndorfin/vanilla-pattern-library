@@ -10,6 +10,7 @@
 @import "./patterns/form_field.css";
 @import "./patterns/form_row.css";
 @import "./patterns/form.css";
+@import "./patterns/heading.css";
 @import "./patterns/container.css";
 
 [data-theme="dark"] {
