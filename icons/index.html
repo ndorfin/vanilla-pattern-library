@@ -4,8 +4,8 @@
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="/vanilla-pattern-library/pattern-library-assets/css/index.css">
 
-<title>All icons — Vanilla Pattern Library</title>
-<meta property="og:title" content="All icons">
+<title>Icons — Vanilla Pattern Library</title>
+<meta property="og:title" content="Icons">
 
 	
 
@@ -34,25 +34,55 @@
 	
 
 <header>
-	<h2>All icons</h2>
+	<h2>Icons</h2>
 	
-		<p>The collection of icons that can be used in most patterns</p>
+		<p>The collection of icons that can be used generically</p>
 
 	
 </header>
 	<article>
-		<h3>List of icons</h3>
+		<p>
+	We have two levels of icons:
+</p>
+<ol>
+	<li>System or framework-level icons</li>
+	<li>Generic icons</li>
+</ol>
 
-<dl class="set_icons">
+<h3>Framework-level icons</h3>
+<p>The website UI includes icons for such elements as the mobile menu, checkboxes, selects, and other 'baked-in' patterns. These aren't intended to be extended.</p>
+
+<h3>Generic icons</h3>
+<p>These icons are intended to be used in block-level headings, and select other patterns.</p>
+<p>If you want to use a certain icon, use its identifier or <code>id</code> in the <code>data-icon=""</code> attribute.</p>
+
+<p>Here's an example using the <code>spark</code> icon in a block-level heading:</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>heading<span class="token punctuation">"</span></span>	<span class="token attr-name">data-scheme</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block<span class="token punctuation">"</span></span> <span class="token attr-name">data-mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>icon-before<span class="token punctuation">"</span></span> <span class="token attr-name">data-icon</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>spark<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	Spark
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span></code></pre>
+
+<h4>List of generic icons</h4>
+
+<table class="table_icons">
+	<thead>
+		<tr>
+			<th scope="col" id="th_id">ID</th>
+			<th scope="col" id="th_example">Example</th>
+			<th scope="col" id="th_synonyms">Synonyms</th>
+		</tr>
+	</thead>
+	<tbody>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_badge-star">
 				<code>badge-star</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_badge-star">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/badge-star" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_badge-star">
 				
 				<ul>
 					
@@ -66,17 +96,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_badge-tick">
 				<code>badge-tick</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_badge-tick">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/badge-tick" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_badge-tick">
 				
 				<ul>
 					
@@ -94,17 +126,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_bandwidth">
 				<code>bandwidth</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_bandwidth">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/bandwidth" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_bandwidth">
 				
 				<ul>
 					
@@ -114,17 +148,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_building">
 				<code>building</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_building">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/building" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_building">
 				
 				<ul>
 					
@@ -142,17 +178,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_checklist">
 				<code>checklist</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_checklist">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/checklist" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_checklist">
 				
 				<ul>
 					
@@ -166,17 +204,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_clock">
 				<code>clock</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_clock">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/clock" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_clock">
 				
 				<ul>
 					
@@ -196,17 +236,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_email">
 				<code>email</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_email">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/email" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_email">
 				
 				<ul>
 					
@@ -218,17 +260,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_flag">
 				<code>flag</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_flag">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/flag" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_flag">
 				
 				<ul>
 					
@@ -244,17 +288,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_fire">
 				<code>fire</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_fire">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/fire" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_fire">
 				
 				<ul>
 					
@@ -268,17 +314,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_gauge">
 				<code>gauge</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_gauge">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/gauge" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_gauge">
 				
 				<ul>
 					
@@ -292,17 +340,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_handshake">
 				<code>handshake</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_handshake">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/handshake" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_handshake">
 				
 				<ul>
 					
@@ -320,17 +370,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_happy">
 				<code>happy</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_happy">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/happy" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_happy">
 				
 				<ul>
 					
@@ -344,17 +396,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_heart">
 				<code>heart</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_heart">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/heart" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_heart">
 				
 				<ul>
 					
@@ -368,17 +422,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_icecream">
 				<code>icecream</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_icecream">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/icecream" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_icecream">
 				
 				<ul>
 					
@@ -396,17 +452,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_lightbulb">
 				<code>lightbulb</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_lightbulb">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/lightbulb" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_lightbulb">
 				
 				<ul>
 					
@@ -420,17 +478,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_location">
 				<code>location</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_location">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/location" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_location">
 				
 				<ul>
 					
@@ -440,17 +500,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_mail">
 				<code>mail</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_mail">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/mail" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_mail">
 				
 				<ul>
 					
@@ -468,17 +530,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_nodes">
 				<code>nodes</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_nodes">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/nodes" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_nodes">
 				
 				<ul>
 					
@@ -492,17 +556,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_phone">
 				<code>phone</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_phone">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/phone" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_phone">
 				
 				<ul>
 					
@@ -516,17 +582,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_phone-ringing">
 				<code>phone-ringing</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_phone-ringing">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/phone-ringing" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_phone-ringing">
 				
 				<ul>
 					
@@ -544,17 +612,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_phone-voip">
 				<code>phone-voip</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_phone-voip">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/phone-voip" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_phone-voip">
 				
 				<ul>
 					
@@ -572,17 +642,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_piggybank">
 				<code>piggybank</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_piggybank">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/piggybank" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_piggybank">
 				
 				<ul>
 					
@@ -596,17 +668,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_rewind">
 				<code>rewind</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_rewind">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/rewind" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_rewind">
 				
 				<ul>
 					
@@ -622,17 +696,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_spark">
 				<code>spark</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_spark">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/spark" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_spark">
 				
 				<ul>
 					
@@ -646,17 +722,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_star">
 				<code>star</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_star">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/star" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_star">
 				
 				<ul>
 					
@@ -668,17 +746,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_stars">
 				<code>stars</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_stars">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/stars" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_stars">
 				
 				<ul>
 					
@@ -690,17 +770,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_trolley">
 				<code>trolley</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_trolley">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/trolley" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_trolley">
 				
 				<ul>
 					
@@ -714,17 +796,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_watch">
 				<code>watch</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_watch">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/watch" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_watch">
 				
 				<ul>
 					
@@ -748,17 +832,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_wifi">
 				<code>wifi</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_wifi">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/wifi" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_wifi">
 				
 				<ul>
 					
@@ -772,17 +858,19 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_wifi-full">
 				<code>wifi-full</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_wifi-full">
 				<div class="container_iframe">
 					<iframe src="/vanilla-pattern-library/icons/wifi-full" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_wifi-full">
 				
 				<ul>
 					
@@ -800,10 +888,11 @@
 					
 				</ul>
 				
-			</dd>
-		</div>
+			</td>
+		</tr>
 	
-</dl>
+	</tbody>
+</table>
 
 	</article>
 </main>
@@ -834,7 +923,7 @@
 <!--
 ============================
 page: {
-  date: 2024-06-05T05:04:44.913Z,
+  date: 2024-06-05T05:33:11.575Z,
   inputPath: './src/icons/index.njk',
   fileSlug: 'icons',
   filePathStem: '/icons/index',
@@ -844,10 +933,10 @@ page: {
   outputPath: 'public/icons/index.html'
 }
 page_meta: undefined
-title: 'All icons'
-heading: 'All icons'
-summary: 'The collection of icons that can be used in most patterns'
-description: 'The collection of icons that can be used in most patterns'
+title: 'Icons'
+heading: 'Icons'
+summary: 'The collection of icons that can be used generically'
+description: 'The collection of icons that can be used generically'
 ============================
 pattern: undefined
 test: undefined
