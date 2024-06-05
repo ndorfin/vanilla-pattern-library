@@ -1,4 +1,26 @@
 -
+  id: badge-star
+  name: Badge (Star)
+  colours:
+    - brown_600
+  synonyms:
+    - badge
+    - shield
+    - protection
+    - secure
+-
+  id: badge-tick
+  name: Badge (Tick)
+  colours:
+    - brown_600
+  synonyms:
+    - badge
+    - shield
+    - protection
+    - protected
+    - secure
+    - secured
+-
   id: bandwidth
   name: Bandwidth
   colours:
@@ -6,6 +28,18 @@
   synonyms:
     - speed
     - throughput
+-
+  id: building
+  name: Building
+  colours:
+    - brown_600
+  synonyms:
+    - business
+    - office
+    - apartments
+    - flats
+    - high-rise
+    - city
 -
   id: checklist
   name: Checklist
@@ -30,6 +64,58 @@
     - watch
     - alarm
 -
+  id: email
+  name: Email
+  colours:
+    - brown_600
+  synonyms:
+    - username
+    - mail
+    - at
+-
+  id: flag
+  name: Flag
+  colours:
+    - brown_600
+  synonyms:
+    - location
+    - marker
+    - destination
+    - country
+    - travel
+-
+  id: fire
+  name: Fire
+  colours:
+    - brown_600
+  synonyms:
+    - flame
+    - warm
+    - hot
+    - amazing
+-
+  id: gauge
+  name: Gauge
+  colours:
+    - brown_600
+  synonyms:
+    - speed
+    - speedometer
+    - fast
+    - measure
+-
+  id: handshake
+  name: handshake
+  colours:
+    - brown_600
+  synonyms:
+    - agreement
+    - contract
+    - relationship
+    - meet
+    - agreed
+    - greet
+-
   id: happy
   name: Happy
   colours:
@@ -39,6 +125,38 @@
     - smile
     - content
     - good
+-
+  id: heart
+  name: Heart
+  colours:
+    - brown_600
+  synonyms:
+    - love
+    - warmth
+    - good
+    - favourite
+-
+  id: icecream
+  name: Icecream
+  colours:
+    - brown_600
+  synonyms:
+    - sweet
+    - lolly
+    - gelato
+    - cone
+    - delight
+    - dessert
+-
+  id: lightbulb
+  name: Lightbulb
+  colours:
+    - brown_600
+  synonyms:
+    - idea
+    - light
+    - illumination
+    - bright
 -
   id: location
   name: Location
@@ -60,6 +178,71 @@
     - letter
     - newsletter
 -
+  id: nodes
+  name: Nodes
+  colours:
+    - brown_600
+  synonyms:
+    - connection
+    - relationships
+    - central
+    - mesh
+-
+  id: phone
+  name: Phone
+  colours:
+    - brown_600
+  synonyms:
+    - call
+    - telephone
+    - talk
+    - voice
+-
+  id: phone-ringing
+  name: Phone (ringing)
+  colours:
+    - brown_600
+  synonyms:
+    - call
+    - ringing
+    - telephone
+    - answer
+    - talk
+    - voice
+-
+  id: phone-voip
+  name: Phone (VOIP)
+  colours:
+    - brown_600
+  synonyms:
+    - call
+    - telephone
+    - talk
+    - telephony
+    - voip
+    - voice
+-
+  id: piggybank
+  name: Piggybank
+  colours:
+    - brown_600
+  synonyms:
+    - save
+    - money
+    - affordable
+    - savings
+-
+  id: rewind
+  name: rewind
+  colours:
+    - brown_600
+  synonyms:
+    - refresh
+    - loosen
+    - counter-clockwise
+    - start over
+    - reset
+-
   id: spark
   name: Spark
   colours:
@@ -78,6 +261,25 @@
     - favourite
     - rating
     - special
+-
+  id: stars
+  name: Stars
+  colours:
+    - brown_600
+  synonyms:
+    - favourites
+    - ratings
+    - special
+-
+  id: trolley
+  name: Trolley
+  colours:
+    - brown_600
+  synonyms:
+    - cart
+    - shopping
+    - purchases
+    - basket
 -
   id: watch
   name: Watch
@@ -103,3 +305,15 @@
     - lan
     - connection
     - wireless
+-
+  id: wifi-full
+  name: Wi-fi full
+  colours:
+    - brown_600
+  synonyms:
+    - internet
+    - lan
+    - connection
+    - wireless
+    - wifi
+    - good signal

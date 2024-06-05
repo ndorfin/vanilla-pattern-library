@@ -1,6 +1,6 @@
 {
 	"name": "vanilla-pattern-library",
-	"version": "1.5.0",
+	"version": "1.6.0",
 	"description": "Collection of various front-end development patterns, web components and templates used within the new Vanilla website",
 	"main": "index.js",
 	"engines": {
