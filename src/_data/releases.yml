@@ -120,6 +120,17 @@
       description: |-
         Added a variant that caters for a row of buttons
 -
+  library_version: 1.5.0
+  assets_version: 0.6.0
+  date: 2024-05-29
+  description: |-
+    Added headings
+  patterns:
+    - 
+      id: heading
+      description: |-
+        Introducing headings
+-
   library_version: 1.6.0
   assets_version: 0.6.1
   date: 2024-06-05
