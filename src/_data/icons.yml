@@ -2,7 +2,7 @@
   id: badge-star
   name: Badge (Star)
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - badge
     - shield
@@ -12,7 +12,7 @@
   id: badge-tick
   name: Badge (Tick)
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - badge
     - shield
@@ -24,7 +24,7 @@
   id: bandwidth
   name: Bandwidth
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - speed
     - throughput
@@ -32,7 +32,7 @@
   id: building
   name: Building
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - business
     - office
@@ -44,7 +44,7 @@
   id: checklist
   name: Checklist
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - list
     - tasks
@@ -54,7 +54,7 @@
   id: clock
   name: Clock
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - time
     - deadline
@@ -67,7 +67,7 @@
   id: email
   name: Email
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - username
     - mail
@@ -76,7 +76,7 @@
   id: flag
   name: Flag
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - location
     - marker
@@ -87,7 +87,7 @@
   id: fire
   name: Fire
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - flame
     - warm
@@ -97,7 +97,7 @@
   id: gauge
   name: Gauge
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - speed
     - speedometer
@@ -107,7 +107,7 @@
   id: handshake
   name: handshake
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - agreement
     - contract
@@ -119,7 +119,7 @@
   id: happy
   name: Happy
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - face
     - smile
@@ -129,7 +129,7 @@
   id: heart
   name: Heart
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - love
     - warmth
@@ -139,7 +139,7 @@
   id: icecream
   name: Icecream
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - sweet
     - lolly
@@ -151,7 +151,7 @@
   id: lightbulb
   name: Lightbulb
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - idea
     - light
@@ -161,7 +161,7 @@
   id: location
   name: Location
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - marker
     - pin
@@ -169,7 +169,7 @@
   id: mail
   name: mail
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - email
     - notification
@@ -181,7 +181,7 @@
   id: nodes
   name: Nodes
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - connection
     - relationships
@@ -191,7 +191,7 @@
   id: phone
   name: Phone
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - call
     - telephone
@@ -201,7 +201,7 @@
   id: phone-ringing
   name: Phone (ringing)
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - call
     - ringing
@@ -213,7 +213,7 @@
   id: phone-voip
   name: Phone (VOIP)
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - call
     - telephone
@@ -225,7 +225,7 @@
   id: piggybank
   name: Piggybank
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - save
     - money
@@ -235,7 +235,7 @@
   id: rewind
   name: rewind
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - refresh
     - loosen
@@ -246,7 +246,7 @@
   id: spark
   name: Spark
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - electricity
     - fast
@@ -256,7 +256,7 @@
   id: star
   name: Star
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - favourite
     - rating
@@ -265,7 +265,7 @@
   id: stars
   name: Stars
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - favourites
     - ratings
@@ -274,7 +274,7 @@
   id: trolley
   name: Trolley
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - cart
     - shopping
@@ -284,7 +284,7 @@
   id: watch
   name: Watch
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - clock
     - time
@@ -299,7 +299,7 @@
   id: wifi
   name: Wi-fi
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - internet
     - lan
@@ -309,7 +309,7 @@
   id: wifi-full
   name: Wi-fi full
   colours:
-    - brown_600
+    - brown-600
   synonyms:
     - internet
     - lan
