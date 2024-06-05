@@ -1,3 +1,4 @@
+/* System or framework-level icons */
 button[data-icon="arrow-right"],
 [data-scheme="primary"][data-icon="arrow-right"] {
 	--icon-image-url: url('../../img/icon_arrow_right_white.svg');
@@ -13,10 +14,123 @@ button[data-icon="arrow-right"],
 	--icon-image-url: url('../../img/icon_arrow_right_brown_100.svg');
 }
 
+/* Generic icons */
+[data-icon="badge-star"] {
+	--icon-image-url: url('../../img/icon_badge-star_brown_600.svg');
+}
+
+[data-icon="badge-tick"] {
+	--icon-image-url: url('../../img/icon_badge-tick_brown_600.svg');
+}
+
+[data-icon="bandwidth"] {
+	--icon-image-url: url('../../img/icon_bandwidth_brown_600.svg');
+}
+
+[data-icon="building"] {
+	--icon-image-url: url('../../img/icon_building_brown_600.svg');
+}
+
+[data-icon="checklist"] {
+	--icon-image-url: url('../../img/icon_checklist_brown_600.svg');
+}
+
+[data-icon="clock"] {
+	--icon-image-url: url('../../img/icon_clock_brown_600.svg');
+}
+
+[data-icon="email"] {
+	--icon-image-url: url('../../img/icon_email_brown_600.svg');
+}
+
+[data-icon="fire"] {
+	--icon-image-url: url('../../img/icon_fire_brown_600.svg');
+}
+
+[data-icon="flag"] {
+	--icon-image-url: url('../../img/icon_flag_brown_600.svg');
+}
+
+[data-icon="gauge"] {
+	--icon-image-url: url('../../img/icon_gauge_brown_600.svg');
+}
+
+[data-icon="handshake"] {
+	--icon-image-url: url('../../img/icon_handshake_brown_600.svg');
+}
+
+[data-icon="happy"] {
+	--icon-image-url: url('../../img/icon_happy_brown_600.svg');
+}
+
+[data-icon="heart"] {
+	--icon-image-url: url('../../img/icon_heart_brown_600.svg');
+}
+
+[data-icon="icecream"] {
+	--icon-image-url: url('../../img/icon_icecream_brown_600.svg');
+}
+
+[data-icon="lightbulb"] {
+	--icon-image-url: url('../../img/icon_lightbulb_brown_600.svg');
+}
+
 [data-icon="location"] {
 	--icon-image-url: url('../../img/icon_location_brown_600.svg');
 }
 
+[data-icon="mail"] {
+	--icon-image-url: url('../../img/icon_mail_brown_600.svg');
+}
+
+[data-icon="nodes"] {
+	--icon-image-url: url('../../img/icon_nodes_brown_600.svg');
+}
+
+[data-icon="phone"] {
+	--icon-image-url: url('../../img/icon_phone_brown_600.svg');
+}
+
+[data-icon="phone-ringing"] {
+	--icon-image-url: url('../../img/icon_phone-ringing_brown_600.svg');
+}
+
+[data-icon="phone-voip"] {
+	--icon-image-url: url('../../img/icon_phone-voip_brown_600.svg');
+}
+
+[data-icon="piggybank"] {
+	--icon-image-url: url('../../img/icon_piggybank_brown_600.svg');
+}
+
+[data-icon="rewind"] {
+	--icon-image-url: url('../../img/icon_rewind_brown_600.svg');
+}
+
 [data-icon="spark"] {
 	--icon-image-url: url('../../img/icon_spark_brown_600.svg');
+}
+
+[data-icon="star"] {
+	--icon-image-url: url('../../img/icon_star_brown_600.svg');
+}
+
+[data-icon="stars"] {
+	--icon-image-url: url('../../img/icon_stars_brown_600.svg');
+}
+
+[data-icon="trolley"] {
+	--icon-image-url: url('../../img/icon_trolley_brown_600.svg');
+}
+
+[data-icon="watch"] {
+	--icon-image-url: url('../../img/icon_watch_brown_600.svg');
+}
+
+[data-icon="wifi"] {
+	--icon-image-url: url('../../img/icon_wifi_brown_600.svg');
+}
+
+[data-icon="wifi-full"] {
+	--icon-image-url: url('../../img/icon_wifi-full_brown_600.svg');
 }
