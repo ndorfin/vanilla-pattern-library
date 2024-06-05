@@ -14,123 +14,127 @@ button[data-icon="arrow-right"],
 	--icon-image-url: url('../../img/icon_arrow_right_brown_100.svg');
 }
 
+/* 
+	`icon_tick_brown_600.svg` used for checkboxes in `patterns/form_field.css`
+*/
+
 /* Generic icons */
 [data-icon="badge-star"] {
-	--icon-image-url: url('../../img/icon_badge-star_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#badge-star-brown-600');
 }
 
 [data-icon="badge-tick"] {
-	--icon-image-url: url('../../img/icon_badge-tick_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#badge-tick-brown-600');
 }
 
 [data-icon="bandwidth"] {
-	--icon-image-url: url('../../img/icon_bandwidth_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#bandwidth-brown-600');
 }
 
 [data-icon="building"] {
-	--icon-image-url: url('../../img/icon_building_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#building-brown-600');
 }
 
 [data-icon="checklist"] {
-	--icon-image-url: url('../../img/icon_checklist_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#checklist-brown-600');
 }
 
 [data-icon="clock"] {
-	--icon-image-url: url('../../img/icon_clock_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#clock-brown-600');
 }
 
 [data-icon="email"] {
-	--icon-image-url: url('../../img/icon_email_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#email-brown-600');
 }
 
 [data-icon="fire"] {
-	--icon-image-url: url('../../img/icon_fire_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#fire-brown-600');
 }
 
 [data-icon="flag"] {
-	--icon-image-url: url('../../img/icon_flag_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#flag-brown-600');
 }
 
 [data-icon="gauge"] {
-	--icon-image-url: url('../../img/icon_gauge_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#gauge-brown-600');
 }
 
 [data-icon="handshake"] {
-	--icon-image-url: url('../../img/icon_handshake_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#handshake-brown-600');
 }
 
 [data-icon="happy"] {
-	--icon-image-url: url('../../img/icon_happy_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#happy-brown-600');
 }
 
 [data-icon="heart"] {
-	--icon-image-url: url('../../img/icon_heart_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#heart-brown-600');
 }
 
 [data-icon="icecream"] {
-	--icon-image-url: url('../../img/icon_icecream_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#icecream-brown-600');
 }
 
 [data-icon="lightbulb"] {
-	--icon-image-url: url('../../img/icon_lightbulb_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#lightbulb-brown-600');
 }
 
 [data-icon="location"] {
-	--icon-image-url: url('../../img/icon_location_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#location-brown-600');
 }
 
 [data-icon="mail"] {
-	--icon-image-url: url('../../img/icon_mail_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#mail-brown-600');
 }
 
 [data-icon="nodes"] {
-	--icon-image-url: url('../../img/icon_nodes_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#nodes-brown-600');
 }
 
 [data-icon="phone"] {
-	--icon-image-url: url('../../img/icon_phone_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#phone-brown-600');
 }
 
 [data-icon="phone-ringing"] {
-	--icon-image-url: url('../../img/icon_phone-ringing_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#phone-ringing-brown-600');
 }
 
 [data-icon="phone-voip"] {
-	--icon-image-url: url('../../img/icon_phone-voip_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#phone-voip-brown-600');
 }
 
 [data-icon="piggybank"] {
-	--icon-image-url: url('../../img/icon_piggybank_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#piggybank-brown-600');
 }
 
 [data-icon="rewind"] {
-	--icon-image-url: url('../../img/icon_rewind_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#rewind-brown-600');
 }
 
 [data-icon="spark"] {
-	--icon-image-url: url('../../img/icon_spark_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#spark-brown-600');
 }
 
 [data-icon="star"] {
-	--icon-image-url: url('../../img/icon_star_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#star-brown-600');
 }
 
 [data-icon="stars"] {
-	--icon-image-url: url('../../img/icon_stars_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#stars-brown-600');
 }
 
 [data-icon="trolley"] {
-	--icon-image-url: url('../../img/icon_trolley_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#trolley-brown-600');
 }
 
 [data-icon="watch"] {
-	--icon-image-url: url('../../img/icon_watch_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#watch-brown-600');
 }
 
 [data-icon="wifi"] {
-	--icon-image-url: url('../../img/icon_wifi_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#wifi-brown-600');
 }
 
 [data-icon="wifi-full"] {
-	--icon-image-url: url('../../img/icon_wifi-full_brown_600.svg');
+	--icon-image-url: url('../../img/icon_sprite.svg#wifi-full-brown-600');
 }
