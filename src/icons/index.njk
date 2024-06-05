@@ -1,21 +1,53 @@
 ---
-title: All icons
-heading: All icons
-summary: The collection of icons that can be used in most patterns
-description: The collection of icons that can be used in most patterns
+title: Icons
+heading: Icons
+summary: The collection of icons that can be used generically
+description: The collection of icons that can be used generically
 ---
-<h3>List of icons</h3>
+<p>
+	We have two levels of icons:
+</p>
+<ol>
+	<li>System or framework-level icons</li>
+	<li>Generic icons</li>
+</ol>
+
+<h3>Framework-level icons</h3>
+<p>The website UI includes icons for such elements as the mobile menu, checkboxes, selects, and other 'baked-in' patterns. These aren't intended to be extended.</p>
+
+<h3>Generic icons</h3>
+<p>These icons are intended to be used in block-level headings, and select other patterns.</p>
+<p>If you want to use a certain icon, use its identifier or <code>id</code> in the <code>data-icon=""</code> attribute.</p>
+
+<p>Here's an example using the <code>spark</code> icon in a block-level heading:</p>
+{% highlight "html" %}
+<h3 class="heading"	data-scheme="block" data-mode="icon-before" data-icon="spark">
+	Spark
+</h3>
+{% endhighlight %}
+
+<h4>List of generic icons</h4>
 {% set iconList = icons | objToArray %}
-<dl class="set_icons">
+<table class="table_icons">
+	<thead>
+		<tr>
+			<th scope="col" id="th_id">ID</th>
+			<th scope="col" id="th_example">Example</th>
+			<th scope="col" id="th_synonyms">Synonyms</th>
+		</tr>
+	</thead>
+	<tbody>
 	{% for icon in iconList %}
-		<div>
-			<dt>
+		<tr>
+			<th scope="row" headers="th_id" id="tr_{{ icon.id }}">
 				<code>{{ icon.id }}</code>
-			</dt>
-			<dd>
+			</th>
+			<td headers="th_example tr_{{ icon.id }}">
 				<div class="container_iframe">
 					<iframe src="{{ url.icons }}/{{ icon.id }}" width="200" height="60"></iframe>
 				</div>
+			</td>
+			<td headers="th_synonyms tr_{{ icon.id }}">
 				{% if icon.synonyms %}
 				<ul>
 					{% for synonym in icon.synonyms %}
@@ -23,7 +55,8 @@ description: The collection of icons that can be used in most patterns
 					{% endfor %}
 				</ul>
 				{% endif %}
-			</dd>
-		</div>
+			</td>
+		</tr>
 	{% endfor %}
-</dl>
+	</tbody>
+</table>

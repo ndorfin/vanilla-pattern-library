@@ -1,0 +1,51 @@
+.table_icons {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.table_icons th {
+	text-align: start;
+}
+
+.table_icons thead tr > * {
+	vertical-align: bottom;
+	padding-inline: 0.75rem;
+	padding-block: 0.5rem;
+	border-block-end: 1px solid #333;
+}
+
+.table_icons tbody tr > * {
+	vertical-align: top;
+	background-color: #f9f9f9;
+	padding-inline: 0.5rem;
+	padding-block-start: 1.5rem;
+	padding-block-end: 0;
+}
+
+.table_icons tbody tr:nth-child(odd) > * {
+	background-color: #f1f1f1;
+}
+
+.table_icons ul {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: "";
+}
+
+.table_icons ul li {
+	display: inline;
+}
+
+.table_icons ul li + li::before {
+	content: ",";
+	margin-inline-start: -0.25rem;
+	margin-inline-end: 0.375rem;
+}
+
+.table_icons iframe {
+	border: 0;
+	resize: none;
+	margin-block-start: -0.5rem;
+}
