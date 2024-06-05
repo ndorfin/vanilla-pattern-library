@@ -3,6 +3,7 @@ _structure:
   - /templates
   - /tests
 home: https://vanilla.co.za/
+icons: /icons
 patterns: /patterns
 releases: /releases
 root: /

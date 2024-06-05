@@ -1,0 +1,29 @@
+---
+title: All icons
+heading: All icons
+summary: The collection of icons that can be used in most patterns
+description: The collection of icons that can be used in most patterns
+---
+<h3>List of icons</h3>
+{% set iconList = icons | objToArray %}
+<dl class="set_icons">
+	{% for icon in iconList %}
+		<div>
+			<dt>
+				<code>{{ icon.id }}</code>
+			</dt>
+			<dd>
+				<div class="container_iframe">
+					<iframe src="{{ url.icons }}/{{ icon.id }}" width="200" height="60"></iframe>
+				</div>
+				{% if icon.synonyms %}
+				<ul>
+					{% for synonym in icon.synonyms %}
+						<li>{{ synonym }}</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			</dd>
+		</div>
+	{% endfor %}
+</dl>

@@ -1,0 +1,12 @@
+---
+pagination:
+  data: icons
+  size: 1
+  alias: icon
+  resolve: values
+permalink: "{{ url.icons }}/{{ icon.id }}/index.html"
+layout: "icon_example.njk"
+---
+<h3 class="heading" data-scheme="block" data-mode="icon-before" data-icon="{{ icon.id }}">
+	{{ icon.name }}
+</h3>

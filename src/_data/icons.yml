@@ -1,0 +1,105 @@
+-
+  id: bandwidth
+  name: Bandwidth
+  colours:
+    - brown_600
+  synonyms:
+    - speed
+    - throughput
+-
+  id: checklist
+  name: Checklist
+  colours:
+    - brown_600
+  synonyms:
+    - list
+    - tasks
+    - todo
+    - goals
+-
+  id: clock
+  name: Clock
+  colours:
+    - brown_600
+  synonyms:
+    - time
+    - deadline
+    - hour
+    - date
+    - schedule
+    - watch
+    - alarm
+-
+  id: happy
+  name: Happy
+  colours:
+    - brown_600
+  synonyms:
+    - face
+    - smile
+    - content
+    - good
+-
+  id: location
+  name: Location
+  colours:
+    - brown_600
+  synonyms:
+    - marker
+    - pin
+-
+  id: mail
+  name: mail
+  colours:
+    - brown_600
+  synonyms:
+    - email
+    - notification
+    - message
+    - communication
+    - letter
+    - newsletter
+-
+  id: spark
+  name: Spark
+  colours:
+    - brown_600
+  synonyms:
+    - electricity
+    - fast
+    - smart
+    - lightning
+-
+  id: star
+  name: Star
+  colours:
+    - brown_600
+  synonyms:
+    - favourite
+    - rating
+    - special
+-
+  id: watch
+  name: Watch
+  colours:
+    - brown_600
+  synonyms:
+    - clock
+    - time
+    - deadline
+    - hour
+    - date
+    - schedule
+    - watch
+    - alarm
+    - wristwatch
+-
+  id: wifi
+  name: Wi-fi
+  colours:
+    - brown_600
+  synonyms:
+    - internet
+    - lan
+    - connection
+    - wireless
