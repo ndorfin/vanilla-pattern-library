@@ -1,6 +1,6 @@
 id: container
 name: Container
-scope: atom
+scope: organism
 summary: Holds content and other patterns, ensuring vertical alignment, and manages overflow.
 description: |-
   Holds content and other patterns, ensuring vertical alignment, and manages overflow.
@@ -9,13 +9,79 @@ assets:
   - /css/patterns/container.css
 example:
   width: 400
-  height: 600
+  height: 160
   code: |-
     <div class="container">
-      …content goes here…
+      <p>…content goes here…</p>
+      <p>And here’s <a href="#">a link</a>.</p> 
     </div>
 # notes: |-
 variants:
+  -
+    id: theme-alternate
+    name: 'Theme: Alternate'
+    description: |-
+      A slightly darker background colour for alternate containers
+    # notes: |-
+    #   - 
+    example:
+      code: |-
+        <div class="container" data-theme="alternate">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: theme-glow
+    name: 'Theme: glow'
+    description: |-
+      A gradient background with top and bottom cappucino colours.
+    # notes: |-
+    #   - 
+    example:
+      code: |-
+        <div class="container" data-theme="glow">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: theme-rich
+    name: 'Theme: Rich'
+    description: |-
+      An inverted colour scheme with a rich coffee-like background colour.
+    # notes: |-
+    #   - 
+    example:
+      code: |-
+        <div class="container" data-theme="rich">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: theme-emphasis
+    name: 'Theme: emphasis'
+    description: |-
+      Mostly used for the call-us banner, this container features an inverted colour scheme with an almost-black background colour.
+    # notes: |-
+    #   - 
+    example:
+      code: |-
+        <div class="container" data-theme="emphasis">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: theme-special
+    name: 'Theme: Special'
+    description: |-
+      Reserve this container theme for special features.
+    # notes: |-
+    #   - 
+    example:
+      code: |-
+        <div class="container" data-theme="special">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
   -
     id: location-lookup
     name: Location look-up
@@ -24,6 +90,7 @@ variants:
     notes: |-
       - You'll need a specially crafted [form](../form/) as the contents. See the [location-lookup variant](../form/#variant_location-lookup).
     example:
+      height: 240
       code: |-
         <div class="container" data-mode="location-lookup">
           <form action="#step-2" method="GET">

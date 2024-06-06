@@ -137,8 +137,19 @@
   description: |-
     Added a page dedicated to the generic [icons](../icons/).
 -
-  library_version: 1.6.0
+  library_version: 1.6.1
   assets_version: 0.6.2
   date: 2024-06-05
   description: |-
     Move icons into a spritesheet: `img/icon_sprite.svg`
+-
+  library_version: 1.6.2
+  assets_version: 0.6.3
+  date: 2024-06-06
+  description: |-
+    Added themed containers
+  patterns:
+    - 
+      id: container
+      description: |-
+        Introducing the themed containers: alternate, glow, rich, emphasis, special
