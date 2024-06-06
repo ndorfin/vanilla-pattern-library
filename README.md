@@ -15,7 +15,7 @@ This repo is designed to consume the `vanilla-web-assets` repo, and produces the
 
 ## Prerequisites
 
-Make sure you've checked out the [`vanilla-web-assets`]() repo as a sibling to this folder. i.e. you should have this repo and the `vanilla-web-assets` repo checked out, side by side:
+Make sure you've checked out the [`vanilla-web-assets`](https://github.com/ndorfin/vanilla-web-assets) repo as a sibling to this folder. i.e. you should have this repo and the `vanilla-web-assets` repo checked out, side by side:
 
 ```
 ../
