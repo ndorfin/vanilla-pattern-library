@@ -1,15 +1,20 @@
 html {
 	--color-white: hsla(0, 0%, 100%, 1);
+	--color-black-200: hsla(0, 0%, 60%, 1);
+	--color-black-950: hsla(0, 3%, 6%, 1);
 	--color-brown-100: hsla(16, 27%, 86%, 1);
 	--color-brown-600: hsla(16, 27%, 22%, 1);
-	--color-black-950: hsla(0, 3%, 6%, 1);
-	--color-black-200: hsla(0, 0%, 60%, 1);
+	--color-orange-500: hsla(24, 100%, 63%, 1);
+	--color-purple-500: hsla(277, 100%, 76%, 1);
+	--color-red-500: hsla(356, 100%, 65%, 1);
+	--color-yellow-100: hsla(54, 100%, 90%, 1);
 	--color-text-title: hsla(30, 4%, 11%, 1);
 	--color-text-label: var(--color-text-title);
 	--color-greyscale-text: hsla(60, 5%, 96%, 1);
 	--color-greyscale-text-caption: hsla(24, 5%, 57%, 1);
-	--color-surface-darker: hsla(16, 26%, 17%, 1);
+	--color-surface-darker: hsla(16, 26%, 17%, 1); /* This has changed */
 	--color-surface-subtitle: var(--color-greyscale-text);
+	--color-surface-subtle: hsla(18, 28%, 93%, 1);
 	--color-surface-lighter: hsla(60, 5%, 96%, 1);
 	--color-border-default: hsla(16, 27%, 28%, 1);
 	--color-border-subtle: hsla(18, 28%, 93%, 1);

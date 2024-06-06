@@ -20,7 +20,8 @@
 
 <link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
 <div class="container">
-  …content goes here…
+  <p>…content goes here…</p>
+  <p>And here’s <a href="#">a link</a>.</p> 
 </div>
 
 <script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
@@ -43,17 +44,55 @@ description: undefined
 pattern: {
   id: 'container',
   name: 'Container',
-  scope: 'atom',
+  scope: 'organism',
   summary: 'Holds content and other patterns, ensuring vertical alignment, and manages overflow.',
   description: 'Holds content and other patterns, ensuring vertical alignment, and manages overflow.',
   design_link: null,
   assets: [ '/css/patterns/container.css' ],
   example: {
     width: 400,
-    height: 600,
-    code: '<div class="container">\n  …content goes here…\n</div>'
+    height: 160,
+    code: '<div class="container">\n' +
+      '  <p>…content goes here…</p>\n' +
+      '  <p>And here’s <a href="#">a link</a>.</p> \n' +
+      '</div>'
   },
   variants: [
+    {
+      id: 'theme-alternate',
+      name: 'Theme: Alternate',
+      description: 'A slightly darker background colour for alternate containers',
+      example: [Object],
+      pattern_id: 'container'
+    },
+    {
+      id: 'theme-glow',
+      name: 'Theme: glow',
+      description: 'A gradient background with top and bottom cappucino colours.',
+      example: [Object],
+      pattern_id: 'container'
+    },
+    {
+      id: 'theme-rich',
+      name: 'Theme: Rich',
+      description: 'An inverted colour scheme with a rich coffee-like background colour.',
+      example: [Object],
+      pattern_id: 'container'
+    },
+    {
+      id: 'theme-emphasis',
+      name: 'Theme: emphasis',
+      description: 'Mostly used for the call-us banner, this container features an inverted colour scheme with an almost-black background colour.',
+      example: [Object],
+      pattern_id: 'container'
+    },
+    {
+      id: 'theme-special',
+      name: 'Theme: Special',
+      description: 'Reserve this container theme for special features.',
+      example: [Object],
+      pattern_id: 'container'
+    },
     {
       id: 'location-lookup',
       name: 'Location look-up',

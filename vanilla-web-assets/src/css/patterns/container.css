@@ -1,4 +1,128 @@
+.container {
+	--container-max-inline-size: 60rem; /* 960px */
+	--container-padding-block: 3rem; /* 48px */
+	--container-padding-inline: 2rem; /* 32px */
+	--container-color-background: var(--color-white);
+	--container-color-foreground: var(--color-brown-600);
+	--container-color-link: inherit;
+	--container-background-position: 50% 50%;
+	--container-background-repeat: no-repeat;
+	--container-background-size: cover;
+
+	position: relative;
+	max-inline-size: var(--container-max-inline-size);
+	margin-inline: auto; 
+	padding-block: var(--container-padding-block);
+	padding-inline: var(--container-padding-inline);
+	color: var(--container-color-foreground);
+}
+
+.container::after {
+	display: block;
+	content: "";
+	position: absolute;
+	inset-block: 0;
+	inset-inline-start: 50%;
+	inline-size: 100vw;
+	margin-inline-start: -50vw;
+	z-index: -1;
+	background-color: var(--container-color-background);
+	background-image: var(--container-background-image);
+	background-position: var(--container-background-position);
+	background-repeat: var(--container-background-repeat);
+	background-size: var(--container-background-size);
+}
+
+/* Remove margins from paragraphs and headings to stop them conflicting with the container's padding */
+.container :is(
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+):first-child {
+	margin-block-start: 0;
+}
+
+.container :is(
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+):last-child {
+	margin-block-end: 0;
+}
+
+/* Set default link colours */
+.container a {
+	color: var(--container-color-link);
+}
+
+/* 
+	Use extra rem in the media query so we have enough whitespace to compensate for a lack of inline padding
+*/
+@media (min-width: 64rem) {
+	.container {
+		--container-padding-inline: 0;
+	}
+}
+
+/* CSS Container query for handling the location lookup form */
 .container[data-mode="location-lookup"] {
 	container-type: inline-size;
 	container-name: form-condensed; /* See ../form.css */
+}
+
+/* 
+	Container theming
+	========================================================= */
+.container[data-theme="alternate"] {
+	/* The subtle grey alternate to the default white container */
+	--container-color-background: var(--color-surface-lighter);
+	--container-color-link: var(--color-black-950);
+}
+
+.container[data-theme="glow"] {
+	--container-background-image: linear-gradient(
+		180deg,
+		hsla(18, 28%, 93%, 1) 0%,
+		hsla(0, 0%, 100%, 1) 30%,
+		hsla(0, 0%, 100%, 1) 70%,
+		hsla(16, 27%, 86%, 1) 100%
+	);
+}
+
+.container[data-theme="rich"] {
+	/* The coffee-coloured and inverted container */
+	--container-color-background: var(--color-brown-600);
+	--container-color-foreground: var(--color-white);
+}
+
+.container[data-theme="emphasis"] {
+	/* Mostly used for the call-us banner, black background, yellow links. */
+	--container-color-background: var(--color-black-950);
+	--container-color-foreground: var(--color-surface-subtle);
+	--container-color-link: var(--color-yellow-100);
+	--container-background-image: url('../../img/bg_swirl.svg');
+	--container-background-position: 50% 50%;
+	--container-background-size: cover;
+}
+
+.container[data-theme="special"] {
+	/* Spectral/Rainbow gradient. */
+	--container-background-image:
+		url('../../img/bg_swirl.svg'),
+		linear-gradient(
+			270deg,
+			var(--color-orange-500) 0%,
+			var(--color-red-500) 50%,
+			var(--color-purple-500) 100%
+		);
+	--container-background-position: 50% 50%, 0 0;
+	--container-background-size: cover, cover;
 }
