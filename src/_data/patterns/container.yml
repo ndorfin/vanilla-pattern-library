@@ -1,6 +1,6 @@
 id: container
 name: Container
-scope: atom
+scope: organism
 summary: Holds content and other patterns, ensuring vertical alignment, and manages overflow.
 description: |-
   Holds content and other patterns, ensuring vertical alignment, and manages overflow.
