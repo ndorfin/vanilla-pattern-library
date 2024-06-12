@@ -1,0 +1,52 @@
+.card {
+	--card-padding-block: 3.5rem;
+	--card-padding-inline: 2rem;
+
+	padding-block: var(--card-padding-block);
+	padding-inline: var(--card-padding-inline);
+	background-color: var(--color-white);
+	max-inline-size: 480px;
+	box-sizing: border-box;
+}
+
+.card > :last-child {
+	margin-block-end: 0;
+}
+
+a.card {
+	display: block;
+	box-shadow: var(--elevation-xs);
+	text-decoration: none;
+	color: unset;
+}
+
+a.card:hover {
+	box-shadow: var(--elevation-m);
+}
+
+.card:is(
+	[data-mode="image"],
+	[data-mode="product"]
+) img {
+	/* Reset the `width` and `height` attributes of the `<img>` for both image-type cards */
+	width: 100%;
+	height: auto;
+}
+
+.card[data-mode="image"] {
+	--card-padding-block: 1.25rem;
+	--card-padding-inline: 1.25rem;
+}
+
+.card[data-mode="image"] picture {
+	display: block;
+	width: calc(100% + var(--card-padding-inline)  + var(--card-padding-inline)); /* Recalculate the width of this container since we're using negative inline margins */
+	margin-block-start: calc(var(--card-padding-block) * -1);
+	margin-inline-start: calc(var(--card-padding-inline) * -1);
+	margin-inline-end: calc(var(--card-padding-inline) * -1);
+}
+
+.card[data-mode="product"] {
+	--card-padding-block: 1.25rem;
+	--card-padding-inline: 1.25rem;
+}

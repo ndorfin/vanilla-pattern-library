@@ -1,0 +1,106 @@
+
+	
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+	
+
+<title>Card — Vanilla Pattern Library</title>
+<meta property="og:title" content="Card">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="A small rectangular content block, often accompanied by images, and call-to-action links.">
+<meta property="og:site_name" content="Vanilla Pattern Library">
+<meta property="og:description" content="A small rectangular content block, often accompanied by images, and call-to-action links.">
+
+<link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
+<div class="card">
+  <h4 class="heading" data-scheme="section">
+    Primary connection
+  </h4>
+  <p>…content goes here…</p>
+  <p>And here’s <a href="#">a link</a>.</p>
+  <div class="call-to-action">
+    <a href="#" class="button" data-scheme="secondary" data-icon="arrow-right" data-mode="icon-after" data-size="small">
+      Get a quote
+    </a>
+  </div>
+</div>
+
+<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
+<!--
+============================
+page: {
+  url: '/patterns/card/example/',
+  outputPath: 'public/patterns/card/example/index.html'
+}
+page_meta: {
+  title: 'Card',
+  summary: 'A small rectangular content block, often accompanied by images, and call-to-action links.',
+  description: 'A small rectangular content block, often accompanied by images, and call-to-action links.'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: {
+  id: 'card',
+  name: 'Card',
+  scope: 'molecule',
+  summary: 'A small rectangular content block, often accompanied by images, and call-to-action links.',
+  description: 'A small rectangular content block, often accompanied by images, and call-to-action links.',
+  design_link: null,
+  assets: [ '/css/patterns/card.css' ],
+  example: {
+    width: 400,
+    height: 160,
+    code: '<div class="card">\n' +
+      '  <h4 class="heading" data-scheme="section">\n' +
+      '    Primary connection\n' +
+      '  </h4>\n' +
+      '  <p>…content goes here…</p>\n' +
+      '  <p>And here’s <a href="#">a link</a>.</p>\n' +
+      '  <div class="call-to-action">\n' +
+      '    <a href="#" class="button" data-scheme="secondary" data-icon="arrow-right" data-mode="icon-after" data-size="small">\n' +
+      '      Get a quote\n' +
+      '    </a>\n' +
+      '  </div>\n' +
+      '</div>'
+  },
+  variants: [
+    {
+      id: 'mode-image',
+      name: 'Mode: Image',
+      description: 'A borderless card that prioritises showing off an image',
+      example: [Object],
+      pattern_id: 'card'
+    },
+    {
+      id: 'mode-product',
+      name: 'Mode: Product',
+      description: 'An interactive card that insets the image and provides space for a call-to-action link.',
+      notes: 'This card **MUST NOT** contain any links or buttons in its content, as the whole card is meant to be interactive.',
+      example: [Object],
+      pattern_id: 'card'
+    },
+    {
+      id: 'mode-plain',
+      name: 'Mode: plain',
+      description: 'Removes the border and reduces the large spacing for a default card.',
+      notes: "- It's up to you to include whatever images you want, and their sizes\n" +
+        '- If you do use an image, please provide a double-resolution source by default\n' +
+        '- These cards work great with [block-level headings](../heading/#variant_mode-icon-above) that use icons above them',
+      example: [Object],
+      pattern_id: 'card'
+    }
+  ]
+}
+test: undefined
+============================
+--></html>

@@ -21,6 +21,12 @@
 /*
 	Icon support for block-level headings
 	============================================================= */
+.heading[data-mode*="icon-"][data-scheme="block"] {
+	background-repeat: no-repeat;
+	background-size: var(--heading-icon-size) var(--heading-icon-size);
+	background-image: var(--icon-image-url);
+}
+
 .heading[data-mode="icon-before"][data-scheme="block"] {
 	--heading-icon-size: 1.5rem;
 	--heading-icon-gap: 0.5rem;
@@ -29,10 +35,15 @@
 	padding-block-start: var(--heading-vertical-padding-split);
 	padding-block-end: var(--heading-vertical-padding-split);
 	padding-inline-start: calc(var(--heading-icon-size) + var(--heading-icon-gap));
-	background-repeat: no-repeat;
-	background-size: var(--heading-icon-size) var(--heading-icon-size);
 	background-position: top 50% left 0;
-	background-image: var(--icon-image-url);
+}
+
+.heading[data-mode="icon-above"][data-scheme="block"] {
+	--heading-icon-size: 3rem;
+	--heading-icon-gap: 1.25rem;
+
+	padding-block-start: calc(var(--heading-icon-size) + var(--heading-icon-gap));
+	background-position: 0 0;
 }
 
 /*
