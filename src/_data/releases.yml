@@ -154,7 +154,7 @@
       description: |-
         Introducing the themed containers: alternate, glow, rich, emphasis, special
 -
-  library_version: 1.6.3
+  library_version: 1.6.4
   assets_version: 0.7.0
   date: 2024-06-12
   description: |-
@@ -163,7 +163,7 @@
     - 
       id: card
       description: |-
-        Introducing the cards: (default), image, imagebox, plain
+        Introducing the cards: (default), image, product, plain
     - 
       id: heading
       description: |-
