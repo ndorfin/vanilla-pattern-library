@@ -1,0 +1,72 @@
+id: cards
+name: Cards
+summary: Test cases for all the cards
+description: |-
+  Test cases for all the cards
+properties:
+  - 
+    id: stack
+    name: Stack cards
+    cases:
+      -
+        code: |-
+          <style>
+            #stack {
+              background-color: var(--color-surface-subtle);
+            }
+            #stack ul {
+              list-style: none;
+              padding: 2rem;
+            }
+            #stack li + li {
+              margin-block-start: 2rem;
+            }
+          </style>
+          <div id="stack">
+            <ul>
+              <li>
+                <div class="card">
+                  <h4 class="heading" data-scheme="section">
+                    Primary connection
+                  </h4>
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                  <div class="call-to-action">
+                    <a href="#" class="button" data-scheme="secondary" data-icon="arrow-right" data-mode="icon-after" data-size="small">
+                      Get a quote
+                    </a>
+                  </div>
+                </div>
+              <li>
+                <div class="card" data-mode="image">
+                  <picture>
+                    <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                    <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                  </picture>
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              <li>
+                <a class="card" href="#" data-mode="product">
+                  <picture>
+                    <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                    <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                  </picture>
+                  <p>…content goes here…</p>
+                  <div class="call-to-action">
+                    Get a quote
+                  </div>
+                </a>
+              <li>
+                <div class="card" data-mode="plain">
+                  <h4 class="heading" data-scheme="block" data-icon="stars" data-mode="icon-above">
+                    All star support
+                  </h4>
+                  <p>
+                    <img src="https://placehold.co/400x400/000000/FFFFFF/webp" width="200" height="200" alt>
+                  </p>
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+            </ul>
+          </div>
