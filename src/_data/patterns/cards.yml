@@ -1,0 +1,60 @@
+id: card
+name: Card
+scope: molecule
+summary: A small rectangular content block, often accompanied by images, and call-to-action links.
+description: |-
+  A small rectangular content block, often accompanied by images, and call-to-action links.
+design_link: 
+assets:
+  - /css/patterns/card.css
+example:
+  width: 400
+  height: 160
+  code: |-
+    <div class="card">
+      <p>…content goes here…</p>
+      <p>And here’s <a href="#">a link</a>.</p> 
+    </div>
+# notes: |-
+variants:
+  -
+    id: mode-imagebox
+    name: 'Mode: Imagebox'
+    description: |-
+      A borderless card that prioritises showing off an image
+    example:
+      code: |-
+        <div class="card" data-mode="imagebox">
+          <picture>
+            <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+            <source srcset="https://placehold.co/600x200/333333/CCFFFF/webp" media="(max-width: 399px) and (min-resolution: 2x)" type="image/webp">
+            <img src="https://placehold.co/300x100/000000/FFFFFF/webp" alt>
+          </picture>
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: mode-image
+    name: 'Mode: Image'
+    description: |-
+      A card that insets the image and provides space for a call-to-action link.
+    example:
+      code: |-
+        <div class="card" data-mode="image">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: mode-plain
+    name: 'Mode: plain'
+    description: |-
+      Removes the border and reduces the large spacing for a default card.
+    example:
+      code: |-
+        <div class="card" data-mode="plain">
+          <h4 class="heading" data-scheme="block" data-icon="stars" data-mode="icon-above">
+            All star support
+          </h4>
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
