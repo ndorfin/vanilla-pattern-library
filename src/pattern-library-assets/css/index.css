@@ -31,6 +31,31 @@ body > header {
 	padding-inline: var(--spacing-container-inner);
 }
 
+body > header a {
+	display: block;
+	padding-block-start: 70px;
+	background-image: url(../../../vanilla-web-assets/src/img/logo_vanilla.svg#with-tagline-animated-inverted);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	background-size: 200px 70px;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 2rem;
+	text-align: center;
+	color: rgb(204,196,189);
+}
+
+@media (min-width: 640px) {
+	body > header a {
+		min-block-size: 70px;
+		padding-block-start: 0;
+		padding-inline-start: 220px;
+		background-position: 0 50%;
+		line-height: 70px;
+		text-align: start;
+	}
+}
+
 body > nav {
 	flex-grow: 0;
 	flex-shrink: 0;
