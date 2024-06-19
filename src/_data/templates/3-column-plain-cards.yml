@@ -4,29 +4,31 @@ summary: 3 plain cards in a 3 colum layout
 description: |-
   3 plain cards in a 3 colum layout
 code: |-
-  <div id="columns">
-    <div class="card" data-mode="image">
-      <picture>
-        <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
-        <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
-      </picture>
-      <p>…content goes here…</p>
-      <p>And here’s <a href="#">a link</a>.</p> 
-    </div>
-    <div class="card" data-mode="image">
-      <picture>
-        <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
-        <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
-      </picture>
-      <p>…content goes here…</p>
-      <p>And here’s <a href="#">a link</a>.</p> 
-    </div>
-    <div class="card" data-mode="image">
-      <picture>
-        <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
-        <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
-      </picture>
-      <p>…content goes here…</p>
-      <p>And here’s <a href="#">a link</a>.</p> 
+  <div class="container">
+    <h4 class="heading" data-scheme="section">
+      Why choose Vanilla?
+    </h4>
+    <div class="layout" data-columns="3">
+      <div class="card" data-mode="plain">
+        <h5 class="heading" data-scheme="block" data-mode="icon-before" data-icon="spark">
+          Quality internet
+        </h5>
+        <p>…content goes here…</p>
+        <p>And here’s <a href="#">a link</a>.</p> 
+      </div>
+      <div class="card" data-mode="plain">
+        <h5 class="heading" data-scheme="block" data-icon="stars" data-mode="icon-before">
+          All star support
+        </h5>
+        <p>…content goes here…</p>
+        <p>And here’s <a href="#">a link</a>.</p> 
+      </div>
+      <div class="card" data-mode="plain">
+        <h5 class="heading" data-scheme="block" data-icon="stars" data-mode="icon-before">
+          All star support
+        </h5>
+        <p>…content goes here…</p>
+        <p>And here’s <a href="#">a link</a>.</p> 
+      </div>
     </div>
   </div>
