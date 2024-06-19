@@ -1,0 +1,10 @@
+---
+pagination:
+  data: templates
+  size: 1
+  alias: template
+  resolve: values
+permalink: "{{ url.templates }}/{{ template.id }}/index.html"
+layout: "template_detail.njk"
+---
+{{ template.code | safe }}
