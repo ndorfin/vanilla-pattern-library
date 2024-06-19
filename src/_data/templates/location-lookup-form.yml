@@ -1,0 +1,96 @@
+id: location-lookup-form
+name: Location Lookup Form
+summary: Location lookup form with user data collection
+description: |-
+  Location Lookup form header with a collection of controls that prompt for user input.
+code: |-
+  <form action="." method="POST">
+  
+    <div class="container" data-theme="rich" data-mode="location-lookup">
+      <form action="#step-2" method="GET">
+        <div class="form_row">
+          <h5 class="heading" data-scheme="paragraph">
+            <label for="input_location">At what location do you need Voice installed?</label>
+          </h5>
+          <div class="form_field">
+            <input type="search"
+                  name="location"
+                  id="input_location"
+                  aria-describedby="input_location_help"
+                  data-icon="location"
+                  data-mode="icon-before"
+                  required>
+          </div>
+          <em class="form_field_help_text" id="input_organisation_help">
+            use current location
+          </em>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <h5 class="heading" data-scheme="paragraph">
+        How can we get in touch with you?
+      </h5>
+
+      <div class="form_row">
+        <label for="input_organisation">Organisation name</label>
+        <div class="form_field">
+          <input type="text"
+                name="organisation"
+                id="input_organisation"
+                aria-describedby="input_organisation_help"
+                autocomplete="organization"
+                placeholder="Company name or your full name"
+                required>
+        </div>
+      </div>
+
+      <div class="form_row" data-status="error">
+        <label for="input_tel">
+          Phone number
+        </label>
+        <div class="form_field">
+          <input type="tel"
+                name="phone_number"
+                id="input_tel"
+                aria-invalid="true"
+                aria-describedby="input_tel_error input_tel_help"
+                required>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <label for="input_email">
+          Email address
+        </label>
+        <div class="form_field">
+          <input type="email"
+                id="input_email"
+                autocomplete="email"
+                placeholder="name@example.com"
+                required>
+        </div>
+      </div>
+
+      <div class="form_row">
+        <div class="form_field">
+          <label>
+            <input type="checkbox" name="fruireCaptcha" value="recaptcha">
+            <span>
+              google Recaptcha
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form_row form_buttons">
+        <button type="submit"
+              data-size="small"
+              data-scheme="primary">
+          Submit
+        </button>
+      </div>
+
+    </div>
+  </form>
