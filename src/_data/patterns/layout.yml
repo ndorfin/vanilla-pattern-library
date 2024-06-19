@@ -1,0 +1,128 @@
+id: layout
+name: Layout
+scope: organism
+summary: Grid-based layouts of block-level elements
+description: |-
+  Grid-based layouts of block-level elements
+design_link: 
+assets:
+  - /css/patterns/layout.css
+example:
+  width: 500
+  height: 300
+  code: |-
+    <div class="layout">
+      <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">
+      <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">
+      <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">
+    </div>
+notes: |-
+  - The minimum width of any column is 200 pixels. Make sure your content works at this small size.
+  - The number of items is determined by the number of child elements added to the `.layout` element.
+  - All layouts default to a single column at smaller screen sizes
+  - Choose the number of columns based on the fixed number of items. e.g. 4-columns for 4, 8, 12, etc. items.
+  - Avoid having 'orphaned' items in these layouts, i.e. one item on a row in a multi-column layout. 2 or more items in a row is fine, but they'll be left-aligned by default.
+  - For tricky numbers of items, e.g. 7, then use a 4-column layout, rather than a 3-column layout.
+  - 4-column layouts will switch to 2-column layouts at intermediate breakpoints.
+variants:
+  -
+    id: columns-2
+    name: 'Columns: 2'
+    description: |-
+      A grid layout of 2 columns, with more dedicated space for items at larger screen sizes.
+    notes: |-
+      - Even-numbered column layouts with 4 or more columns will switch to this 2-column layout at intermediate breakpoints.
+      - This layout is ideal for an even number of items that need more space per item.
+    example:
+      width: 500
+      code: |-
+        <div class="layout" data-columns="2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 4">
+        </div>
+  -
+    id: columns-3
+    name: 'Columns: 3'
+    description: |-
+      A grid layout of 3 columns, with less dedicated space for items at larger screen sizes.
+    notes: |-
+      - As soon as space allows (large screen sizes) this layout will switch to 3 columns from the default single column.
+      - This layout is ideal for items numbering 3, 5, 6, 9, 11, 12, 14, 15, and so on.
+    example:
+      width: 750
+      code: |-
+        <div class="layout" data-columns="3">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 4">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 5">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 6">
+        </div>
+  -
+    id: columns-4
+    name: 'Columns: 4'
+    description: |-
+      A grid layout of 4 columns, with the smallest dedicated space for items at larger screen sizes.
+    notes: |-
+      - As soon as space allows (intermediate breakpoints) this layout will switch to 2 columns from the default single column.
+      - At larger breakpoints it will jump up to 4 columns.
+      - This layout is ideal for items numbering 4, 7, 8, 11, 12, 16, and so on.
+    example:
+      code: |-
+        <div class="layout" data-columns="4">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 4">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 5">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 6">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 7">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 8">
+        </div>
+  -
+    id: gap-none
+    name: 'Gap: none'
+    description: |-
+      Remove any gap between items in the grid
+    example:
+      width: 500
+      code: |-
+        <div class="layout" data-gap="none" data-columns="2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 4">
+        </div>
+  -
+    id: gap-small
+    name: 'Gap: small'
+    description: |-
+      Creates a small gap between items in the grid
+    example:
+      width: 500
+      code: |-
+        <div class="layout" data-gap="small" data-columns="2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 4">
+        </div>
+  -
+    id: gap-large
+    name: 'Gap: large'
+    description: |-
+      Creates a large gap between items in the grid
+    notes: |-
+      This gap is only visible at intermediate screen sizes or larger.
+    example:
+      width: 500
+      code: |-
+        <div class="layout" data-gap="large" data-columns="2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">
+          <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 4">
+        </div>
