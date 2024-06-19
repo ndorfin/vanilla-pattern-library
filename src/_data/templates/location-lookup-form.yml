@@ -5,7 +5,6 @@ description: |-
   Location Lookup form header with a collection of controls that prompt for user input.
 code: |-
   <form action="." method="POST">
-  
     <div class="container" data-theme="rich" data-mode="location-lookup">
       <form action="#step-2" method="GET">
         <div class="form_row">
@@ -27,12 +26,10 @@ code: |-
         </div>
       </form>
     </div>
-
     <div class="container">
       <h5 class="heading" data-scheme="paragraph">
         How can we get in touch with you?
       </h5>
-
       <div class="form_row">
         <label for="input_organisation">Organisation name</label>
         <div class="form_field">
@@ -45,7 +42,6 @@ code: |-
                 required>
         </div>
       </div>
-
       <div class="form_row" data-status="error">
         <label for="input_tel">
           Phone number
@@ -58,8 +54,10 @@ code: |-
                 aria-describedby="input_tel_error input_tel_help"
                 required>
         </div>
+        <em class="form_field_status_text" id="input_tel_error">
+          Please use numbers only
+        </em>
       </div>
-
       <div class="form_row">
         <label for="input_email">
           Email address
@@ -72,7 +70,6 @@ code: |-
                 required>
         </div>
       </div>
-
       <div class="form_row">
         <div class="form_field">
           <label>
@@ -83,7 +80,6 @@ code: |-
           </label>
         </div>
       </div>
-
       <div class="form_row form_buttons">
         <button type="submit"
               data-size="small"
@@ -91,6 +87,5 @@ code: |-
           Submit
         </button>
       </div>
-
     </div>
   </form>
