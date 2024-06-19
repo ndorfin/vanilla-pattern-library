@@ -9,14 +9,13 @@ code: |-
       Explore more Vanilla service
     </h4>
     <div class="layout" data-columns="4">
-      <div class="card" data-mode="image">
-        <picture>
-          <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
-          <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
-        </picture>
-        <h5 class="heading" data-scheme="block">
-          Basic routers
-        </h5>
+      <div class="card" data-mode="plain">
+        <p>
+          <img src="https://placehold.co/200x200/000000/FFFFFF/webp" width="100" height="100" alt>
+        </p>
+        <h4 class="heading" data-scheme="block">
+          All star support
+        </h4>
         <p>…content goes here…</p>
         <p>And here’s <a href="#">a link</a>.</p> 
       </div>
