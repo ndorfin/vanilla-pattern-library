@@ -1,0 +1,124 @@
+
+	
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+	
+
+<title>Layout — Pattern Library</title>
+<meta property="og:title" content="Layout">
+
+	
+
+<meta name="generator" content="Eleventy (11ty.dev)">
+<meta name="description" content="Grid-based layouts of block-level elements">
+<meta property="og:site_name" content="Pattern Library">
+<meta property="og:description" content="Grid-based layouts of block-level elements">
+
+<link rel="stylesheet" href="/vanilla-pattern-library/vanilla-web-assets/src/css/index.css">
+<div class="layout">
+  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">
+  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">
+  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">
+</div>
+
+<script defer="" type="module" src="/vanilla-pattern-library/vanilla-web-assets/src/mjs/index.mjs"></script>
+<!--
+============================
+page: {
+  url: '/patterns/layout/example/',
+  outputPath: 'public/patterns/layout/example/index.html'
+}
+page_meta: {
+  title: 'Layout',
+  summary: 'Grid-based layouts of block-level elements',
+  description: 'Grid-based layouts of block-level elements'
+}
+title: undefined
+heading: undefined
+summary: undefined
+description: undefined
+============================
+pattern: {
+  id: 'layout',
+  name: 'Layout',
+  scope: 'organism',
+  summary: 'Grid-based layouts of block-level elements',
+  description: 'Grid-based layouts of block-level elements',
+  design_link: null,
+  assets: [ '/css/patterns/layout.css' ],
+  example: {
+    width: 500,
+    height: 300,
+    code: '<div class="layout">\n' +
+      '  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 1">\n' +
+      '  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 2">\n' +
+      '  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">\n' +
+      '</div>'
+  },
+  notes: '- The minimum width of any column is 200 pixels. Make sure your content works at this small size.\n' +
+    '- The number of items is determined by the number of child elements added to the `.layout` element.\n' +
+    '- All layouts default to a single column at smaller screen sizes\n' +
+    '- Choose the number of columns based on the fixed number of items. e.g. 4-columns for 4, 8, 12, etc. items.\n' +
+    "- Avoid having 'orphaned' items in these layouts, i.e. one item on a row in a multi-column layout. 2 or more items in a row is fine, but they'll be left-aligned by default.\n" +
+    '- For tricky numbers of items, e.g. 7, then use a 4-column layout, rather than a 3-column layout.\n' +
+    '- 4-column layouts will switch to 2-column layouts at intermediate breakpoints.',
+  variants: [
+    {
+      id: 'columns-2',
+      name: 'Columns: 2',
+      description: 'A grid layout of 2 columns, with more dedicated space for items at larger screen sizes.',
+      notes: '- Even-numbered column layouts with 4 or more columns will switch to this 2-column layout at intermediate breakpoints.\n' +
+        '- This layout is ideal for an even number of items that need more space per item.',
+      example: [Object],
+      pattern_id: 'layout'
+    },
+    {
+      id: 'columns-3',
+      name: 'Columns: 3',
+      description: 'A grid layout of 3 columns, with less dedicated space for items at larger screen sizes.',
+      notes: '- As soon as space allows (large screen sizes) this layout will switch to 3 columns from the default single column.\n' +
+        '- This layout is ideal for items numbering 3, 5, 6, 9, 11, 12, 14, 15, and so on.',
+      example: [Object],
+      pattern_id: 'layout'
+    },
+    {
+      id: 'columns-4',
+      name: 'Columns: 4',
+      description: 'A grid layout of 4 columns, with the smallest dedicated space for items at larger screen sizes.',
+      notes: '- As soon as space allows (intermediate breakpoints) this layout will switch to 2 columns from the default single column.\n' +
+        '- At larger breakpoints it will jump up to 4 columns.\n' +
+        '- This layout is ideal for items numbering 4, 7, 8, 11, 12, 16, and so on.',
+      example: [Object],
+      pattern_id: 'layout'
+    },
+    {
+      id: 'gap-none',
+      name: 'Gap: none',
+      description: 'Remove any gap between items in the grid',
+      example: [Object],
+      pattern_id: 'layout'
+    },
+    {
+      id: 'gap-small',
+      name: 'Gap: small',
+      description: 'Creates a small gap between items in the grid',
+      example: [Object],
+      pattern_id: 'layout'
+    },
+    {
+      id: 'gap-large',
+      name: 'Gap: large',
+      description: 'Creates a large gap between items in the grid',
+      notes: 'This gap is only visible at intermediate screen sizes or larger.',
+      example: [Object],
+      pattern_id: 'layout'
+    }
+  ]
+}
+test: undefined
+============================
+--></html>

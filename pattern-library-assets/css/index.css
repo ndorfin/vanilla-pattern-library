@@ -77,7 +77,6 @@ main > header {
 
 article {
 	padding-block: 4rem;
-	max-inline-size: 80ch;
 }
 
 article > section + section {

@@ -1,0 +1,70 @@
+.layout {
+	--layout-column-setting: auto;
+	--layout-gap: 1rem; /* Defaults to 'small' */
+
+	display: grid;
+	grid-template-columns: var(--layout-column-setting);
+	gap: var(--layout-gap);
+}
+
+.layout > * {
+	display: block;
+	min-inline-size: 12.5rem;
+}
+
+ul.layout {
+	list-style-type: "";
+	margin: 0;
+	padding: 0;
+}
+
+.layout[data-gap="none"] {
+	--layout-gap: 0;
+}
+
+.layout[data-gap="small"] {
+	--layout-gap: 1rem;
+}
+
+/*
+	Gap @ large size:            3rem x 1 =  3rem
+	Min inline-size of item:  12.5rem x 2 = 25rem
+	---------------------------------------------
+	Total:                                  28rem
+*/
+@media (min-width: 28rem) {
+	.layout[data-gap="large"] {
+		--layout-gap: 3rem;
+	}
+	
+	.layout:is(
+		[data-columns="2"],
+		[data-columns="4"]
+	) {
+		--layout-column-setting: repeat(2, 1fr);
+	}
+}
+
+/*
+	Gap @ large size:            3rem x 2 =  6.0rem
+	Min inline-size of item:  12.5rem x 3 = 37.5rem
+	-----------------------------------------------
+	Total:                                  43.5rem
+*/
+@media (min-width: 43.5rem) {
+	.layout[data-columns="3"] {
+		--layout-column-setting: repeat(3, 1fr);
+	}
+}
+
+/*
+	Gap @ large size:            3rem x 3 =  9rem
+	Min inline-size of item:  12.5rem x 4 = 50rem
+	---------------------------------------------
+	Total:                                  59rem
+*/
+@media (min-width: 59rem) {
+	.layout[data-columns="4"] {
+		--layout-column-setting: repeat(4, 1fr);
+	}
+}
