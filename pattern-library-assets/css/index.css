@@ -34,7 +34,7 @@ body > header {
 body > header a {
 	display: block;
 	padding-block-start: 70px;
-	background-image: url(/vanilla-web-assets/src/img/logo_vanilla.svg#with-tagline-animated-inverted);
+	background-image: url(../img/logo_vanilla.svg#with-tagline-animated-inverted);
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 	background-size: 200px 70px;
