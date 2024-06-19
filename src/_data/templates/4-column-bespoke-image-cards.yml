@@ -1,0 +1,56 @@
+id: 4-column-bespoke-image-cards
+name: 4 Column Bespoke Image Cards
+summary: 4 cards with bespoke images in a 4 colum layout
+description: |-
+  4 cards with bespoke images in a 4 colum layout
+code: |-
+  <div class="container" data-theme="alternate">
+    <h4 class="heading" data-scheme="section">
+      Explore more Vanilla service
+    </h4>
+    <div class="layout" data-columns="4">
+      <div class="card" data-mode="image">
+        <picture>
+          <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+          <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+        </picture>
+        <h5 class="heading" data-scheme="block">
+          Basic routers
+        </h5>
+        <p>…content goes here…</p>
+        <p>And here’s <a href="#">a link</a>.</p> 
+      </div>
+      <div class="card" data-mode="image">
+        <picture>
+          <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+          <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+        </picture>
+        <h5 class="heading" data-scheme="block">
+          WiFi installation
+        </h5>
+        <p>…content goes here…</p>
+        <p>And here’s <a href="#">a link</a>.</p> 
+      </div>
+      <div class="card" data-mode="image">
+        <picture>
+          <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+          <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+        </picture>
+        <h5 class="heading" data-scheme="block">
+          Loadshedding
+        </h5>
+        <p>…content goes here…</p>
+        <p>And here’s <a href="#">a link</a>.</p> 
+      </div>
+      <div class="card" data-mode="image">
+        <picture>
+          <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+          <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+        </picture>
+        <h5 class="heading" data-scheme="block">
+          Desktop IT support
+        </h5>
+        <p>…content goes here…</p>
+        <p>And here’s <a href="#">a link</a>.</p> 
+      </div>
+  </div>
