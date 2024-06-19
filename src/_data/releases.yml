@@ -174,3 +174,14 @@
   date: 2024-06-14
   description: |-
     Added logo
+-
+  library_version: 1.7.0
+  assets_version: 0.9.0
+  date: 2024-06-19
+  description: |-
+    Added layouts.
+  patterns:
+    - 
+      id: layout
+      description: |-
+        Introducing layouts. 2, 3, and 4 column layouts for content such as cards or images.
