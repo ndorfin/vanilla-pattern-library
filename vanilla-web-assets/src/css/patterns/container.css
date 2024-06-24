@@ -108,7 +108,7 @@
 	--container-color-background: var(--color-black-950);
 	--container-color-foreground: var(--color-surface-subtle);
 	--container-color-link: var(--color-yellow-100);
-	--container-background-image: url('../../img/bg_swirl.svg');
+	--container-background-image: url('../../img/bg_container_swirl.svg');
 	--container-background-position: 50% 50%;
 	--container-background-size: cover;
 }
@@ -116,7 +116,7 @@
 .container[data-theme="special"] {
 	/* Spectral/Rainbow gradient. */
 	--container-background-image:
-		url('../../img/bg_swirl.svg'),
+		url('../../img/bg_container_swirl.svg'),
 		linear-gradient(
 			270deg,
 			var(--color-orange-500) 0%,
@@ -125,4 +125,16 @@
 		);
 	--container-background-position: 50% 50%, 0 0;
 	--container-background-size: cover, cover;
+}
+
+.container[data-anchor="top"] {
+	--container-background-position: 50% 0;
+}
+
+.container[data-anchor="center"] {
+	--container-background-position: 50% 50%;
+}
+
+.container[data-anchor="bottom"] {
+	--container-background-position: 50% 100%;
 }
