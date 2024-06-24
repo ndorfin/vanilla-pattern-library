@@ -74,11 +74,42 @@ variants:
     name: 'Theme: Special'
     description: |-
       Reserve this container theme for special features.
-    # notes: |-
-    #   - 
     example:
       code: |-
         <div class="container" data-theme="special">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: anchor-top
+    name: 'Anchor: Top'
+    description: |-
+      Set the background image to start from the top
+    example:
+      code: |-
+        <div class="container" data-theme="special" data-anchor="top">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: anchor-center
+    name: 'Anchor: Center'
+    description: |-
+      Set the background image to start from the center
+    example:
+      code: |-
+        <div class="container" data-theme="special" data-anchor="center">
+          <p>…content goes here…</p>
+          <p>And here’s <a href="#">a link</a>.</p> 
+        </div>
+  -
+    id: anchor-bottom
+    name: 'Anchor: Bottom'
+    description: |-
+      Set the background image to start from the bottom
+    example:
+      code: |-
+        <div class="container" data-theme="special" data-anchor="bottom">
           <p>…content goes here…</p>
           <p>And here’s <a href="#">a link</a>.</p> 
         </div>
