@@ -196,3 +196,14 @@
       id: container
       description: |-
         Use the new `data-anchor="top|center|bottom"` attribute on `special` or `emphasis` container types.
+-
+  library_version: 1.8.0
+  assets_version: 0.10.0
+  date: 2024-06-24
+  description: |-
+    Introducing tables. Also added a reasonable defaults for `<sup>` elements when used as footnotes.
+  patterns:
+    - 
+      id: table
+      description: |-
+        Introducing default, striped, and cell-spaced tables.
