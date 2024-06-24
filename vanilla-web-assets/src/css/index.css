@@ -14,6 +14,7 @@
 @import "./patterns/card.css";
 @import "./patterns/container.css";
 @import "./patterns/layout.css";
+@import "./patterns/table.css";
 
 [data-theme="dark"] {
 	background-color: hsla(24, 4%, 23%, 1);
