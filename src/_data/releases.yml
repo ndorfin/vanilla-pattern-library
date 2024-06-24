@@ -185,3 +185,14 @@
       id: layout
       description: |-
         Introducing layouts. 2, 3, and 4 column layouts for content such as cards or images.
+-
+  library_version: 1.7.1
+  assets_version: 0.9.1
+  date: 2024-06-24
+  description: |-
+    Added background anchor positioning to containers
+  patterns:
+    - 
+      id: container
+      description: |-
+        Use the new `data-anchor="top|center|bottom"` attribute on `special` or `emphasis` container types.
