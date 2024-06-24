@@ -1,0 +1,46 @@
+id: table
+name: Table
+scope: atom
+summary: A way to represent tabular data or spreadsheets columns and rows
+description: |-
+  A way to represent tabular data or spreadsheets columns and rows
+design_link: 
+assets:
+  - /css/patterns/table.css
+example:
+  width: 250
+  height: 75
+  code: |-
+    <div class="container_table">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" id="">
+
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" headers="" id="">
+
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+notes: |-
+  - 
+# variants:
+#   -
+#     id: scheme-primary
+#     name: 'Scheme: Primary'
+#     description: |-
+#       The primary call to action on a page, or within a form. This is the default styling for all `<button>` elements, or elements with the `button` class attribute.
+#     notes: |-
+#       Use the attribute: `data-scheme="primary"`.
+#     example:
+#       code: |-
+#         <button type="submit" data-scheme="primary">
+#           I’m a button!
+#         </button>
