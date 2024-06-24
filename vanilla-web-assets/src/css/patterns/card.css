@@ -4,7 +4,6 @@
 
 	padding-block: var(--card-padding-block);
 	padding-inline: var(--card-padding-inline);
-	background-color: var(--color-white);
 	max-inline-size: 480px;
 	box-sizing: border-box;
 }
@@ -49,4 +48,20 @@ a.card:hover {
 .card[data-mode="product"] {
 	--card-padding-block: 1.25rem;
 	--card-padding-inline: 1.25rem;
+}
+
+.card[data-mode="product"] .call-to-action {
+	padding-block: 0.75rem;
+	padding-inline: 1rem;
+	margin-inline: calc(var(--card-padding-inline) * -1);
+	margin-block-end: calc(var(--card-padding-block) * -1);
+	background-color: var(--color-brown-600);
+	color: var(--color-white);
+	transition-property: background-color;
+	transition-duration: var(--speed-blink);
+	text-align: center;
+}
+
+.card[data-mode="product"]:hover .call-to-action {
+	background-color: var(--color-black-950);
 }
