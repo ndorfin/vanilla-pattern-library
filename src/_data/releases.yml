@@ -207,3 +207,14 @@
       id: table
       description: |-
         Introducing default, striped, and cell-spaced tables.
+-
+  library_version: 1.8.1
+  assets_version: 0.10.1
+  date: 2024-06-24
+  description: |-
+    Add missing styles for the CTA buttons in interactive cards
+  patterns:
+    - 
+      id: card
+      description: |-
+        Product cards now have a styled call-to-action 'button'
