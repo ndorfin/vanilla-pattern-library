@@ -15,15 +15,26 @@ example:
       <h4 class="heading" data-scheme="section">
         Primary connection
       </h4>
-      <p>…content goes here…</p>
-      <p>And here’s <a href="#">a link</a>.</p>
+      <div class="content">
+        <p>…content goes here…</p>
+        <p>And here’s <a href="#">a link</a>.</p>
+      </div>
       <div class="call-to-action">
         <a href="#" class="button" data-scheme="secondary" data-icon="arrow-right" data-mode="icon-after" data-size="small">
           Get a quote
         </a>
       </div>
     </div>
-# notes: |-
+notes: |-
+  - A card is comprised of (at most) 4 distinct sections:
+    1. A banner image (using the `<picture>` element)
+    2. A heading (using a [block-level heading](../heading/#variant_scheme-block) or smaller)
+    3. A content block that can hold arbitrary content
+    4. A Call-to-action element (if the card is 'interactive' - see below)
+  - The Image and Product card variants can be made interactive, by using the anchor element (`<a>`) with the usual attributes.
+  - An 'interactive' card MUST NOT have any anchors inside its content - this will break the HTML used to construct these types of cards.
+  - Cards are intended to be used in a 2-4 column [layout](../layout/).
+  - Cards are intended to match their peers when it comes to image sizes/ratios, and number of distinct sections.
 variants:
   -
     id: mode-image
@@ -37,9 +48,13 @@ variants:
             <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
             <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
           </picture>
-          <p>…content goes here…</p>
-          <p>And here’s <a href="#">a link</a>.</p> 
+          <div class="content">
+            <p>…content goes here…</p>
+            <p>And here’s <a href="#">a link</a>.</p> 
+          </div>
         </div>
+    notes: |-
+      - The only mandatory section in this card variant is the `<picture>` element. Using this setup in a [layout](../layout/) will allow you to create tiles of images.
   -
     id: mode-product
     name: 'Mode: Product'
@@ -54,7 +69,9 @@ variants:
             <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
             <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
           </picture>
-          <p>…content goes here…</p>
+          <div class="content">
+            <p>…content goes here…</p>
+          </div>
           <div class="call-to-action">
             Get a quote
           </div>
@@ -67,16 +84,20 @@ variants:
     notes: |-
       - It's up to you to include whatever images you want, and their sizes
       - If you do use an image, please provide a double-resolution source by default
+      - This card variant doesn't require equally-sized banner images. Smaller images will align themselves to the bottom of their row when used in a [layout](../layout/).
       - These cards work great with [block-level headings](../heading/#variant_mode-icon-above) that use icons above them
+      - These cards don't have a background colour set, so avoid using these in inverted-themed [containers](../container/).
     example:
       code: |-
         <div class="card" data-mode="plain">
           <h4 class="heading" data-scheme="block" data-icon="stars" data-mode="icon-above">
             All star support
           </h4>
-          <p>
-            <img src="https://placehold.co/400x400/000000/FFFFFF/webp" width="200" height="200" alt>
-          </p>
-          <p>…content goes here…</p>
-          <p>And here’s <a href="#">a link</a>.</p> 
+          <div class="content">
+            <p>
+              <img src="https://placehold.co/400x400/000000/FFFFFF/webp" width="200" height="200" alt>
+            </p>
+            <p>…content goes here…</p>
+            <p>And here’s <a href="#">a link</a>.</p>
+          </div>
         </div>
