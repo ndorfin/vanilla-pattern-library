@@ -1,0 +1,344 @@
+id: table
+name: Table
+scope: atom
+summary: A way to represent tabular data or spreadsheets columns and rows
+description: |-
+  A way to represent tabular data or spreadsheets columns and rows
+design_link: 
+assets:
+  - /css/patterns/table.css
+example:
+  width: 570
+  height: 250
+  code: |-
+    <div class="container_table">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" id="col_header_speed">
+              Speed
+            </th>
+            <th scope="col" id="col_header_up_down_speeds">
+              Up/down speeds <sup><a href="#line_speed_units">1</a></sup>
+            </th>
+            <th scope="col" id="col_header_line_rental" class="cell_amount">
+              Line rental
+            </th>
+            <th scope="col" id="col_header_data" class="cell_amount">
+              Data
+            </th>
+            <th scope="col" id="col_header_total" class="cell_amount cell_total">
+              Total <sup><a href="#inclusive_vat">2</a></sup>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" headers="col_header_speed" id="row_header_300">
+              300 Mbps
+            </th>
+            <td headers="row_header_300 col_header_up_down_speeds">
+              300/300 Mbps
+            </td>
+            <td headers="row_header_300 col_header_line_rental" class="cell_amount">
+              R2,099
+            </td>
+            <td headers="row_header_300 col_header_data" class="cell_amount">
+              R899
+            </td>
+            <td headers="row_header_300 col_header_total" class="cell_amount cell_total">
+              R2,998
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" headers="col_header_speed" id="row_header_200">
+              200 Mbps
+            </th>
+            <td headers="row_header_200 col_header_up_down_speeds">
+              200/200 Mbps
+            </td>
+            <td headers="row_header_200 col_header_line_rental" class="cell_amount">
+              R1,811
+            </td>
+            <td headers="row_header_200 col_header_data" class="cell_amount">
+              R899
+            </td>
+            <td headers="row_header_200 col_header_total" class="cell_amount cell_total">
+              R2,710
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" headers="col_header_speed" id="row_header_100">
+              100 Mbps
+            </th>
+            <td headers="row_header_100 col_header_up_down_speeds">
+              100/100 Mbps
+            </td>
+            <td headers="row_header_100 col_header_line_rental" class="cell_amount">
+              R1,265
+            </td>
+            <td headers="row_header_100 col_header_data" class="cell_amount">
+              R699
+            </td>
+            <td headers="row_header_100 col_header_total" class="cell_amount cell_total">
+              R1,964
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" headers="col_header_speed" id="row_header_50">
+              50 Mbps
+            </th>
+            <td headers="row_header_50 col_header_up_down_speeds">
+              50/50 Mbps
+            </td>
+            <td headers="row_header_50 col_header_line_rental" class="cell_amount">
+              R1,093
+            </td>
+            <td headers="row_header_50 col_header_data" class="cell_amount">
+              R699
+            </td>
+            <td headers="row_header_50 col_header_total" class="cell_amount cell_total">
+              R1,792
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ol>
+        <li id="line_speed_units">
+          All line speeds measured in megabits per second (Mbps)
+        </li>
+        <li id="inclusive_vat">
+          Inclusive of <abbr title="Value Added Tax">VAT</abbr>
+        </li>
+      </ol>
+    </div>
+notes: |-
+  - You must include the relevant `scope`, `headers`, and `id` attributes on the table cells.
+  - You must add ID attributes to each table header (`<th>`) cell. These attribute values are then referenced in the `headers` attributes of subordinate cells.
+  - Each table header (`<th>`) cell also requires a `scope` attribute to declare which direction the header governs.
+  - If you'd like to right-align amounts, then use `class="cell_amount"` on each of the relevant cells
+  - If you'd like to demarcate total columns, then use `class="cell_total"` on each of the relevant cells.
+
+variants:
+  -
+    id: row-theme-striped
+    name: 'Row theme: Striped'
+    description: |-
+      This table has more generous use of background colouring.
+    notes: |-
+      - Use the attribute: `data-row-theme="striped"`.
+      - Can be mixed with `data-cell-mode="spaced"`. See below.
+    example:
+      code: |-
+        <div class="container_table">
+          <table data-row-theme="striped">
+            <thead>
+              <tr>
+                <th scope="col" id="col_header_speed">
+                  Speed
+                </th>
+                <th scope="col" id="col_header_up_down_speeds">
+                  Up/down speeds <sup><a href="#line_speed_units">1</a></sup>
+                </th>
+                <th scope="col" id="col_header_line_rental" class="cell_amount">
+                  Line rental
+                </th>
+                <th scope="col" id="col_header_data" class="cell_amount">
+                  Data
+                </th>
+                <th scope="col" id="col_header_total" class="cell_amount cell_total">
+                  Total <sup><a href="#inclusive_vat">2</a></sup>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" headers="col_header_speed" id="row_header_300">
+                  300 Mbps
+                </th>
+                <td headers="row_header_300 col_header_up_down_speeds">
+                  300/300 Mbps
+                </td>
+                <td headers="row_header_300 col_header_line_rental" class="cell_amount">
+                  R2,099
+                </td>
+                <td headers="row_header_300 col_header_data" class="cell_amount">
+                  R899
+                </td>
+                <td headers="row_header_300 col_header_total" class="cell_amount cell_total">
+                  R2,998
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" headers="col_header_speed" id="row_header_200">
+                  200 Mbps
+                </th>
+                <td headers="row_header_200 col_header_up_down_speeds">
+                  200/200 Mbps
+                </td>
+                <td headers="row_header_200 col_header_line_rental" class="cell_amount">
+                  R1,811
+                </td>
+                <td headers="row_header_200 col_header_data" class="cell_amount">
+                  R899
+                </td>
+                <td headers="row_header_200 col_header_total" class="cell_amount cell_total">
+                  R2,710
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" headers="col_header_speed" id="row_header_100">
+                  100 Mbps
+                </th>
+                <td headers="row_header_100 col_header_up_down_speeds">
+                  100/100 Mbps
+                </td>
+                <td headers="row_header_100 col_header_line_rental" class="cell_amount">
+                  R1,265
+                </td>
+                <td headers="row_header_100 col_header_data" class="cell_amount">
+                  R699
+                </td>
+                <td headers="row_header_100 col_header_total" class="cell_amount cell_total">
+                  R1,964
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" headers="col_header_speed" id="row_header_50">
+                  50 Mbps
+                </th>
+                <td headers="row_header_50 col_header_up_down_speeds">
+                  50/50 Mbps
+                </td>
+                <td headers="row_header_50 col_header_line_rental" class="cell_amount">
+                  R1,093
+                </td>
+                <td headers="row_header_50 col_header_data" class="cell_amount">
+                  R699
+                </td>
+                <td headers="row_header_50 col_header_total" class="cell_amount cell_total">
+                  R1,792
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <ol>
+            <li id="line_speed_units">
+              All line speeds measured in megabits per second (Mbps)
+            </li>
+            <li id="inclusive_vat">
+              Inclusive of <abbr title="Value Added Tax">VAT</abbr>
+            </li>
+          </ol>
+        </div>
+  -
+    id: cell-mode-spaced
+    name: 'Cell mode: Spaced'
+    description: |-
+      Each cell in this table has more space
+    notes: |-
+      - Use the attribute: `data-cell-mode="spaced"`.
+      - Can be mixed with `data-row-theme="striped"`. See above.
+    example:
+      code: |-
+        <div class="container_table">
+          <table data-cell-mode="spaced">
+            <thead>
+              <tr>
+                <th scope="col" id="col_header_speed">
+                  Speed
+                </th>
+                <th scope="col" id="col_header_up_down_speeds">
+                  Up/down speeds <sup><a href="#line_speed_units">1</a></sup>
+                </th>
+                <th scope="col" id="col_header_line_rental" class="cell_amount">
+                  Line rental
+                </th>
+                <th scope="col" id="col_header_data" class="cell_amount">
+                  Data
+                </th>
+                <th scope="col" id="col_header_total" class="cell_amount cell_total">
+                  Total <sup><a href="#inclusive_vat">2</a></sup>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" headers="col_header_speed" id="row_header_300">
+                  300 Mbps
+                </th>
+                <td headers="row_header_300 col_header_up_down_speeds">
+                  300/300 Mbps
+                </td>
+                <td headers="row_header_300 col_header_line_rental" class="cell_amount">
+                  R2,099
+                </td>
+                <td headers="row_header_300 col_header_data" class="cell_amount">
+                  R899
+                </td>
+                <td headers="row_header_300 col_header_total" class="cell_amount cell_total">
+                  R2,998
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" headers="col_header_speed" id="row_header_200">
+                  200 Mbps
+                </th>
+                <td headers="row_header_200 col_header_up_down_speeds">
+                  200/200 Mbps
+                </td>
+                <td headers="row_header_200 col_header_line_rental" class="cell_amount">
+                  R1,811
+                </td>
+                <td headers="row_header_200 col_header_data" class="cell_amount">
+                  R899
+                </td>
+                <td headers="row_header_200 col_header_total" class="cell_amount cell_total">
+                  R2,710
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" headers="col_header_speed" id="row_header_100">
+                  100 Mbps
+                </th>
+                <td headers="row_header_100 col_header_up_down_speeds">
+                  100/100 Mbps
+                </td>
+                <td headers="row_header_100 col_header_line_rental" class="cell_amount">
+                  R1,265
+                </td>
+                <td headers="row_header_100 col_header_data" class="cell_amount">
+                  R699
+                </td>
+                <td headers="row_header_100 col_header_total" class="cell_amount cell_total">
+                  R1,964
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" headers="col_header_speed" id="row_header_50">
+                  50 Mbps
+                </th>
+                <td headers="row_header_50 col_header_up_down_speeds">
+                  50/50 Mbps
+                </td>
+                <td headers="row_header_50 col_header_line_rental" class="cell_amount">
+                  R1,093
+                </td>
+                <td headers="row_header_50 col_header_data" class="cell_amount">
+                  R699
+                </td>
+                <td headers="row_header_50 col_header_total" class="cell_amount cell_total">
+                  R1,792
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <ol>
+            <li id="line_speed_units">
+              All line speeds measured in megabits per second (Mbps)
+            </li>
+            <li id="inclusive_vat">
+              Inclusive of <abbr title="Value Added Tax">VAT</abbr>
+            </li>
+          </ol>
+        </div>

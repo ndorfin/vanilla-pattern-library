@@ -185,3 +185,65 @@
       id: layout
       description: |-
         Introducing layouts. 2, 3, and 4 column layouts for content such as cards or images.
+-
+  library_version: 1.7.1
+  assets_version: 0.9.1
+  date: 2024-06-24
+  description: |-
+    Added background anchor positioning to containers
+  patterns:
+    - 
+      id: container
+      description: |-
+        Use the new `data-anchor="top|center|bottom"` attribute on `special` or `emphasis` container types.
+-
+  library_version: 1.8.0
+  assets_version: 0.10.0
+  date: 2024-06-24
+  description: |-
+    Introducing tables. Also added a reasonable defaults for `<sup>` elements when used as footnotes.
+  patterns:
+    - 
+      id: table
+      description: |-
+        Introducing default, striped, and cell-spaced tables.
+-
+  library_version: 1.8.1
+  assets_version: 0.10.1
+  date: 2024-06-24
+  description: |-
+    Add missing styles for the CTA buttons in interactive cards
+  patterns:
+    - 
+      id: card
+      description: |-
+        Product cards now have a styled call-to-action 'button'
+-
+  library_version: 1.9.0
+  assets_version: 1.0.0
+  date: 2024-06-25
+  description: |-
+    Breaking changes. Bugfixes and improvements for cards in layouts.
+  patterns:
+    - 
+      id: card
+      description: |-
+        Each card's contents are now broken up into at least 4 distinct owners or rows:
+
+          - A banner image: `<picture>`
+          - A heading: `<hX class="heading">`
+          - A content block: `<div class="content">`
+          - An optional Call to Action block: `<div class="call-to-action">`
+
+        Cards now determine equal heights for each of these rows when in a grid layout.
+
+        Also added more docs to cards. 
+    - 
+      id: layout
+      description: |-
+        Layouts now create a subgrid when their children are cards.
+
+        It is no longer possible to use cards in a list. Cards have to be direct descendents of the `<div class="layout">` element.
+
+        Added more docs to layouts.
+
