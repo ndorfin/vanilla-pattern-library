@@ -5,7 +5,7 @@ description: |-
   3 plain cards in a 3 colum layout
 code: |-
   <div class="container">
-    <h4 class="heading" data-scheme="section" style="text-align:center;">
+    <h4 class="heading" data-scheme="section">
       Why choose Vanilla?
     </h4>
     <div class="layout" data-columns="3">
@@ -13,22 +13,28 @@ code: |-
         <h5 class="heading" data-scheme="block" data-mode="icon-before" data-icon="spark">
           Quality internet
         </h5>
-        <p>Tier 1 connectivity tailored to Mother City tastes.</p>
-        <p>We simplify the connections to and management of complex golbal internet ecosystem to ensure that you get the clarity - speed, freesom and prosperity - for you digital work and home life.</p>
+        <div class="content">
+          <p>Tier 1 connectivity tailored to Mother City tastes.</p>
+          <p>We simplify the connections to and management of complex golbal internet ecosystem to ensure that you get the clarity - speed, freesom and prosperity - for you digital work and home life.</p>
+        </div>
       </div>
       <div class="card" data-mode="plain">
         <h5 class="heading" data-scheme="block" data-icon="stars" data-mode="icon-before">
           All star support
         </h5>
-        <p>Get personalised and authentic customer service.</p>
-        <p>If you're based within the vanilla sweet spot - 5km radius from the heart of Cape Town - we keen to help with on-site technical support. <a href="#">Meet the team</a>.</p> 
+        <div class="content">
+          <p>Get personalised and authentic customer service.</p>
+          <p>If you're based within the vanilla sweet spot - 5km radius from the heart of Cape Town - we keen to help with on-site technical support. <a href="#">Meet the team</a>.</p>
+        </div>
       </div>
       <div class="card" data-mode="plain">
-        <h5 class="heading" data-scheme="block" data-icon="mail" data-mode="icon-before">
+        <h5 class="heading" data-scheme="block" data-icon="no-contract" data-mode="icon-before">
           No contracts
         </h5>
-        <p>Only ever pay for what you use. And we'll never lock you into a contract.</p>
-        <p>Love us or leave us. All accounts are billed month-to-month so you can cancel anytime.</p> 
+        <div class="content">
+          <p>Only ever pay for what you use. And we'll never lock you into a contract.</p>
+          <p>Love us or leave us. All accounts are billed month-to-month so you can cancel anytime.</p>
+        </div>
       </div>
     </div>
   </div>

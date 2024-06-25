@@ -15,13 +15,15 @@ code: |-
           </h6>
           <div class="form_field">
             <input type="search"
+                  name="location"
                   id="input_location"
                   aria-describedby="input_location_help"
+                  autocomplet="location"
                   data-icon="location"
                   data-mode="icon-before"
                   required>
           </div>
-          <em class="form_field_help_text" id="input_organisation_help" style="text-align:right;">
+          <em class="form_field_help_text" id="input_location_help">
             use current location
           </em>
         </div>
@@ -47,9 +49,11 @@ code: |-
           </label>
           <div class="form_field">
             <input type="tel"
-                  name="phone_number"
+                  name="tel"
                   id="input_tel"
-                  aria-describedby="input_tel_error input_tel_help"
+                  aria-invalid="true"
+                  aria-describedby="input_tel_error"
+                  autocomplet="tel"
                   required>
           </div>
           <em class="form_field_status_text" id="input_tel_error">
@@ -62,7 +66,9 @@ code: |-
           </label>
           <div class="form_field">
             <input type="email"
+                  name="email"
                   id="input_email"
+                  aria-describedby="input_email_help"
                   autocomplete="email"
                   placeholder="name@example.com"
                   required>
