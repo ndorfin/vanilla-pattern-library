@@ -5,51 +5,56 @@ description: |-
   4 cards with bespoke images in a 4 colum layout
 code: |-
   <div class="container" data-theme="alternate">
-    <h4 class="heading" data-scheme="section">
+    <h4 class="heading" data-scheme="section" style="text-align:center;">
       Explore more Vanilla service
     </h4>
     <div class="layout" data-columns="4">
+
       <div class="card" data-mode="plain">
-        <p>
-          <img src="https://placehold.co/200x200/000000/FFFFFF/webp" width="100" height="100" alt>
-        </p>
-        <h4 class="heading" data-scheme="block">
-          All star support
-        </h4>
-        <p>…content goes here…</p>
-        <p>And here’s <a href="#">a link</a>.</p> 
-      </div>
-      <div class="card" data-mode="image">
         <picture>
-          <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
-          <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+          <source srcset="https://placehold.co/50x50/333333/CCFFFF/webp" media="(min-width: 50px)" type="image/webp">
+          <img src="https://placehold.co/50x50/000000/FFFFFF/webp" width="50" height="50" alt>
+        </picture>
+        <h5 class="heading" data-scheme="block">
+          Basic routers
+        </h5>
+        <p>For those who can get by just fine with a single WiFi router, take a look at Vanilla <a href="#">recommended routers</a> for a single room or small office.</p>
+      </div>
+
+      <div class="card" data-mode="plain">
+        <picture>
+          <source srcset="https://placehold.co/50x50/333333/CCFFFF/webp" media="(min-width: 50px)" type="image/webp">
+          <img src="https://placehold.co/50x50/000000/FFFFFF/webp" width="50" height="50" alt>
         </picture>
         <h5 class="heading" data-scheme="block">
           WiFi installation
         </h5>
-        <p>…content goes here…</p>
-        <p>And here’s <a href="#">a link</a>.</p> 
+        <p>Get top-tier WiFi with our carrier-grade network and <a href="#">quality hardware</a>. We map coverage, optimise capacity, and configure to your unique business needs. <a href="#">Learn more abour WiFi</a>.</p>
       </div>
-      <div class="card" data-mode="image">
+
+      <div class="card" data-mode="plain">
         <picture>
-          <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
-          <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+          <source srcset="https://placehold.co/50x50/333333/CCFFFF/webp" media="(min-width: 50px)" type="image/webp">
+          <img src="https://placehold.co/50x50/000000/FFFFFF/webp" width="50" height="50" alt>
         </picture>
         <h5 class="heading" data-scheme="block">
           Loadshedding
         </h5>
-        <p>…content goes here…</p>
-        <p>And here’s <a href="#">a link</a>.</p> 
+        <p>Power your way through power outages with these <a href="#">backup solutions</a> to keep your network (and  PC) running.</p>
+        <p>Beat the loadshedding blues and</p> 
       </div>
-      <div class="card" data-mode="image">
+
+      <div class="card" data-mode="plain">
         <picture>
-          <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
-          <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+          <source srcset="https://placehold.co/50x50/333333/CCFFFF/webp" media="(min-width: 50px)" type="image/webp">
+          <img src="https://placehold.co/50x50/000000/FFFFFF/webp" width="50" height="50" alt>
         </picture>
         <h5 class="heading" data-scheme="block">
           Desktop IT support
         </h5>
-        <p>…content goes here…</p>
-        <p>And here’s <a href="#">a link</a>.</p> 
+        <p>Your life line when things go wrong. For business-critical issues, please ring our emergency number on <strong>081 310 0032</strong>.</p>
+        <p>Chat to us about our <a href="#">Business SLAs</a>.</p> 
       </div>
+
+    </div>
   </div>

@@ -9,36 +9,33 @@ code: |-
   </head>
     <form action="." method="POST">
       <div class="container" data-theme="rich">
-        <form action="#step-2" method="GET">
-          <div class="form_row">
-            <h5 class="heading" data-scheme="paragraph">
-              <label for="input_location">At what location do you need Voice installed?</label>
-            </h5>
-            <div class="form_field">
-              <input type="search"
-                    name="location"
-                    id="input_location"
-                    aria-describedby="input_location_help"
-                    data-icon="location"
-                    data-mode="icon-before"
-                    required>
-            </div>
-            <em class="form_field_help_text" id="input_organisation_help">
-              use current location
-            </em>
+        <div class="form_row">
+          <h6 class="heading" data-scheme="paragraph">
+            <label for="input_location">At what location do you need Voice installed?</label>
+          </h6>
+          <div class="form_field">
+            <input type="search"
+                  id="input_location"
+                  aria-describedby="input_location_help"
+                  data-icon="location"
+                  data-mode="icon-before"
+                  required>
           </div>
+          <em class="form_field_help_text" id="input_organisation_help" style="text-align:right;">
+            use current location
+          </em>
+        </div>
       </div>
       <div class="container">
-        <h5 class="heading" data-scheme="paragraph">
+        <h6 class="heading" data-scheme="paragraph">
           How can we get in touch with you?
-        </h5>
+        </h6>
         <div class="form_row">
           <label for="input_organisation">Organisation name</label>
           <div class="form_field">
             <input type="text"
                   name="organisation"
                   id="input_organisation"
-                  aria-describedby="input_organisation_help"
                   autocomplete="organization"
                   placeholder="Company name or your full name"
                   required>
@@ -52,7 +49,6 @@ code: |-
             <input type="tel"
                   name="phone_number"
                   id="input_tel"
-                  aria-invalid="true"
                   aria-describedby="input_tel_error input_tel_help"
                   required>
           </div>
