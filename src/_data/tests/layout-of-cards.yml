@@ -1,0 +1,533 @@
+
+id: layout-of-cards
+name: Layout of cards
+summary: Test cases layouts containing various cards
+description: |-
+  Test cases layouts containing various cards
+properties:
+  - 
+    id: image-cards
+    name: Image cards
+    cases:
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="3">
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  A heading
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/900x900/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" width="300" height="300" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  A heading
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/900x900/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" width="300" height="300" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  A longer heading that wraps
+                </h4>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  A heading
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  A heading
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  A heading
+                </h4>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="3">
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/900x900/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" width="300" height="300" alt>
+                </picture>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/900x900/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" width="300" height="300" alt>
+                </picture>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="3">
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/900x900/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" width="300" height="300" alt>
+                </picture>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/900x900/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" width="300" height="300" alt>
+                </picture>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+              </div>
+              <div class="card" data-mode="image">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+              </div>
+            </div>
+          </div>
+  - 
+    id: product-cards
+    name: Product cards
+    cases:
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="4">
+              <a class="card" href="#" data-mode="product">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  Test heading
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  Test heading
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  A longer test heading that wraps
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  Test heading
+                </h4>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+            </div>
+          </div>
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="4">
+              <a class="card" href="#" data-mode="product">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <picture>
+                  <source srcset="https://placehold.co/800x267/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/600x200/000000/FFFFFF/webp" width="300" height="100" alt>
+                </picture>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+            </div>
+          </div>
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="4">
+              <a class="card" href="#" data-mode="product">
+                <h4 class="heading" data-scheme="block">
+                  Test heading
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <h4 class="heading" data-scheme="block">
+                  Test heading
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <h4 class="heading" data-scheme="block">
+                  A longer test heading that wraps
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+              <a class="card" href="#" data-mode="product">
+                <h4 class="heading" data-scheme="block">
+                  Test heading
+                </h4>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+                <div class="call-to-action">
+                  Get a quote
+                </div>
+              </a>
+            </div>
+          </div>
+  - 
+    id: plain-cards
+    name: Plain cards
+    cases:
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="4">
+              <div class="card" data-mode="plain">
+                <h4 class="heading" data-scheme="block" data-icon="stars" data-mode="icon-above">
+                  All star support
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <h4 class="heading" data-scheme="block" data-icon="star" data-mode="icon-above">
+                  Expert answers
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <h4 class="heading" data-scheme="block" data-icon="clock" data-mode="icon-above">
+                  24/7 help
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <h4 class="heading" data-scheme="block" data-icon="unknown" data-mode="icon-above">
+                  Unknown other benefits
+                </h4>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="4">
+              <div class="card" data-mode="plain">
+                <picture>
+                  <source srcset="https://placehold.co/800x800/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/400x400/000000/FFFFFF/webp" width="200" height="200" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  All star support
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <picture>
+                  <source srcset="https://placehold.co/400x800/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/200x400/000000/FFFFFF/webp" width="100" height="200" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  Expert answers
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <picture>
+                  <source srcset="https://placehold.co/800x400/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/400x200/000000/FFFFFF/webp" width="200" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  24/7 help
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>And here’s <a href="#">a link</a>.</p> 
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <picture>
+                  <source srcset="https://placehold.co/400x400/333333/CCFFFF/webp" media="(min-width: 400px)" type="image/webp">
+                  <img src="https://placehold.co/200x200/000000/FFFFFF/webp" width="100" height="100" alt>
+                </picture>
+                <h4 class="heading" data-scheme="block">
+                  Unknown other benefits
+                </h4>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed quod fugit, optio voluptatum voluptatibus corrupti tempore repudiandae quo ut? Id hic ducimus, earum quaerat temporibus molestias obcaecati exercitationem nulla.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      -
+        code: |-
+          <div class="container" data-theme="alternate">
+            <div class="layout" data-columns="4">
+              <div class="card" data-mode="plain">
+                <h4 class="heading" data-scheme="block">
+                  <a href="#">All star support</a>
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>
+                    <a href="#" class="button" data-size="small" data-scheme="primary" data-icon="arrow-right" data-mode="icon-after">
+                      Get a quote
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <h4 class="heading" data-scheme="block">
+                  <a href="#">All star support</a>
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>
+                    <a href="#" class="button" data-scheme="primary" data-icon="arrow-right" data-mode="icon-after">
+                      Get a quote
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <h4 class="heading" data-scheme="block">
+                  <a href="#">All star support</a>
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>
+                    <a href="#" class="button" data-size="small" data-scheme="secondary" data-icon="arrow-right" data-mode="icon-after">
+                      Get a quote
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="card" data-mode="plain">
+                <h4 class="heading" data-scheme="block">
+                  <a href="#">All star support</a>
+                </h4>
+                <div class="content">
+                  <p>…content goes here…</p>
+                  <p>
+                    <a href="#" class="button" data-scheme="secondary" data-icon="arrow-right" data-mode="icon-after">
+                      Get a quote
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>

@@ -218,3 +218,32 @@
       id: card
       description: |-
         Product cards now have a styled call-to-action 'button'
+-
+  library_version: 1.9.0
+  assets_version: 1.0.0
+  date: 2024-06-25
+  description: |-
+    Breaking changes. Bugfixes and improvements for cards in layouts.
+  patterns:
+    - 
+      id: card
+      description: |-
+        Each card's contents are now broken up into at least 4 distinct owners or rows:
+
+          - A banner image: `<picture>`
+          - A heading: `<hX class="heading">`
+          - A content block: `<div class="content">`
+          - An optional Call to Action block: `<div class="call-to-action">`
+
+        Cards now determine equal heights for each of these rows when in a grid layout.
+
+        Also added more docs to cards. 
+    - 
+      id: layout
+      description: |-
+        Layouts now create a subgrid when their children are cards.
+
+        It is no longer possible to use cards in a list. Cards have to be direct descendents of the `<div class="layout">` element.
+
+        Added more docs to layouts.
+
