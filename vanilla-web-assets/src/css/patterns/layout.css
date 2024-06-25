@@ -33,6 +33,35 @@ ul.layout {
 	Total:                                  28rem
 */
 @media (min-width: 28rem) {
+	.layout > .card {
+		display: grid;
+		grid-template-rows: subgrid;
+		align-content: stretch;
+		grid-row: span var(--card-layout-number-of-rows);
+	}
+
+	.layout > .card:has(> *:nth-child(1)) {
+		--card-layout-number-of-rows: 1;
+	}
+
+	.layout > .card:has(> *:nth-child(2)) {
+		--card-layout-number-of-rows: 2;
+	}
+
+	.layout > .card:has(> *:nth-child(3)) {
+		--card-layout-number-of-rows: 3;
+	}
+
+	.layout > .card:has(> *:nth-child(4)) {
+		--card-layout-number-of-rows: 4;
+	}
+
+	.layout > .card > picture {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+	}
+
 	.layout[data-gap="large"] {
 		--layout-gap: 3rem;
 	}

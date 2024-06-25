@@ -6,6 +6,7 @@
 	padding-inline: var(--card-padding-inline);
 	max-inline-size: 480px;
 	box-sizing: border-box;
+	background-color: var(--card-background-color);
 }
 
 .card > :last-child {
@@ -35,6 +36,7 @@ a.card:hover {
 .card[data-mode="image"] {
 	--card-padding-block: 1.25rem;
 	--card-padding-inline: 1.25rem;
+	--card-background-color: var(--color-white);
 }
 
 .card[data-mode="image"] picture {
@@ -45,9 +47,14 @@ a.card:hover {
 	margin-inline-end: calc(var(--card-padding-inline) * -1);
 }
 
+.card[data-mode="image"] > picture:only-child {
+	margin-block-end: calc(var(--card-padding-block) * -1);
+}
+
 .card[data-mode="product"] {
 	--card-padding-block: 1.25rem;
 	--card-padding-inline: 1.25rem;
+	--card-background-color: var(--color-white);
 }
 
 .card[data-mode="product"] .call-to-action {

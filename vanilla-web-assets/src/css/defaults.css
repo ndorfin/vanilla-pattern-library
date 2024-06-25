@@ -22,3 +22,7 @@ sup > a {
 	padding: 0.5rem;
 	margin-inline: -0.5rem;
 }
+
+a:hover {
+	text-decoration: none;
+}

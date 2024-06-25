@@ -52,6 +52,66 @@
 					Date
 				</dt>
 				<dd>
+					<time datetime="2024-06-25T00:00:00.000Z">
+			Tue, 25 Jun 2024 00:00:00 GMT
+		</time>
+				</dd>
+				<dt>
+					Versions
+				</dt>
+				<dd>
+					Pattern library: <code>1.9.0</code><br>
+					Web Assets: <code>1.0.0</code>
+				</dd>
+				<dt>
+					Description
+				</dt>
+				<dd>
+					<p>Breaking changes. Bugfixes and improvements for cards in layouts.</p>
+
+				</dd>
+				
+				<dt>
+					Patterns affected
+				</dt>
+				<dd>
+					<ul>
+						
+							<li>
+								<a href="/vanilla-pattern-library/patterns/card"><code>card</code></a>
+								<p>Each card's contents are now broken up into at least 4 distinct owners or rows:</p>
+<ul>
+<li>A banner image: <code>&lt;picture&gt;</code></li>
+<li>A heading: <code>&lt;hX class=&quot;heading&quot;&gt;</code></li>
+<li>A content block: <code>&lt;div class=&quot;content&quot;&gt;</code></li>
+<li>An optional Call to Action block: <code>&lt;div class=&quot;call-to-action&quot;&gt;</code></li>
+</ul>
+<p>Cards now determine equal heights for each of these rows when in a grid layout.</p>
+<p>Also added more docs to cards.</p>
+
+							</li>
+						
+							<li>
+								<a href="/vanilla-pattern-library/patterns/layout"><code>layout</code></a>
+								<p>Layouts now create a subgrid when their children are cards.</p>
+<p>It is no longer possible to use cards in a list. Cards have to be direct descendents of the <code>&lt;div class=&quot;layout&quot;&gt;</code> element.</p>
+<p>Added more docs to layouts.</p>
+
+							</li>
+						
+					</ul>
+				</dd>
+				
+				
+			</dl>
+		</li>
+	
+		<li>
+			<dl>
+				<dt>
+					Date
+				</dt>
+				<dd>
 					<time datetime="2024-06-24T00:00:00.000Z">
 			Mon, 24 Jun 2024 00:00:00 GMT
 		</time>
@@ -850,7 +910,7 @@
 <!--
 ============================
 page: {
-  date: 2024-06-24T09:27:02.657Z,
+  date: 2024-06-25T09:24:02.722Z,
   inputPath: './src/releases/index.njk',
   fileSlug: 'releases',
   filePathStem: '/releases/index',

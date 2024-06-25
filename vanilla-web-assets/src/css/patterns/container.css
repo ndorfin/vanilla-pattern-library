@@ -59,7 +59,7 @@
 }
 
 /* Set default link colours */
-.container a {
+.container a:not(.button) {
 	color: var(--container-color-link);
 }
 

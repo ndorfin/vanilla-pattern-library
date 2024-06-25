@@ -59,13 +59,18 @@ pattern: {
       '  <img src="https://placehold.co/600x600/000000/FFFFFF/webp" alt="Item 3">\n' +
       '</div>'
   },
+  tests: [ 'layout-of-cards' ],
   notes: '- The minimum width of any column is 200 pixels. Make sure your content works at this small size.\n' +
     '- The number of items is determined by the number of child elements added to the `.layout` element.\n' +
     '- All layouts default to a single column at smaller screen sizes\n' +
     '- Choose the number of columns based on the fixed number of items. e.g. 4-columns for 4, 8, 12, etc. items.\n' +
     "- Avoid having 'orphaned' items in these layouts, i.e. one item on a row in a multi-column layout. 2 or more items in a row is fine, but they'll be left-aligned by default.\n" +
     '- For tricky numbers of items, e.g. 7, then use a 4-column layout, rather than a 3-column layout.\n' +
-    '- 4-column layouts will switch to 2-column layouts at intermediate breakpoints.',
+    '- 4-column layouts will switch to 2-column layouts at intermediate breakpoints.\n' +
+    '- When adding content such as [Cards](../card/) to layouts:\n' +
+    '  - add them as direct children of the `.layout` element.\n' +
+    '  - make sure they share the same number of content items per card. e.g. all have a heading, content, and call-to-action element.\n' +
+    "  - make sure all Product and Image cards have the same ratio-sized images (This doesn't matter so much in Plain cards).",
   variants: [
     {
       id: 'columns-2',
