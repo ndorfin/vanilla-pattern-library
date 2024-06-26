@@ -1,0 +1,15 @@
+{% set page_meta = {
+	title: template.name,
+	summary: template.summary,
+	description: template.description
+} %}
+<!DOCTYPE html>
+<html lang="{{ global.site.lang }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+{% include "title.njk" %}
+{% include "site_meta.njk" %}
+<link rel="stylesheet" href="/vanilla-web-assets/src/css/index.css">
+{{ content | safe }}
+<script defer type="module" src="/vanilla-web-assets/src/mjs/index.mjs"></script>
+{% include "debug.njk" %}
